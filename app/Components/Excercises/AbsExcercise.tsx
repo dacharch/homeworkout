@@ -1,38 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import AbsBeginnerExcercise from "./Abs/AbsBeginner/AbsBeginnerExcercise";
 
 interface AbsExerciseProps {
   setComponent: (component: string) => void;
 }
 
 const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
+  const[switchComponent,setComponent2] = useState("") ;
+
+  const RenderComponent = () =>{
+       switch(switchComponent){
+         case "Abs Beginner Excercise" :
+            return <AbsBeginnerExcercise/>  ;
+
+         default : return null ;
+
+       }
+  }
   return (
-    <View style={styles.container}>
-      <Text style={styles.text_container}>💪 Abs Workout</Text>
 
-      <View style={styles.box_flex_container}>
-        <TouchableOpacity style={styles.box}>
-          <Text style={styles.emoji}>🔥</Text>
-          <Text style={styles.box_text}>Abs Beginner</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.box}>
-          <Text style={styles.emoji}>⚡</Text>
-          <Text style={styles.box_text}>Abs Intermediate</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={styles.box_flex_container2}>
-        <TouchableOpacity style={styles.bottom_box}>
-          <Text style={styles.emoji}>🏆</Text>
-          <Text style={styles.box_text}>Abs Advanced</Text>
-        </TouchableOpacity>
-      </View>
-
-      <TouchableOpacity style={styles.back_button} onPress={() => setComponent("")}>
-        <Text style={styles.back_text}>⬅ Back</Text>
-      </TouchableOpacity>
-    </View>
+    <>
+      {
+         switchComponent === ""?(
+          <View style={styles.container}>
+          <Text style={styles.text_container}>💪 Abs Workout</Text>
+    
+          <View style={styles.box_flex_container}>
+            <TouchableOpacity
+              onPress={()=>setComponent2("Abs Beginner Excercise")}
+              style={styles.box} 
+             >
+              <Text style={styles.emoji}>🔥</Text>
+              <Text style={styles.box_text}>Abs Beginner</Text>
+            </TouchableOpacity>
+    
+            <TouchableOpacity style={styles.box}>
+              <Text style={styles.emoji}>⚡</Text>
+              <Text style={styles.box_text}>Abs Intermediate</Text>
+            </TouchableOpacity>
+          </View>
+    
+          <View style={styles.box_flex_container2}>
+            <TouchableOpacity style={styles.bottom_box}>
+              <Text style={styles.emoji}>🏆</Text>
+              <Text style={styles.box_text}>Abs Advanced</Text>
+            </TouchableOpacity>
+          </View>
+    
+          <TouchableOpacity style={styles.back_button} onPress={() => setComponent("")}>
+            <Text style={styles.back_text}>⬅ Back</Text>
+          </TouchableOpacity>
+        </View>
+         ):(
+           <RenderComponent/>
+         )
+      }
+    
+    </>
+   
   );
 };
 
