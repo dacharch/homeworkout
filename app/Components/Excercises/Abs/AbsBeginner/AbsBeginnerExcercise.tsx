@@ -1,36 +1,77 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-import { Image } from 'expo-image';
+import React, { useState } from "react";
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Modal, Pressable  } from "react-native";
+import { Exercise, exercises } from "../../../../data/constant";
+import { Image } from "expo-image";
+
 
 const AbsBeginnerExercise = () => {
+  const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
+
   return (
-
     <>
-       <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.text_container}>🔥 Abs Beginner Workout</Text>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.text_container}>🔥 Abs Beginner Workout</Text>
 
-      <View style={styles.exercise_container}>
-        <TouchableOpacity 
-          style={styles.exercise_box}
-          
+        <View style={styles.exercise_container}>
+          <TouchableOpacity 
+            style={styles.exercise_box}
+            onPress={() => setSelectedExercise(exercises[0])}
           >
-          <Image 
-            source={require('../../../../assets/jumping_jack.gif')} 
-            style={styles.gif} 
-            contentFit="contain"
-          />
-          <Text style={styles.exercise_text}>Jumping Jacks</Text>
-        </TouchableOpacity>
+            <Image 
+              source={require('../../../../assets/jumping_jack.gif')} 
+              style={styles.gif} 
+              contentFit="contain"
+            />
+            <Text style={styles.exercise_text}>Jumping Jacks</Text>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
 
-        <TouchableOpacity style={styles.exercise_box}>
-          <Text style={styles.emoji}>💪</Text>
-          <Text style={styles.exercise_text}>Abdominal Crunches</Text>
-        </TouchableOpacity>
-      </View>
-    </ScrollView>
-    
+      {/* Modal for Exercise Details */}
+      <Modal
+        visible={!!selectedExercise}
+        animationType="slide"
+        transparent
+        onRequestClose={() => setSelectedExercise(null)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContainer}>
+            {selectedExercise && (
+              <>
+                <Text style={styles.modalTitle}>{selectedExercise.name}</Text>
+                <Image source={selectedExercise.image} style={styles.modalImage} contentFit="contain" />
+
+                <ScrollView style={styles.modalContent}>
+                  <Text style={styles.sectionTitle}>📌 Instruction</Text>
+                  {selectedExercise.instructions.map((step, index) => (
+                    <Text key={index} style={styles.modalText}>• {step}</Text>
+                  ))}
+
+                  <Text style={styles.sectionTitle}>🎯 Focus Area</Text>
+                  {selectedExercise.focusAreas.map((area, index) => (
+                    <Text key={index} style={styles.modalText}>• {area}</Text>
+                  ))}
+
+                  <Text style={styles.sectionTitle}>⚠️ Common Mistakes</Text>
+                  {selectedExercise.commonMistakes.map((mistake, index) => (
+                    <Text key={index} style={styles.modalText}>• {mistake}</Text>
+                  ))}
+
+                  <Text style={styles.sectionTitle}>🌬️ Breathing Tips</Text>
+                  {selectedExercise.breathingTips.map((tip, index) => (
+                    <Text key={index} style={styles.modalText}>• {tip}</Text>
+                  ))}
+                </ScrollView>
+
+                <Pressable style={styles.closeButton} onPress={() => setSelectedExercise(null)}>
+                  <Text style={styles.closeButtonText}>Close</Text>
+                </Pressable>
+              </>
+            )}
+          </View>
+        </View>
+      </Modal>
     </>
-    
   );
 };
 
@@ -62,7 +103,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#2C2C2E",
     padding: 20,
     borderRadius: 15,
-    width: 160,
+    width: 250,
     height: 200,
     alignItems: "center",
     justifyContent: "center",
@@ -84,11 +125,63 @@ const styles = StyleSheet.create({
     letterSpacing: 1.2,
     marginTop: 10,
   },
-  emoji: {
-    fontSize: 40,
-  },
   gif: {
-    width: 80,
-    height: 80,
+    width: 120, // Increased size
+    height: 120, // Increased size
+  },
+  
+  // Modal styles
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.9)", // Darker background for better contrast
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalContainer: {
+    backgroundColor: "#3A3A3C", // Slightly lighter than black for better readability
+    padding: 20,
+    borderRadius: 12,
+    width: "90%",
+    maxHeight: "100%",
+    alignItems: "center",
+  },
+  modalTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#FFD700",
+    marginBottom: 10,
+  },
+  modalImage: {
+    width: 200, // Increased size
+    height: 140, // Increased size
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  modalContent: {
+    width: "100%",
+    marginVertical: 10,
+  },
+  sectionTitle: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#FF9500",
+    marginTop: 10,
+  },
+  modalText: {
+    fontSize: 14,
+    color: "#FFFFFF",
+    lineHeight: 20,
+  },
+  closeButton: {
+    marginTop: 15,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    backgroundColor: "#FF9500",
+    borderRadius: 8,
+  },
+  closeButtonText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: "#1C1C1E",
   },
 });
