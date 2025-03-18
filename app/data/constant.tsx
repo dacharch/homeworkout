@@ -144,7 +144,7 @@ export const AbsIntermediate:Exercise[] =[
   {
     id: 1,
     name: "Side Bridges Left",
-    image: require("../assets/jumping_jack.gif"), // Replace with actual file path
+    image: require("../assets/site_bridges_left.gif"), // Replace with actual file path
     instructions: [
       "Lie on your left side with your legs extended and stacked on top of each other.",
       "Place your left elbow directly under your shoulder, supporting your upper body.",
@@ -159,7 +159,7 @@ export const AbsIntermediate:Exercise[] =[
   {
     id: 5,
     name: "Butt Bridge",
-    image: require("../assets/jumping_jack.gif"), 
+    image: require("../assets/butt_bridge_left.gif"), 
     instructions: [
       "Lie on your back with your knees bent and feet flat on the floor.",
       "Place your arms at your sides, palms facing down.",
@@ -175,7 +175,7 @@ export const AbsIntermediate:Exercise[] =[
   {
     id: 6,
     name: "Side Bridges Right",
-    image: require("../assets/jumping_jack.gif"),
+    image: require("../assets/site_bridge_right.gif"),
     instructions: [
       "Lie on your right side with legs extended and stacked.",
       "Place your right forearm on the ground, elbow directly under your shoulder.",
@@ -204,7 +204,7 @@ export const AbsIntermediate:Exercise[] =[
   {
     id: 7,
     name: "Bicycle Crunches",
-    image: require("../assets/jumping_jack.gif"),
+    image: require("../assets/bicycle_crunches.gif"),
     instructions: [
       "Lie on your back with your hands behind your head and legs lifted, knees bent at 90 degrees.",
       "Engage your core and lift your shoulders off the ground.",
@@ -232,7 +232,7 @@ export const AbsIntermediate:Exercise[] =[
   {
     id: 8,
     name: "Spine Lumbar Twist Stretch Right",
-    image: require("../assets/jumping_jack.gif"),
+    image: require("../assets/spline_number_right.gif"),
     instructions: [
       "Lie on your back with your legs extended.",
       "Bend your right knee and bring it across your body to the left side.",
@@ -257,17 +257,18 @@ export const AbsIntermediate:Exercise[] =[
       "Breathe slowly and steadily throughout the hold."
     ]
   },
+
   {
     id: 9,
-    name: "Spine Lumbar Twist Stretch Right",
-    image: require("../assets/jumping_jack.gif"),
+    name: "Spine Lumbar Twist Stretch Left",
+    image: require("../assets/spine_left.gif"),
     instructions: [
-      "Lie on your back with both legs extended.",
-      "Bend your right knee and bring it across your body to the left side.",
-      "Keep your right arm extended to the right and shoulders flat on the ground.",
-      "Use your left hand to gently press your right knee down for a deeper stretch.",
-      "Hold this position for 20-30 seconds, feeling the stretch in your lower back and obliques.",
-      "Slowly return to the starting position and switch sides."
+      "Lie on your back with your legs extended.",
+      "Bend your left knee and bring it across your body to the right side.",
+      "Extend your left arm to the side and keep your shoulders flat on the ground.",
+      "Gently press your left knee down with your right hand for a deeper stretch.",
+      "Hold the position for 20-30 seconds, feeling the stretch in your lower back and obliques.",
+      "Return to the starting position and switch sides."
     ],
     focusAreas: [
       "Stretches the lower back and obliques.",
@@ -284,7 +285,9 @@ export const AbsIntermediate:Exercise[] =[
       "Exhale as you lower your knee and deepen the stretch.",
       "Breathe slowly and steadily throughout the hold."
     ]
-  }
+}
+
+ 
 
 ]
 
