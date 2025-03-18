@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import AbsBeginnerExcercise from "./Abs/AbsBeginner/AbsBeginnerExcercise";
+import AbsIntermediateExcercise from "./Abs/AbsBeginner/AbsIntermediate/AbsIntermediateExcercise";
 
 interface AbsExerciseProps {
   setComponent: (component: string) => void;
@@ -13,6 +14,10 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
        switch(switchComponent){
          case "Abs Beginner Excercise" :
             return <AbsBeginnerExcercise/>  ;
+         
+         case "Abs Intermedidate Excercise" :
+            return <AbsIntermediateExcercise />
+
 
          default : return null ;
 
@@ -35,7 +40,9 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
               <Text style={styles.box_text}>Abs Beginner</Text>
             </TouchableOpacity>
     
-            <TouchableOpacity style={styles.box}>
+            <TouchableOpacity 
+               onPress={()=>setComponent2("Abs Intermedidate Excercise")}
+               style={styles.box}>
               <Text style={styles.emoji}>⚡</Text>
               <Text style={styles.box_text}>Abs Intermediate</Text>
             </TouchableOpacity>

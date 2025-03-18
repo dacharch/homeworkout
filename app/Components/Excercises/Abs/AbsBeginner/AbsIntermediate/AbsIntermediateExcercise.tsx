@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Modal, Pressable } from "react-native";
-import { Exercise, AbsBeginner } from "../../../../data/constant";
+import { AbsIntermediate,Exercise } from "@/app/data/constant";
 import { Image } from "expo-image";
 
-const AbsBeginnerExercise = () => {
+const AbsIntermediateExercise = () => {
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
 
   return (
     <>
       <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.text_container}>🔥 Abs Beginner Workout</Text>
+        <Text style={styles.text_container}>🔥 Abs Intermediate Workout</Text>
 
         <View style={styles.exercise_container}>
-          {AbsBeginner.map((exercise) => (
+          {AbsIntermediate.map((exercise) => (
             <TouchableOpacity 
               key={exercise.id}
               style={styles.exercise_box}
@@ -77,7 +77,7 @@ const AbsBeginnerExercise = () => {
   );
 };
 
-export default AbsBeginnerExercise;
+export default AbsIntermediateExercise;
 
 const styles = StyleSheet.create({
   container: {
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#2C2C2E",
     padding: 20,
     borderRadius: 15,
-    width: "47%", // Adjusting for two boxes per row with spacing
+    width: "47%",
     height: 250,
     alignItems: "center",
     justifyContent: "center",
