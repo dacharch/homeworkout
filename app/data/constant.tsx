@@ -458,8 +458,32 @@ export const ArmBeginner:Exercise[]= [
     ]
  },
  {
-  
- }
+  id: 2,
+  name: "Arm Raises",
+  image: require("../assets/arm_raises.gif"),
+  instructions: [
+    "Stand upright with your feet shoulder-width apart.",
+    "Keep your arms straight and relaxed at your sides.",
+    "Slowly raise both arms forward until they reach shoulder height.",
+    "Lower them back down in a controlled motion.",
+    "Repeat for the desired number of repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the shoulders and upper arms.",
+    "Improves shoulder mobility and endurance.",
+    "Enhances posture and upper body coordination."
+  ],
+  commonMistakes: [
+    "Using momentum instead of controlled movements.",
+    "Raising the arms too high or too low.",
+    "Shrugging the shoulders instead of keeping them relaxed."
+  ],
+  breathingTips: [
+    "Inhale before lifting your arms.",
+    "Exhale as you raise them to shoulder height.",
+    "Breathe steadily and avoid holding your breath."
+  ]
+}
 ]
 
 
