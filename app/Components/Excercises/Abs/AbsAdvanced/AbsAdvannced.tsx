@@ -5,10 +5,7 @@ import {Image} from 'expo-image'
 
 
 const AbsAdvannced = () => {
-  const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
-  
-
-  
+  const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);  
   return (
      <>
         <ScrollView contentContainerStyle={styles.container}>
