@@ -21,6 +21,8 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
           
          case  "Abs Advanced Excercise" :
              return <AbsAdvannced/>
+        
+        
 
 
          default : return null ;

@@ -30,6 +30,7 @@ const AbsBeginnerExercise = () => {
       </ScrollView>
 
       {/* Modal for Exercise Details */}
+      
       <Modal
         visible={!!selectedExercise}
         animationType="slide"
