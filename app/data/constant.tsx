@@ -140,7 +140,6 @@ export const AbsBeginner: Exercise[] = [
 
 
 export const AbsIntermediate:Exercise[] =[
-
   {
     id: 1,
     name: "Side Bridges Left",
@@ -256,7 +255,6 @@ export const AbsIntermediate:Exercise[] =[
       "Breathe slowly and steadily throughout the hold."
     ]
   },
-
   {
     id: 9,
     name: "Spine Lumbar Twist Stretch Left",

@@ -19,7 +19,6 @@ const AbsAdvannced = () => {
                       style={styles.exercise_box}
                       onPress={()=>setSelectedExercise(excercise)}
                    >
-
                     <Image
                        source={excercise.image}
                        style={styles.gif}
@@ -34,9 +33,7 @@ const AbsAdvannced = () => {
                }
             </View>
         </ScrollView>
-
-        {/*Modal */}
-
+        {/*Modal Excercise View*/}
            <Modal
                 visible={!!selectedExercise}
                 animationType="slide"
@@ -80,8 +77,6 @@ const AbsAdvannced = () => {
                   </View>
                 </View>
               </Modal>
-       
-     
      </>
   )
 }
