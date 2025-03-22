@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import AbsBeginnerExcercise from "./Abs/AbsBeginner/AbsBeginnerExcercise";
-import AbsIntermediateExcercise from "./AbsIntermediate/AbsIntermediateExcercise";
+import AbsIntermediateExcercise from "./Abs/AbsIntermediate/AbsIntermediateExcercise";
+import AbsAdvannced from "./Abs/AbsAdvanced/AbsAdvannced";
 
 interface AbsExerciseProps {
   setComponent: (component: string) => void;
@@ -17,6 +18,9 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
          
          case "Abs Intermedidate Excercise" :
             return <AbsIntermediateExcercise />
+          
+         case  "Abs Advanced Excercise" :
+             return <AbsAdvannced/>
 
 
          default : return null ;
@@ -49,7 +53,10 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
           </View>
     
           <View style={styles.box_flex_container2}>
-            <TouchableOpacity style={styles.bottom_box}>
+            <TouchableOpacity 
+              onPress={()=>setComponent2("Abs Advanced Excercise")}
+              style={styles.bottom_box}
+              >
               <Text style={styles.emoji}>🏆</Text>
               <Text style={styles.box_text}>Abs Advanced</Text>
             </TouchableOpacity>

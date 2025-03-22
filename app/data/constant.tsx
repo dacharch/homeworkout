@@ -285,9 +285,6 @@ export const AbsIntermediate:Exercise[] =[
       "Exhale as you lower your knee and deepen the stretch.",
       "Breathe slowly and steadily throughout the hold."
     ]
-}
-
- 
-
+ }
 ]
 
