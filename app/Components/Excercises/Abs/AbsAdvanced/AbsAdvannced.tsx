@@ -85,9 +85,6 @@ const AbsAdvannced = () => {
      </>
   )
 }
-
-
-
 export default AbsAdvannced
 
 const styles = StyleSheet.create({
@@ -118,7 +115,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#2C2C2E",
     padding: 20,
     borderRadius: 15,
-    width: "47%", // Adjusting for two boxes per row with spacing
+    width: "47%", 
     height: 250,
     alignItems: "center",
     justifyContent: "center",

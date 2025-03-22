@@ -171,7 +171,6 @@ export const AbsIntermediate:Exercise[] =[
     commonMistakes: ["Overarching the lower back.", "Not fully engaging the glutes.", "Lifting too fast without control."],
     breathingTips: ["Exhale as you lift your hips.", "Inhale as you lower them.", "Maintain a steady breathing rhythm."]
   },
-
   {
     id: 6,
     name: "Side Bridges Right",
@@ -355,6 +354,80 @@ export const AbsAdvanced:Exercise[] = [
     commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
     breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
   },
+
+  {
+    id: 4,
+    name: "Bicycle Crunches",
+    image: require("../assets/bicycle_crunches.gif"),
+    instructions: [
+      "Lie on your back with your hands behind your head and legs lifted, knees bent at 90 degrees.",
+      "Engage your core and lift your shoulders off the ground.",
+      "Bring your right elbow toward your left knee while extending your right leg.",
+      "Switch sides, bringing your left elbow toward your right knee while extending your left leg.",
+      "Continue alternating sides in a pedaling motion.",
+      "Keep the movement controlled and your core engaged throughout."
+    ],
+    focusAreas: [
+      "Strengthens abs, obliques, and hip flexors.",
+      "Improves core endurance and stability.",
+      "Enhances coordination and flexibility."
+    ],
+    commonMistakes: [
+      "Pulling the neck instead of using core muscles.",
+      "Rushing the movement instead of maintaining control.",
+      "Not fully extending the legs or engaging the core."
+    ],
+    breathingTips: [
+      "Exhale as you twist and bring your elbow to your knee.",
+      "Inhale as you return to the starting position.",
+      "Maintain a steady and controlled breathing rhythm."
+    ]
+  },
+  {
+    id: 5,
+    name: "Cobra Stretch",
+    image: require("../assets/cobra_stretch.gif"),
+    instructions: [
+      "Lie face down with your hands under your shoulders.",
+      "Press into your palms and lift your chest off the ground.",
+      "Keep your hips on the floor and stretch your abdomen.",
+      "Hold the position and breathe deeply."
+    ],
+    focusAreas: ["Stretches the lower back and core.", "Improves spinal flexibility.", "Relieves tension in the back."],
+    commonMistakes: ["Overextending the lower back.", "Not engaging the shoulders.", "Holding breath instead of relaxing into the stretch."],
+    breathingTips: ["Inhale deeply as you lift up.", "Exhale while holding the stretch.", "Breathe deeply to relax into the position."]
+  },
+  {
+    id: 6,
+    name: "Spine Lumbar Twist Stretch",
+    image: require("../assets/spine_number.gif"),
+    instructions: [
+      "Lie on your back with your knees bent.",
+      "Drop both knees to one side while keeping your shoulders on the floor.",
+      "Hold the stretch, then switch sides.",
+      "Breathe deeply and relax into the stretch."
+    ],
+    focusAreas: ["Stretches the lower back and obliques.", "Improves spinal flexibility.", "Relieves tension in the lumbar region."],
+    commonMistakes: ["Lifting shoulders off the floor.", "Forcing the stretch too much.", "Not breathing deeply."],
+    breathingTips: ["Exhale as you lower your knees.", "Inhale when switching sides.", "Maintain steady breathing."]
+  },
+  
+  {
+    id: 7,
+    name: "Side Bridges Left",
+    image: require("../assets/site_bridges_left.gif"), 
+    instructions: [
+      "Lie on your left side with your legs extended and stacked on top of each other.",
+      "Place your left elbow directly under your shoulder, supporting your upper body.",
+      "Engage your core and lift your hips off the ground, forming a straight line from head to feet.",
+      "Hold the position for the desired duration while keeping your core tight.",
+      "Slowly lower your hips back down and repeat."
+    ],
+    focusAreas: ["Strengthens obliques and core.", "Improves lateral stability.", "Enhances overall body balance."],
+    commonMistakes: ["Letting hips drop.", "Not aligning body in a straight line.", "Holding breath instead of breathing steadily."],
+    breathingTips: ["Breathe deeply and steadily throughout.", "Exhale when lifting hips.", "Inhale when lowering hips."]
+  },
+
   
 ]
 
