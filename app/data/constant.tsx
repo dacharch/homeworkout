@@ -429,7 +429,6 @@ export const AbsAdvanced:Exercise[] = [
 
 
 export const ArmBeginner:Exercise[]= [
- 
   {
     id: 1,
     name: "Spine Lumbar Twist Stretch Left",
@@ -457,8 +456,10 @@ export const ArmBeginner:Exercise[]= [
       "Exhale as you lower your knee and deepen the stretch.",
       "Breathe slowly and steadily throughout the hold."
     ]
+ },
+ {
+  
  }
-
 ]
 
 
