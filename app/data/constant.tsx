@@ -144,7 +144,7 @@ export const AbsIntermediate:Exercise[] =[
   {
     id: 1,
     name: "Side Bridges Left",
-    image: require("../assets/site_bridges_left.gif"), // Replace with actual file path
+    image: require("../assets/site_bridges_left.gif"), 
     instructions: [
       "Lie on your left side with your legs extended and stacked on top of each other.",
       "Place your left elbow directly under your shoulder, supporting your upper body.",
@@ -344,5 +344,6 @@ export const AbsAdvanced:Exercise[] = [
   
   
 ]
+
 
 
