@@ -483,6 +483,416 @@ export const ArmBeginner:Exercise[]= [
     "Exhale as you raise them to shoulder height.",
     "Breathe steadily and avoid holding your breath."
   ]
+},
+{
+  id: 3,
+  name: "Side Arm Raises",
+  image: require("../assets/side_arm_raises.gif"),
+  instructions: [
+    "Stand upright with your feet shoulder-width apart.",
+    "Keep your arms straight and relaxed at your sides.",
+    "Slowly raise both arms out to the sides until they reach shoulder height.",
+    "Lower them back down in a controlled motion.",
+    "Repeat for the desired number of repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the shoulders and upper arms.",
+    "Improves shoulder mobility and endurance.",
+    "Enhances posture and upper body coordination."
+  ],
+  commonMistakes: [
+    "Using momentum instead of controlled movements.",
+    "Raising the arms too high or too low.",
+    "Shrugging the shoulders instead of keeping them relaxed."
+  ],
+  breathingTips: [
+    "Inhale before lifting your arms.",
+    "Exhale as you raise them to shoulder height.",
+    "Breathe steadily and avoid holding your breath."
+  ]
+},
+
+{
+  id: 4,
+  name: "Triceps Dips",
+  image: require("../assets/triceps_dips.gif"),
+  instructions: [
+    "Sit on the edge of a stable chair or bench with your hands gripping the edge beside your hips.",
+    "Slide your hips forward off the edge, keeping your legs bent at 90 degrees or extended straight for more challenge.",
+    "Lower your body by bending your elbows until your upper arms are parallel to the floor.",
+    "Push through your palms to extend your arms and return to the starting position.",
+    "Repeat for the desired number of repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the triceps, shoulders, and chest.",
+    "Improves upper body endurance and stability.",
+    "Enhances arm definition and functional strength."
+  ],
+  commonMistakes: [
+    "Letting the shoulders hunch forward.",
+    "Lowering too far, causing strain on the shoulders.",
+    "Using momentum instead of controlled movement."
+  ],
+  breathingTips: [
+    "Inhale as you lower your body.",
+    "Exhale as you push back up.",
+    "Maintain steady and controlled breathing."
+  ]
+},
+{
+  id: 5,
+  name: "Arm Circles (Clockwise)",
+  image: require("../assets/arm_circles_clockwise.gif"),
+  instructions: [
+    "Stand upright with your feet shoulder-width apart.",
+    "Extend your arms straight out to the sides at shoulder height.",
+    "Slowly rotate your arms in small clockwise circles.",
+    "Gradually increase the size of the circles for more intensity.",
+    "Continue for the desired duration, then switch directions if needed."
+  ],
+  focusAreas: [
+    "Strengthens the shoulders and upper arms.",
+    "Improves shoulder mobility and endurance.",
+    "Enhances flexibility and coordination in the upper body."
+  ],
+  commonMistakes: [
+    "Moving too fast and using momentum instead of controlled movements.",
+    "Letting the arms drop below shoulder height.",
+    "Shrugging the shoulders instead of keeping them relaxed."
+  ],
+  breathingTips: [
+    "Breathe steadily throughout the movement.",
+    "Inhale as you begin the motion.",
+    "Exhale as you complete each circular motion."
+  ]
+},
+{
+  id: 6,
+  name: "Arm Circles (Counterclockwise)",
+  image: require("../assets/arm_circles_counterclockwise.gif"),
+  instructions: [
+    "Stand upright with your feet shoulder-width apart.",
+    "Extend your arms straight out to the sides at shoulder height.",
+    "Slowly rotate your arms in small counterclockwise circles.",
+    "Gradually increase the size of the circles for more intensity.",
+    "Continue for the desired duration, then switch directions if needed."
+  ],
+  focusAreas: [
+    "Strengthens the shoulders and upper arms.",
+    "Improves shoulder mobility and endurance.",
+    "Enhances flexibility and coordination in the upper body."
+  ],
+  commonMistakes: [
+    "Moving too fast and using momentum instead of controlled movements.",
+    "Letting the arms drop below shoulder height.",
+    "Shrugging the shoulders instead of keeping them relaxed."
+  ],
+  breathingTips: [
+    "Breathe steadily throughout the movement.",
+    "Inhale as you begin the motion.",
+    "Exhale as you complete each circular motion."
+  ]
+},
+{
+  id: 7,
+  name: "Diamond Push-Ups",
+  image: require("../assets/diamond_push_ups.gif"),
+  instructions: [
+    "Start in a high plank position with your hands close together, forming a diamond shape with your thumbs and index fingers.",
+    "Keep your core engaged and your body in a straight line from head to heels.",
+    "Lower your chest towards your hands by bending your elbows, keeping them close to your body.",
+    "Push back up to the starting position by extending your arms.",
+    "Repeat for the desired number of repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the triceps, chest, and shoulders.",
+    "Engages the core for stability.",
+    "Improves upper body endurance and definition."
+  ],
+  commonMistakes: [
+    "Letting the elbows flare out too much.",
+    "Arching or sagging the lower back.",
+    "Not going low enough for a full range of motion."
+  ],
+  breathingTips: [
+    "Inhale as you lower your body.",
+    "Exhale as you push back up.",
+    "Maintain a steady breathing rhythm throughout."
+  ]
+},
+
+{
+  id: 9,
+  name: "Chest Press Pulse",
+  image: require("../assets/chest_press_pulse.gif"),
+  instructions: [
+    "Lie on your back with your knees bent and feet flat on the floor (or on a bench if using weights).",
+    "Hold a pair of dumbbells or use body weight by pressing your palms together at chest level.",
+    "Press the weights or hands upward until your arms are fully extended.",
+    "Lower them slightly and pulse up and down in small, controlled movements.",
+    "Continue pulsing for the desired duration or number of reps, then return to the starting position."
+  ],
+  focusAreas: [
+    "Strengthens the chest, shoulders, and triceps.",
+    "Enhances muscular endurance with continuous tension.",
+    "Improves control and stability in the upper body."
+  ],
+  commonMistakes: [
+    "Using momentum instead of controlled movements.",
+    "Arching the lower back instead of keeping it flat.",
+    "Dropping the arms too low, reducing tension on the chest."
+  ],
+  breathingTips: [
+    "Inhale as you lower slightly.",
+    "Exhale as you pulse upward.",
+    "Maintain steady, controlled breathing throughout."
+  ]
+},
+{
+  id: 9,
+  name: "Leg Barbell Curl (Right Leg)",
+  image: require("../assets/leg_barbell_curl_right.gif"),
+  instructions: [
+    "Stand upright with your feet shoulder-width apart, holding a barbell with both hands in an underhand grip.",
+    "Shift your weight onto your left leg and slightly bend your knee for balance.",
+    "Slowly curl your right leg backward, bringing your heel toward your glutes.",
+    "Hold the contraction for a moment, then lower your leg back to the starting position in a controlled motion.",
+    "Repeat for the desired number of repetitions before switching legs."
+  ],
+  focusAreas: [
+    "Strengthens the hamstrings and calves.",
+    "Improves lower body stability and balance.",
+    "Enhances leg muscle endurance and control."
+  ],
+  commonMistakes: [
+    "Swinging the leg too fast instead of using controlled movements.",
+    "Leaning too far forward or backward, losing balance.",
+    "Not engaging the hamstrings properly during the curl."
+  ],
+  breathingTips: [
+    "Inhale as you lower your leg.",
+    "Exhale as you curl your leg upward.",
+    "Maintain a steady breathing pattern throughout the movement."
+  ]
+},
+{
+  id: 10,
+  name: "Diagonal Plank",
+  image: require("../assets/diagonal_plank.gif"),
+  instructions: [
+    "Start in a high plank position with your hands shoulder-width apart and your body in a straight line from head to heels.",
+    "Extend your right arm forward and your left leg backward simultaneously, keeping them aligned with your torso.",
+    "Hold this position for a few seconds while engaging your core and maintaining balance.",
+    "Lower your arm and leg back to the starting position.",
+    "Repeat on the opposite side, extending your left arm and right leg.",
+    "Continue alternating sides for the desired duration or repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the core, shoulders, and glutes.",
+    "Improves balance, stability, and coordination.",
+    "Engages multiple muscle groups for full-body control."
+  ],
+  commonMistakes: [
+    "Letting the hips sag or rise too high.",
+    "Losing control and moving too quickly.",
+    "Not engaging the core properly, leading to instability."
+  ],
+  breathingTips: [
+    "Inhale as you prepare to lift your arm and leg.",
+    "Exhale as you extend them into position.",
+    "Breathe steadily to maintain stability and endurance."
+  ]
+},
+{
+  id: 11,
+  name: "Punches",
+  image: require("../assets/punches.gif"),
+  instructions: [
+    "Stand with your feet shoulder-width apart and knees slightly bent.",
+    "Hold your fists up near your chin in a guard position.",
+    "Extend one arm forward in a punching motion, rotating your torso slightly.",
+    "Quickly retract your arm while simultaneously extending the other arm for the next punch.",
+    "Continue alternating punches in a controlled and rhythmic manner for the desired duration."
+  ],
+  focusAreas: [
+    "Strengthens the arms, shoulders, and core.",
+    "Improves cardiovascular endurance and agility.",
+    "Enhances coordination and reaction speed."
+  ],
+  commonMistakes: [
+    "Locking the elbows when punching.",
+    "Not engaging the core, reducing power and control.",
+    "Punching too fast without proper form, leading to sloppy movements."
+  ],
+  breathingTips: [
+    "Exhale with each punch for better power and control.",
+    "Inhale between punches to maintain a steady rhythm.",
+    "Avoid holding your breath to prevent early fatigue."
+  ]
+},
+{
+  id: 12,
+  name: "Push-Ups",
+  image: require("../assets/push_ups.gif"),
+  instructions: [
+    "Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line from head to heels.",
+    "Engage your core and keep your elbows slightly tucked in.",
+    "Lower your chest toward the floor by bending your elbows while keeping your body straight.",
+    "Push back up to the starting position by extending your arms fully.",
+    "Repeat for the desired number of repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the chest, shoulders, and triceps.",
+    "Engages the core and improves overall stability.",
+    "Enhances upper body endurance and functional strength."
+  ],
+  commonMistakes: [
+    "Letting the hips sag or rise too high.",
+    "Flaring the elbows out too much, straining the shoulders.",
+    "Not going low enough for a full range of motion."
+  ],
+  breathingTips: [
+    "Inhale as you lower your body.",
+    "Exhale as you push back up.",
+    "Maintain steady breathing to avoid early fatigue."
+  ]
+},
+{
+  id: 13,
+  name: "Inchworms",
+  image: require("../assets/inchworms.gif"),
+  instructions: [
+    "Stand tall with your feet hip-width apart and your arms relaxed at your sides.",
+    "Hinge at your hips and reach your hands toward the floor, keeping your legs as straight as possible.",
+    "Walk your hands forward until you reach a high plank position with your body in a straight line.",
+    "Hold the plank briefly, engaging your core and keeping your shoulders aligned over your wrists.",
+    "Walk your hands back toward your feet and return to a standing position.",
+    "Repeat for the desired number of repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the core, shoulders, and arms.",
+    "Improves flexibility in the hamstrings and lower back.",
+    "Enhances overall mobility and coordination."
+  ],
+  commonMistakes: [
+    "Bending the knees too much while reaching down.",
+    "Letting the hips sag in the plank position.",
+    "Rushing through the movement instead of maintaining control."
+  ],
+  breathingTips: [
+    "Inhale as you bend forward and walk your hands out.",
+    "Exhale as you return to a standing position.",
+    "Maintain steady breathing throughout the movement."
+  ]
+},
+{
+  id: 14,
+  name: "Wall Push-Ups",
+  image: require("../assets/wall.gif"),
+  instructions: [
+    "Stand facing a wall with your feet hip-width apart, about arm's length away.",
+    "Place your palms flat against the wall at shoulder height and slightly wider than shoulder-width apart.",
+    "Keep your body straight and engage your core as you slowly bend your elbows, bringing your chest closer to the wall.",
+    "Pause for a moment, then push yourself back to the starting position by extending your arms.",
+    "Repeat for the desired number of repetitions."
+  ],
+  focusAreas: [
+    "Strengthens the chest, shoulders, and triceps.",
+    "Engages the core and improves upper body endurance.",
+    "Great for beginners or those recovering from injuries."
+  ],
+  commonMistakes: [
+    "Letting the hips sag or sticking them out.",
+    "Placing hands too high or too low, causing improper form.",
+    "Moving too fast and using momentum instead of controlled movements."
+  ],
+  breathingTips: [
+    "Inhale as you lower yourself toward the wall.",
+    "Exhale as you push back to the starting position.",
+    "Maintain a steady breathing rhythm throughout the exercise."
+  ]
+},
+{
+  id: 15,
+  name: "Triceps Stretch (Left Arm)",
+  image: require("../assets/triceps_stretch_left.gif"),
+  instructions: [
+    "Stand or sit upright with your feet hip-width apart.",
+    "Raise your left arm overhead and bend your elbow, bringing your left hand toward the middle of your back.",
+    "Use your right hand to gently push your left elbow back and downward for a deeper stretch.",
+    "Hold the stretch for 20-30 seconds while keeping your back straight.",
+    "Release and switch to the right arm if needed."
+  ],
+  focusAreas: [
+    "Stretches the triceps and shoulders.",
+    "Improves flexibility and range of motion in the arms.",
+    "Helps relieve muscle tension and stiffness."
+  ],
+  commonMistakes: [
+    "Arching the back instead of keeping it straight.",
+    "Overstretching, causing discomfort or pain.",
+    "Tilting the head forward instead of keeping it aligned with the spine."
+  ],
+  breathingTips: [
+    "Inhale deeply before starting the stretch.",
+    "Exhale slowly as you deepen the stretch.",
+    "Maintain slow, steady breathing to enhance relaxation."
+  ]
+},
+{
+  id: 16,
+  name: "Standing Biceps Stretch",
+  image: require("../assets/standing_biceps_stretch.gif"),
+  instructions: [
+    "Stand upright with your feet shoulder-width apart.",
+    "Extend both arms behind you and interlace your fingers with your palms facing downward.",
+    "Slowly lift your arms upward while keeping them straight, feeling a stretch in your biceps and shoulders.",
+    "Hold the stretch for 20-30 seconds while keeping your chest open.",
+    "Release and return to the starting position."
+  ],
+  focusAreas: [
+    "Stretches the biceps, shoulders, and chest.",
+    "Improves upper body flexibility and posture.",
+    "Helps relieve muscle tightness after upper body workouts."
+  ],
+  commonMistakes: [
+    "Hunching the shoulders instead of keeping them relaxed.",
+    "Bending the elbows instead of keeping the arms straight.",
+    "Lifting the arms too high, causing discomfort."
+  ],
+  breathingTips: [
+    "Inhale deeply before lifting your arms.",
+    "Exhale slowly as you deepen the stretch.",
+    "Maintain steady breathing to enhance relaxation."
+  ]
+},
+{
+  id: 17,
+  name: "Standing Biceps Stretch (Right Arm)",
+  image: require("../assets/standing_biceps_stretch_right.gif"),
+  instructions: [
+    "Stand upright with your feet shoulder-width apart.",
+    "Extend your right arm straight out to the side at shoulder height, palm facing forward.",
+    "Place your left hand on a wall or behind your back for support.",
+    "Slowly rotate your body to the left until you feel a stretch in your right biceps and shoulder.",
+    "Hold the stretch for 20-30 seconds, keeping your posture upright.",
+    "Release and switch to the other arm if needed."
+  ],
+  focusAreas: [
+    "Stretches the biceps, shoulders, and chest.",
+    "Improves upper body flexibility and mobility.",
+    "Helps relieve tightness from strength training or prolonged sitting."
+  ],
+  commonMistakes: [
+    "Shrugging the shoulders instead of keeping them relaxed.",
+    "Bending the arm instead of keeping it straight.",
+    "Twisting too forcefully, causing discomfort."
+  ],
+  breathingTips: [
+    "Inhale deeply before starting the stretch.",
+    "Exhale as you rotate slightly to deepen the stretch.",
+    "Maintain steady, controlled breathing for better relaxation."
+  ]
 }
 ]
 
