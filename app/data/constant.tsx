@@ -291,17 +291,30 @@ export const AbsIntermediate:Exercise[] =[
 export const AbsAdvanced:Exercise[] = [
   {
     id: 1,
-    name: "Spine Lumbar Twist Stretch",
-    image: require("../assets/spine_number.gif"),
+    name: "Sit-Ups",
+    image: require("../assets/situps.gif"),
     instructions: [
-      "Lie on your back with your knees bent.",
-      "Drop both knees to one side while keeping your shoulders on the floor.",
-      "Hold the stretch, then switch sides.",
-      "Breathe deeply and relax into the stretch."
+      "Lie on your back with your knees bent and feet flat on the floor.",
+      "Place your hands behind your head or cross them over your chest.",
+      "Engage your core and lift your upper body towards your knees.",
+      "Lower yourself back down with control and repeat."
     ],
-    focusAreas: ["Stretches the lower back and obliques.", "Improves spinal flexibility.", "Relieves tension in the lumbar region."],
-    commonMistakes: ["Lifting shoulders off the floor.", "Forcing the stretch too much.", "Not breathing deeply."],
-    breathingTips: ["Exhale as you lower your knees.", "Inhale when switching sides.", "Maintain steady breathing."]
+    focusAreas: [
+      "Strengthens the abdominal muscles.",
+      "Improves core stability.",
+      "Enhances endurance and muscular definition."
+    ],
+    commonMistakes: [
+      "Pulling on the neck with hands.",
+      "Using momentum instead of core strength.",
+      "Not controlling the descent."
+    ],
+    breathingTips: [
+      "Exhale as you lift your body up.",
+      "Inhale as you lower yourself down.",
+      "Maintain steady and controlled breathing."
+    ]
   }
+  
 ]
 
