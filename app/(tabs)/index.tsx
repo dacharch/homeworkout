@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import AbsExercise from "../Components/Excercises/Abs/AbsExcercise";
+import ArmExcercise from "../Components/Excercises/Arm/ArmExcercise" ;
 const Index: React.FC = () => {
   const [switchComponent, setComponent] = useState<string>("");
 
@@ -8,6 +9,8 @@ const Index: React.FC = () => {
     switch (switchComponent) {
       case "Abs Exercise":
         return <AbsExercise setComponent={setComponent} />;
+      case "Arm Excercise":
+        return <ArmExcercise setComponent={setComponent}/>;
       default:
         return null;
     }
@@ -29,7 +32,9 @@ const Index: React.FC = () => {
 
             <View style={styles.box}>
               <Text style={styles.emoji}>💪</Text>
-              <Text style={styles.box_text}>Arm Workout</Text>
+              <TouchableOpacity onPress={()=>setComponent("Arm Excercise")}>
+                <Text style={styles.box_text}>Arm Workout</Text>
+              </TouchableOpacity>
             </View>
           </View>
 
