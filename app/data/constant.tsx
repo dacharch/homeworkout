@@ -316,7 +316,7 @@ export const AbsAdvanced:Exercise[] = [
     ]
   },
   {
-    id: 3,
+    id: 2,
     name: "V-Ups",
     image: require("../assets/v_ups.gif"),
     instructions: [
@@ -340,8 +340,21 @@ export const AbsAdvanced:Exercise[] = [
       "Inhale as you lower yourself back down.",
       "Keep your breathing steady and controlled."
     ]
-  }
-  
+  },
+  {
+    id: 3,
+    name: "Jumping Jacks",
+    image: require("../assets/jumping_jack.gif"),
+    instructions: [
+      "Stand upright with your feet together and arms at your sides.",
+      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
+      "Jump again to return to the starting position.",
+      "Repeat at a steady pace."
+    ],
+    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
+    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
+    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
+  },
   
 ]
 
