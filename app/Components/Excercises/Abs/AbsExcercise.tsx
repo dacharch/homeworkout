@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import AbsBeginnerExcercise from "./Abs/AbsBeginner/AbsBeginnerExcercise";
-import AbsIntermediateExcercise from "./Abs/AbsIntermediate/AbsIntermediateExcercise";
-import AbsAdvannced from "./Abs/AbsAdvanced/AbsAdvannced";
+import AbsBeginnerExcercise from "./AbsBeginner/AbsBeginnerExcercise";
+import AbsIntermediateExcercise from "./AbsIntermediate/AbsIntermediateExcercise";
+import AbsAdvannced from "./AbsAdvanced/AbsAdvannced";
 
 interface AbsExerciseProps {
   setComponent: (component: string) => void;
@@ -21,10 +21,7 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
           
          case  "Abs Advanced Excercise" :
              return <AbsAdvannced/>
-        
-        
-
-
+      
          default : return null ;
 
        }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import AbsExercise from "../Components/Excercises/AbsExcercise";
+import AbsExercise from "../Components/Excercises/Abs/AbsExcercise";
 const Index: React.FC = () => {
   const [switchComponent, setComponent] = useState<string>("");
 
