@@ -314,7 +314,34 @@ export const AbsAdvanced:Exercise[] = [
       "Inhale as you lower yourself down.",
       "Maintain steady and controlled breathing."
     ]
+  },
+  {
+    id: 3,
+    name: "V-Ups",
+    image: require("../assets/v_ups.gif"),
+    instructions: [
+      "Lie flat on your back with your legs extended and arms stretched overhead.",
+      "Engage your core and lift both your upper body and legs simultaneously.",
+      "Reach your hands toward your toes, forming a 'V' shape with your body.",
+      "Lower yourself back down with control and repeat."
+    ],
+    focusAreas: [
+      "Targets the upper and lower abs.",
+      "Improves core strength and stability.",
+      "Enhances balance and coordination."
+    ],
+    commonMistakes: [
+      "Bending the knees too much.",
+      "Using momentum instead of core engagement.",
+      "Not maintaining a straight back."
+    ],
+    breathingTips: [
+      "Exhale as you lift your body into the 'V' position.",
+      "Inhale as you lower yourself back down.",
+      "Keep your breathing steady and controlled."
+    ]
   }
+  
   
 ]
 
