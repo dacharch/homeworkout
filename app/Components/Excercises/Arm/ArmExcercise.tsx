@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-import ArmIntermediate from "./ArmIntermediate/ArmIntermediate";
-import ArmAdvanced from "./ArmAdvanced/ArmAdvanced";
-import ArmBeginner from "./ArmBeginner/ArmBeginner";
+import ArmIntermediate from "./ArmIntermediate/ArmIntermediateExcercise";
+import ArmAdvanced from "./ArmAdvanced/ArmAdvancedExcercise";
+import ArmBeginner from "./ArmBeginner/ArmBeginnerExcercise";
 
 
 interface AbsExerciseProps {
@@ -26,7 +26,7 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
        }
   }
   return (
-
+    
     <>
       {
          switchComponent === ""?(

@@ -425,9 +425,42 @@ export const AbsAdvanced:Exercise[] = [
     commonMistakes: ["Letting hips drop.", "Not aligning body in a straight line.", "Holding breath instead of breathing steadily."],
     breathingTips: ["Breathe deeply and steadily throughout.", "Exhale when lifting hips.", "Inhale when lowering hips."]
   },
-
-  
 ]
+
+
+export const ArmBeginner:Exercise[]= [
+ 
+  {
+    id: 1,
+    name: "Spine Lumbar Twist Stretch Left",
+    image: require("../assets/spine_left.gif"),
+    instructions: [
+      "Lie on your back with your legs extended.",
+      "Bend your left knee and bring it across your body to the right side.",
+      "Extend your left arm to the side and keep your shoulders flat on the ground.",
+      "Gently press your left knee down with your right hand for a deeper stretch.",
+      "Hold the position for 20-30 seconds, feeling the stretch in your lower back and obliques.",
+      "Return to the starting position and switch sides."
+    ],
+    focusAreas: [
+      "Stretches the lower back and obliques.",
+      "Improves spinal mobility and flexibility.",
+      "Relieves tension and promotes relaxation."
+    ],
+    commonMistakes: [
+      "Lifting the shoulders off the ground.",
+      "Forcing the twist too much, causing discomfort.",
+      "Not keeping the stretch controlled and relaxed."
+    ],
+    breathingTips: [
+      "Inhale deeply before starting the twist.",
+      "Exhale as you lower your knee and deepen the stretch.",
+      "Breathe slowly and steadily throughout the hold."
+    ]
+ }
+
+]
+
 
 
 
