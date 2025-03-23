@@ -8,8 +8,6 @@ interface ChestExcerciseProps {
      setComponent:(component:string) =>void ;
 }
 
-
-
 const ChestExcercise:React.FC<ChestExcerciseProps> = ({setComponent}) => {
   const [switchComponent,setComponent2] = useState("") ;
 
@@ -142,7 +140,7 @@ const styles  = StyleSheet.create({
         fontWeight: "bold",
         color: "#FFFFFF",
         textAlign: "center",
-        textTransform: "uppercase",
+       
         letterSpacing: 1.2,
         marginTop: 10,
       },

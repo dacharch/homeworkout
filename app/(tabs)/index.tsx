@@ -45,7 +45,7 @@ const Index: React.FC = () => {
           <View style={styles.box_flex_container}>
             <View style={styles.box}>
               <Text style={styles.emoji}>🏋️</Text>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=>setComponent("Chest Excercise")}>
                  <Text style={styles.box_text}>Chest Workout</Text>
               </TouchableOpacity>
             </View>
