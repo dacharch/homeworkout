@@ -896,11 +896,518 @@ export const ArmBeginner:Exercise[]= [
 ]
 
 export const ArmIntermedidate:Exercise[] =[
+
+  {
+    id: 1,
+    name: "Arm Circles (Clockwise)",
+    image: require("../assets/arm_circles_clockwise.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Extend your arms straight out to the sides at shoulder height.",
+      "Slowly rotate your arms in small clockwise circles.",
+      "Gradually increase the size of the circles for more intensity.",
+      "Continue for the desired duration, then switch directions if needed."
+    ],
+    focusAreas: [
+      "Strengthens the shoulders and upper arms.",
+      "Improves shoulder mobility and endurance.",
+      "Enhances flexibility and coordination in the upper body."
+    ],
+    commonMistakes: [
+      "Moving too fast and using momentum instead of controlled movements.",
+      "Letting the arms drop below shoulder height.",
+      "Shrugging the shoulders instead of keeping them relaxed."
+    ],
+    breathingTips: [
+      "Breathe steadily throughout the movement.",
+      "Inhale as you begin the motion.",
+      "Exhale as you complete each circular motion."
+    ]
+  },
+  {
+    id: 2,
+    name: "Arm Circles (Counterclockwise)",
+    image: require("../assets/arm_circles_counterclockwise.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Extend your arms straight out to the sides at shoulder height.",
+      "Slowly rotate your arms in small counterclockwise circles.",
+      "Gradually increase the size of the circles for more intensity.",
+      "Continue for the desired duration, then switch directions if needed."
+    ],
+    focusAreas: [
+      "Strengthens the shoulders and upper arms.",
+      "Improves shoulder mobility and endurance.",
+      "Enhances flexibility and coordination in the upper body."
+    ],
+    commonMistakes: [
+      "Moving too fast and using momentum instead of controlled movements.",
+      "Letting the arms drop below shoulder height.",
+      "Shrugging the shoulders instead of keeping them relaxed."
+    ],
+    breathingTips: [
+      "Breathe steadily throughout the movement.",
+      "Inhale as you begin the motion.",
+      "Exhale as you complete each circular motion."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Floor Tricep Dips",
+    "image": require("../assets/floor_tricep_dips.gif"),
+    "instructions": [
+      "Sit on the floor with your knees bent and feet flat on the ground.",
+      "Place your hands behind you, fingers pointing forward, shoulder-width apart.",
+      "Press into your palms and lift your hips slightly off the ground.",
+      "Lower your body by bending your elbows until your arms are at a 90-degree angle.",
+      "Push through your palms to return to the starting position.",
+      "Repeat for the desired number of reps."
+    ],
+    "focusAreas": [
+      "Strengthens the triceps, shoulders, and chest.",
+      "Improves upper body endurance.",
+      "Enhances arm and shoulder stability."
+    ],
+    "commonMistakes": [
+      "Letting elbows flare out instead of keeping them close to the body.",
+      "Dropping the hips too low instead of focusing on arm movement.",
+      "Locking the elbows at the top of the movement."
+    ],
+    "breathingTips": [
+      "Inhale as you lower your body down.",
+      "Exhale as you push yourself back up.",
+      "Maintain steady breathing throughout the movement."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Military Push-Ups",
+    "image": require("../assets/military_push_ups.gif"),
+    "instructions": [
+      "Start in a high plank position with your hands directly under your shoulders.",
+      "Keep your body in a straight line from head to heels, engaging your core.",
+      "Lower your body by bending your elbows, keeping them close to your torso.",
+      "Go down until your chest is just above the ground, maintaining a controlled motion.",
+      "Push through your palms to return to the starting position.",
+      "Repeat for the desired number of reps."
+    ],
+    "focusAreas": [
+      "Strengthens the triceps, chest, and shoulders.",
+      "Enhances core stability and overall upper body endurance.",
+      "Improves posture and functional strength."
+    ],
+    "commonMistakes": [
+      "Letting elbows flare out instead of keeping them close to the body.",
+      "Dropping the hips or arching the back, causing poor form.",
+      "Not going low enough or rushing through the reps."
+    ],
+    "breathingTips": [
+      "Inhale as you lower your body down.",
+      "Exhale as you push yourself back up.",
+      "Maintain steady and controlled breathing throughout the movement."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Alternative Hooks",
+    "image": require("../assets/alternative_hooks.gif"),
+    "instructions": [
+      "Stand with your feet shoulder-width apart and slightly bend your knees.",
+      "Hold your fists near your chin in a boxing stance.",
+      "Twist your torso and throw a hook punch with your right arm, keeping your elbow at a 90-degree angle.",
+      "Return to the starting position and immediately throw a hook punch with your left arm.",
+      "Continue alternating hooks in a controlled and powerful motion.",
+      "Maintain a steady pace and engage your core throughout the movement."
+    ],
+    "focusAreas": [
+      "Strengthens the shoulders, arms, and core.",
+      "Improves coordination and punching power.",
+      "Enhances cardiovascular endurance and agility."
+    ],
+    "commonMistakes": [
+      "Throwing wild punches without control.",
+      "Not rotating the hips and torso for full power.",
+      "Dropping the guard after each punch instead of keeping hands up."
+    ],
+    "breathingTips": [
+      "Exhale sharply with each punch for more power.",
+      "Inhale as you return to the starting position.",
+      "Maintain steady breathing to keep up endurance."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Push-Up Rotation",
+    "image": require("../assets/push_up_rotation.gif"),
+    "instructions": [
+      "Start in a high plank position with your hands directly under your shoulders.",
+      "Lower your body into a push-up by bending your elbows, keeping your core engaged.",
+      "Push back up to the starting position.",
+      "Rotate your torso to the right and extend your right arm toward the ceiling, forming a side plank.",
+      "Return to the starting position and repeat the movement, this time rotating to the left.",
+      "Continue alternating sides with each push-up."
+    ],
+    "focusAreas": [
+      "Strengthens the chest, shoulders, triceps, and core.",
+      "Improves balance, stability, and coordination.",
+      "Engages the obliques and enhances rotational strength."
+    ],
+    "commonMistakes": [
+      "Letting hips sag or rise too high, breaking form.",
+      "Not fully extending the arm during the rotation.",
+      "Rushing through the movement instead of maintaining control."
+    ],
+    "breathingTips": [
+      "Inhale as you lower your body down.",
+      "Exhale as you push back up and rotate.",
+      "Maintain steady breathing throughout the movement."
+    ]
+  },
+  {
+    id: 9,
+    name: "Leg Barbell Curl (Right Leg)",
+    image: require("../assets/leg_barbell_curl_right.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart, holding a barbell with both hands in an underhand grip.",
+      "Shift your weight onto your left leg and slightly bend your knee for balance.",
+      "Slowly curl your right leg backward, bringing your heel toward your glutes.",
+      "Hold the contraction for a moment, then lower your leg back to the starting position in a controlled motion.",
+      "Repeat for the desired number of repetitions before switching legs."
+    ],
+    focusAreas: [
+      "Strengthens the hamstrings and calves.",
+      "Improves lower body stability and balance.",
+      "Enhances leg muscle endurance and control."
+    ],
+    commonMistakes: [
+      "Swinging the leg too fast instead of using controlled movements.",
+      "Leaning too far forward or backward, losing balance.",
+      "Not engaging the hamstrings properly during the curl."
+    ],
+    breathingTips: [
+      "Inhale as you lower your leg.",
+      "Exhale as you curl your leg upward.",
+      "Maintain a steady breathing pattern throughout the movement."
+    ]
+  },
+
+  {
+    id: 10,
+    name: "Push-Ups",
+    image: require("../assets/push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line from head to heels.",
+      "Engage your core and keep your elbows slightly tucked in.",
+      "Lower your chest toward the floor by bending your elbows while keeping your body straight.",
+      "Push back up to the starting position by extending your arms fully.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, and triceps.",
+      "Engages the core and improves overall stability.",
+      "Enhances upper body endurance and functional strength."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or rise too high.",
+      "Flaring the elbows out too much, straining the shoulders.",
+      "Not going low enough for a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain steady breathing to avoid early fatigue."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Burpees",
+    "image": require("../assets/burpees.gif"),
+    "instructions": [
+      "Stand upright with your feet shoulder-width apart.",
+      "Lower your body into a squat position and place your hands on the ground.",
+      "Kick your feet back into a high plank position.",
+      "Perform a push-up by lowering your chest to the floor and pushing back up.",
+      "Jump your feet forward to return to the squat position.",
+      "Explosively jump up, reaching your arms overhead.",
+      "Land softly and immediately go into the next rep."
+    ],
+    "focusAreas": [
+      "Engages the full body, including chest, arms, legs, and core.",
+      "Boosts cardiovascular endurance and explosive power.",
+      "Improves agility, coordination, and functional strength."
+    ],
+    "commonMistakes": [
+      "Not performing a full push-up, reducing effectiveness.",
+      "Letting the hips sag during the plank position.",
+      "Landing too hard after the jump, increasing impact on joints."
+    ],
+    "breathingTips": [
+      "Inhale as you lower into the squat and kick back.",
+      "Exhale as you push up and jump forward.",
+      "Maintain a steady rhythm to avoid gasping for air."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Arm Scissors",
+    "image": require("../assets/arm_scissors.gif"),
+    "instructions": [
+      "Stand upright with your feet shoulder-width apart.",
+      "Extend both arms straight out to the sides at shoulder height.",
+      "Cross your arms in front of your chest, overlapping them like scissors.",
+      "Quickly return to the starting position and repeat the movement, alternating which arm is on top.",
+      "Maintain a steady pace and engage your shoulders throughout the exercise.",
+      "Continue for the desired duration or number of repetitions."
+    ],
+    "focusAreas": [
+      "Strengthens the shoulders, chest, and upper arms.",
+      "Improves arm mobility and endurance.",
+      "Enhances flexibility and coordination."
+    ],
+    "commonMistakes": [
+      "Dropping the arms below shoulder height.",
+      "Moving too fast and using momentum instead of controlled movement.",
+      "Not fully extending the arms during the motion."
+    ],
+    "breathingTips": [
+      "Breathe steadily throughout the movement.",
+      "Inhale as you open your arms.",
+      "Exhale as you cross your arms in front of your chest."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Skipping Without Rope",
+    "image": require("../assets/skipping_without_rope.gif"),
+    "instructions": [
+      "Stand upright with your feet close together and arms at your sides.",
+      "Bend your elbows and position your hands as if holding a jump rope.",
+      "Jump lightly off the ground, keeping your knees slightly bent.",
+      "Rotate your wrists in a circular motion as if swinging an imaginary rope.",
+      "Land softly on the balls of your feet and immediately jump again.",
+      "Maintain a steady rhythm and continue for the desired duration."
+    ],
+    "focusAreas": [
+      "Improves cardiovascular endurance and coordination.",
+      "Strengthens the calves, legs, and core muscles.",
+      "Enhances agility, balance, and footwork."
+    ],
+    "commonMistakes": [
+      "Jumping too high, which can cause unnecessary impact on joints.",
+      "Not using arm movements, reducing the effectiveness of the exercise.",
+      "Landing too hard instead of keeping it light and controlled."
+    ],
+    "breathingTips": [
+      "Breathe in a steady rhythm to maintain endurance.",
+      "Inhale through the nose and exhale through the mouth.",
+      "Avoid holding your breath while jumping."
+    ]
+  }
   
-     
+  
+  
+  
+
 ]
 export const ArmAdvanced:Exercise[] =[
 
+  {
+    id: 1,
+    name: "Arm Circles (Clockwise)",
+    image: require("../assets/arm_circles_clockwise.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Extend your arms straight out to the sides at shoulder height.",
+      "Slowly rotate your arms in small clockwise circles.",
+      "Gradually increase the size of the circles for more intensity.",
+      "Continue for the desired duration, then switch directions if needed."
+    ],
+    focusAreas: [
+      "Strengthens the shoulders and upper arms.",
+      "Improves shoulder mobility and endurance.",
+      "Enhances flexibility and coordination in the upper body."
+    ],
+    commonMistakes: [
+      "Moving too fast and using momentum instead of controlled movements.",
+      "Letting the arms drop below shoulder height.",
+      "Shrugging the shoulders instead of keeping them relaxed."
+    ],
+    breathingTips: [
+      "Breathe steadily throughout the movement.",
+      "Inhale as you begin the motion.",
+      "Exhale as you complete each circular motion."
+    ]
+  },
+  {
+    id: 2,
+    name: "Arm Circles (Counterclockwise)",
+    image: require("../assets/arm_circles_counterclockwise.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Extend your arms straight out to the sides at shoulder height.",
+      "Slowly rotate your arms in small counterclockwise circles.",
+      "Gradually increase the size of the circles for more intensity.",
+      "Continue for the desired duration, then switch directions if needed."
+    ],
+    focusAreas: [
+      "Strengthens the shoulders and upper arms.",
+      "Improves shoulder mobility and endurance.",
+      "Enhances flexibility and coordination in the upper body."
+    ],
+    commonMistakes: [
+      "Moving too fast and using momentum instead of controlled movements.",
+      "Letting the arms drop below shoulder height.",
+      "Shrugging the shoulders instead of keeping them relaxed."
+    ],
+    breathingTips: [
+      "Breathe steadily throughout the movement.",
+      "Inhale as you begin the motion.",
+      "Exhale as you complete each circular motion."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Skipping Without Rope",
+    "image": require("../assets/skipping_without_rope.gif"),
+    "instructions": [
+      "Stand upright with your feet close together and arms at your sides.",
+      "Bend your elbows and position your hands as if holding a jump rope.",
+      "Jump lightly off the ground, keeping your knees slightly bent.",
+      "Rotate your wrists in a circular motion as if swinging an imaginary rope.",
+      "Land softly on the balls of your feet and immediately jump again.",
+      "Maintain a steady rhythm and continue for the desired duration."
+    ],
+    "focusAreas": [
+      "Improves cardiovascular endurance and coordination.",
+      "Strengthens the calves, legs, and core muscles.",
+      "Enhances agility, balance, and footwork."
+    ],
+    "commonMistakes": [
+      "Jumping too high, which can cause unnecessary impact on joints.",
+      "Not using arm movements, reducing the effectiveness of the exercise.",
+      "Landing too hard instead of keeping it light and controlled."
+    ],
+    "breathingTips": [
+      "Breathe in a steady rhythm to maintain endurance.",
+      "Inhale through the nose and exhale through the mouth.",
+      "Avoid holding your breath while jumping."
+    ]
+  },
+  {
+    id: 9,
+    name: "Leg Barbell Curl (Right Leg)",
+    image: require("../assets/leg_barbell_curl_right.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart, holding a barbell with both hands in an underhand grip.",
+      "Shift your weight onto your left leg and slightly bend your knee for balance.",
+      "Slowly curl your right leg backward, bringing your heel toward your glutes.",
+      "Hold the contraction for a moment, then lower your leg back to the starting position in a controlled motion.",
+      "Repeat for the desired number of repetitions before switching legs."
+    ],
+    focusAreas: [
+      "Strengthens the hamstrings and calves.",
+      "Improves lower body stability and balance.",
+      "Enhances leg muscle endurance and control."
+    ],
+    commonMistakes: [
+      "Swinging the leg too fast instead of using controlled movements.",
+      "Leaning too far forward or backward, losing balance.",
+      "Not engaging the hamstrings properly during the curl."
+    ],
+    breathingTips: [
+      "Inhale as you lower your leg.",
+      "Exhale as you curl your leg upward.",
+      "Maintain a steady breathing pattern throughout the movement."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Burpees",
+    "image": require("../assets/burpees.gif"),
+    "instructions": [
+      "Stand upright with your feet shoulder-width apart.",
+      "Lower your body into a squat position and place your hands on the ground.",
+      "Kick your feet back into a high plank position.",
+      "Perform a push-up by lowering your chest to the floor and pushing back up.",
+      "Jump your feet forward to return to the squat position.",
+      "Explosively jump up, reaching your arms overhead.",
+      "Land softly and immediately go into the next rep."
+    ],
+    "focusAreas": [
+      "Engages the full body, including chest, arms, legs, and core.",
+      "Boosts cardiovascular endurance and explosive power.",
+      "Improves agility, coordination, and functional strength."
+    ],
+    "commonMistakes": [
+      "Not performing a full push-up, reducing effectiveness.",
+      "Letting the hips sag during the plank position.",
+      "Landing too hard after the jump, increasing impact on joints."
+    ],
+    "breathingTips": [
+      "Inhale as you lower into the squat and kick back.",
+      "Exhale as you push up and jump forward.",
+      "Maintain a steady rhythm to avoid gasping for air."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Arm Curls Crunch Left",
+    "image": require("../assets/arm_curls_crunch_left.gif"),
+    "instructions": [
+      "Lie on your left side with your legs stacked and knees slightly bent.",
+      "Place your right hand behind your head and your left arm on the floor for support.",
+      "Crunch your upper body by bringing your right elbow towards your right knee.",
+      "Engage your core and squeeze your obliques during the movement.",
+      "Slowly return to the starting position and repeat for the desired reps."
+    ],
+    "focusAreas": [
+      "Strengthens obliques and core muscles.",
+      "Enhances abdominal definition and stability.",
+      "Improves flexibility and side-body engagement."
+    ],
+    "commonMistakes": [
+      "Using momentum instead of engaging core muscles.",
+      "Pulling the neck with the hand instead of using core strength.",
+      "Not fully extending the body back to the starting position."
+    ],
+    "breathingTips": [
+      "Exhale as you crunch up.",
+      "Inhale as you return to the starting position.",
+      "Maintain steady breathing to avoid fatigue."
+    ]
+},
+{
+  "id": 13,
+  "name": "Arm Curls Crunch Right",
+  "image": require("../assets/arm_curls_crunch_right.gif"),
+  "instructions": [
+    "Lie on your right side with your legs stacked and knees slightly bent.",
+    "Place your left hand behind your head and your right arm on the floor for support.",
+    "Crunch your upper body by bringing your left elbow towards your left knee.",
+    "Engage your core and squeeze your obliques during the movement.",
+    "Slowly return to the starting position and repeat for the desired reps."
+  ],
+  "focusAreas": [
+    "Strengthens obliques and core muscles.",
+    "Enhances abdominal definition and stability.",
+    "Improves flexibility and side-body engagement."
+  ],
+  "commonMistakes": [
+    "Using momentum instead of engaging core muscles.",
+    "Pulling the neck with the hand instead of using core strength.",
+    "Not fully extending the body back to the starting position."
+  ],
+  "breathingTips": [
+    "Exhale as you crunch up.",
+    "Inhale as you return to the starting position.",
+    "Maintain steady breathing to avoid fatigue."
+  ]
+}
+
+
+
+
+    
 ]
 
 

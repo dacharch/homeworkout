@@ -1,12 +1,81 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Modal, Pressable } from "react-native";
-import { Exercise, ArmBeginner } from "../../../../data/constant";
+import { Exercise, ArmAdvanced } from "../../../../data/constant";
 import { Image } from "expo-image";
 
 
 const ArmAdvancedExcercise = () => {
+  const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
+  
   return (
-    <div>ArmAdvancedExcercise</div>
+     <>
+          <ScrollView contentContainerStyle={styles.container}>
+            <Text style={styles.text_container}>🔥 Arm Intermediate Workout</Text>
+    
+            <View style={styles.exercise_container}>
+              {ArmAdvanced.map((exercise) => (
+                <TouchableOpacity 
+                  key={exercise.id}
+                  style={styles.exercise_box}
+                  onPress={() => setSelectedExercise(exercise)}
+                >
+                  <Image 
+                    source={exercise.image} 
+                    style={styles.gif} 
+                    contentFit="contain"
+                  />
+                  <Text style={styles.exercise_text}>{exercise.name}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </ScrollView>
+    
+          {/* Modal for Exercise Details */}
+          
+          <Modal
+            visible={!!selectedExercise}
+            animationType="slide"
+            transparent
+            onRequestClose={() => setSelectedExercise(null)}
+          >
+            <View style={styles.modalOverlay}>
+              <View style={styles.modalContainer}>
+                {selectedExercise && (
+                  <>
+                    <Text style={styles.modalTitle}>{selectedExercise.name}</Text>
+                    <Image source={selectedExercise.image} style={styles.modalImage} contentFit="contain" />
+    
+                    <ScrollView style={styles.modalContent}>
+                      <Text style={styles.sectionTitle}>📌 Instruction</Text>
+                      {selectedExercise.instructions.map((step, index) => (
+                        <Text key={index} style={styles.modalText}>• {step}</Text>
+                      ))}
+    
+                      <Text style={styles.sectionTitle}>🎯 Focus Area</Text>
+                      {selectedExercise.focusAreas.map((area, index) => (
+                        <Text key={index} style={styles.modalText}>• {area}</Text>
+                      ))}
+    
+                      <Text style={styles.sectionTitle}>⚠️ Common Mistakes</Text>
+                      {selectedExercise.commonMistakes.map((mistake, index) => (
+                        <Text key={index} style={styles.modalText}>• {mistake}</Text>
+                      ))}
+    
+                      <Text style={styles.sectionTitle}>🌬️ Breathing Tips</Text>
+                      {selectedExercise.breathingTips.map((tip, index) => (
+                        <Text key={index} style={styles.modalText}>• {tip}</Text>
+                      ))}
+                    </ScrollView>
+    
+                    <Pressable style={styles.closeButton} onPress={() => setSelectedExercise(null)}>
+                      <Text style={styles.closeButtonText}>Close</Text>
+                    </Pressable>
+                  </>
+                )}
+              </View>
+            </View>
+          </Modal>
+        </>
   )
 }
 
