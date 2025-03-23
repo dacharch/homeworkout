@@ -620,9 +620,8 @@ export const ArmBeginner:Exercise[]= [
     "Maintain a steady breathing rhythm throughout."
   ]
 },
-
 {
-  id: 9,
+  id: 8,
   name: "Chest Press Pulse",
   image: require("../assets/chest_press_pulse.gif"),
   instructions: [
@@ -708,7 +707,7 @@ export const ArmBeginner:Exercise[]= [
   name: "Punches",
   image: require("../assets/punches.gif"),
   instructions: [
-    "Stand with your feet shoulder-width apart and knees slightly bent.",
+    "Stand with your feet shoulder-widzth apart and knees slightly bent.",
     "Hold your fists up near your chin in a guard position.",
     "Extend one arm forward in a punching motion, rotating your torso slightly.",
     "Quickly retract your arm while simultaneously extending the other arm for the next punch.",
@@ -842,7 +841,7 @@ export const ArmBeginner:Exercise[]= [
 {
   id: 16,
   name: "Standing Biceps Stretch",
-  image: require("../assets/standing_biceps_stretch.gif"),
+  image: require("../assets/standing_biceps_stretch_left.gif"),
   instructions: [
     "Stand upright with your feet shoulder-width apart.",
     "Extend both arms behind you and interlace your fingers with your palms facing downward.",
