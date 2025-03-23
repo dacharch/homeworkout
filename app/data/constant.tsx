@@ -1403,10 +1403,41 @@ export const ArmAdvanced:Exercise[] =[
     "Maintain steady breathing to avoid fatigue."
   ]
 }
+    
+]
 
+export const  ChestBeginner:Exercise[] =[
 
-
-
+  {
+    "id": 13,
+    "name": "Skipping Without Rope",
+    "image": require("../assets/skipping_without_rope.gif"),
+    "instructions": [
+      "Stand upright with your feet close together and arms at your sides.",
+      "Bend your elbows and position your hands as if holding a jump rope.",
+      "Jump lightly off the ground, keeping your knees slightly bent.",
+      "Rotate your wrists in a circular motion as if swinging an imaginary rope.",
+      "Land softly on the balls of your feet and immediately jump again.",
+      "Maintain a steady rhythm and continue for the desired duration."
+    ],
+    "focusAreas": [
+      "Improves cardiovascular endurance and coordination.",
+      "Strengthens the calves, legs, and core muscles.",
+      "Enhances agility, balance, and footwork."
+    ],
+    "commonMistakes": [
+      "Jumping too high, which can cause unnecessary impact on joints.",
+      "Not using arm movements, reducing the effectiveness of the exercise.",
+      "Landing too hard instead of keeping it light and controlled."
+    ],
+    "breathingTips": [
+      "Breathe in a steady rhythm to maintain endurance.",
+      "Inhale through the nose and exhale through the mouth.",
+      "Avoid holding your breath while jumping."
+    ]
+  }
+  
+  
     
 ]
 
