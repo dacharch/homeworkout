@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Modal, Pressable } from "react-native";
-import { Exercise, ArmBeginner } from "../../../../data/constant";
+import { Exercise, ArmIntermedidate } from "../../../../data/constant";
 import { Image } from "expo-image";
 
 const ArmIntermedidateExcercise = () => {
@@ -12,7 +12,7 @@ const ArmIntermedidateExcercise = () => {
         <Text style={styles.text_container}>🔥 Arm Intermediate Workout</Text>
 
         <View style={styles.exercise_container}>
-          {ArmBeginner.map((exercise) => (
+          {ArmIntermedidate.map((exercise) => (
             <TouchableOpacity 
               key={exercise.id}
               style={styles.exercise_box}

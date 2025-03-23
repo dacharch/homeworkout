@@ -895,6 +895,14 @@ export const ArmBeginner:Exercise[]= [
 }
 ]
 
+export const ArmIntermedidate:Exercise[] =[
+  
+     
+]
+export const ArmAdvanced:Exercise[] =[
+
+]
+
 
 
 
