@@ -1409,38 +1409,503 @@ export const ArmAdvanced:Exercise[] =[
 export const  ChestBeginner:Exercise[] =[
 
   {
-    "id": 13,
-    "name": "Skipping Without Rope",
-    "image": require("../assets/skipping_without_rope.gif"),
-    "instructions": [
-      "Stand upright with your feet close together and arms at your sides.",
-      "Bend your elbows and position your hands as if holding a jump rope.",
-      "Jump lightly off the ground, keeping your knees slightly bent.",
-      "Rotate your wrists in a circular motion as if swinging an imaginary rope.",
-      "Land softly on the balls of your feet and immediately jump again.",
-      "Maintain a steady rhythm and continue for the desired duration."
+    id: 1,
+    name: "Jumping Jacks",
+    image: require("../assets/jumping_jack.gif"),
+    instructions: [
+      "Stand upright with your feet together and arms at your sides.",
+      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
+      "Jump again to return to the starting position.",
+      "Repeat at a steady pace."
     ],
-    "focusAreas": [
-      "Improves cardiovascular endurance and coordination.",
-      "Strengthens the calves, legs, and core muscles.",
-      "Enhances agility, balance, and footwork."
+    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
+    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
+    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
+  },
+  {
+    id: 2,
+    name: "Incline Push-ups",
+    image: require("../assets/incline_push_up.gif"),
+    instructions: [
+      "Place your hands on an elevated surface (bench, step, or wall) shoulder-width apart.",
+      "Step your feet back until your body forms a straight line from head to heels.",
+      "Lower your chest towards the surface by bending your elbows.",
+      "Push back up to the starting position, fully extending your arms.",
+      "Repeat while maintaining proper form."
     ],
-    "commonMistakes": [
-      "Jumping too high, which can cause unnecessary impact on joints.",
-      "Not using arm movements, reducing the effectiveness of the exercise.",
-      "Landing too hard instead of keeping it light and controlled."
+    focusAreas: [
+      "Targets the lower chest, shoulders, and triceps.",
+      "Engages the core for stability.",
+      "Reduces strain on the shoulders compared to standard push-ups."
     ],
-    "breathingTips": [
-      "Breathe in a steady rhythm to maintain endurance.",
-      "Inhale through the nose and exhale through the mouth.",
-      "Avoid holding your breath while jumping."
+    commonMistakes: [
+      "Letting hips sag or rise too high, reducing effectiveness.",
+      "Placing hands too far apart, straining the shoulders.",
+      "Not lowering the chest fully, limiting range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your chest towards the surface.",
+      "Exhale as you push back up to the starting position.",
+      "Keep a steady breathing rhythm for endurance."
     ]
-  }
-  
-  
+  },
+  {
+    id: 2,
+    name: "Push-Ups",
+    image: require("../assets/push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line from head to heels.",
+      "Engage your core and keep your elbows slightly tucked in.",
+      "Lower your chest toward the floor by bending your elbows while keeping your body straight.",
+      "Push back up to the starting position by extending your arms fully.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, and triceps.",
+      "Engages the core and improves overall stability.",
+      "Enhances upper body endurance and functional strength."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or rise too high.",
+      "Flaring the elbows out too much, straining the shoulders.",
+      "Not going low enough for a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain steady breathing to avoid early fatigue."
+    ]
+  },
+  {
+    id: 3,
+    name: "Wide Arm Push-Ups",
+    image: require("../assets/wide_arm_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with your hands placed wider than shoulder-width apart.",
+      "Engage your core and keep your body in a straight line from head to heels.",
+      "Lower your chest toward the floor by bending your elbows outward.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Targets the chest muscles more intensely.",
+      "Engages the shoulders and triceps.",
+      "Improves upper body strength and endurance."
+    ],
+    commonMistakes: [
+      "Allowing the hips to sag or rise too high.",
+      "Not maintaining a straight body posture.",
+      "Failing to lower the chest enough for a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Keep a steady breathing rhythm to maintain endurance."
+    ]
+  },
+  {
+    id: 4,
+    name: "Wide Arm Push-Ups",
+    image: require("../assets/wide_arm_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with your hands placed wider than shoulder-width apart.",
+      "Engage your core and keep your body in a straight line from head to heels.",
+      "Lower your chest toward the floor by bending your elbows outward.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Targets the chest muscles more intensely.",
+      "Engages the shoulders and triceps.",
+      "Improves upper body strength and endurance."
+    ],
+    commonMistakes: [
+      "Allowing the hips to sag or rise too high.",
+      "Not maintaining a straight body posture.",
+      "Failing to lower the chest enough for a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Keep a steady breathing rhythm to maintain endurance."
+    ]
+  },
+  {
+    id: 5,
+    name: "Triceps Dips",
+    image: require("../assets/triceps_dips.gif"),
+    instructions: [
+      "Sit on the edge of a stable chair or bench with your hands gripping the edge beside your hips.",
+      "Slide your hips forward off the edge, keeping your legs bent at 90 degrees or extended straight for more challenge.",
+      "Lower your body by bending your elbows until your upper arms are parallel to the floor.",
+      "Push through your palms to extend your arms and return to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the triceps, shoulders, and chest.",
+      "Improves upper body endurance and stability.",
+      "Enhances arm definition and functional strength."
+    ],
+    commonMistakes: [
+      "Letting the shoulders hunch forward.",
+      "Lowering too far, causing strain on the shoulders.",
+      "Using momentum instead of controlled movement."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain steady and controlled breathing."
+    ]
+  },
+  {
+    id: 6,
+    name: "Incline Push-ups",
+    image: require("../assets/incline_push_up.gif"),
+    instructions: [
+      "Place your hands on an elevated surface (bench, step, or wall) shoulder-width apart.",
+      "Step your feet back until your body forms a straight line from head to heels.",
+      "Lower your chest towards the surface by bending your elbows.",
+      "Push back up to the starting position, fully extending your arms.",
+      "Repeat while maintaining proper form."
+    ],
+    focusAreas: [
+      "Targets the lower chest, shoulders, and triceps.",
+      "Engages the core for stability.",
+      "Reduces strain on the shoulders compared to standard push-ups."
+    ],
+    commonMistakes: [
+      "Letting hips sag or rise too high, reducing effectiveness.",
+      "Placing hands too far apart, straining the shoulders.",
+      "Not lowering the chest fully, limiting range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your chest towards the surface.",
+      "Exhale as you push back up to the starting position.",
+      "Keep a steady breathing rhythm for endurance."
+    ]
+  },
+  {
+    id: 7,
+    name: "Knee Push-Ups",
+    image: require("../assets/knee_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position but lower your knees to the floor, keeping your body in a straight line from head to knees.",
+      "Place your hands slightly wider than shoulder-width apart.",
+      "Engage your core and lower your chest toward the floor by bending your elbows.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, and triceps with reduced intensity.",
+      "Engages the core while maintaining proper form.",
+      "Ideal for beginners to build upper body strength."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or sticking them too high.",
+      "Not maintaining a straight line from head to knees.",
+      "Performing partial reps without a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain a steady breathing pattern for better endurance."
+    ]
+  },
+  {
+    id: 8,
+    name: "Cobra Stretch",
+    image: require("../assets/cobra_stretch.gif"),
+    instructions: [
+      "Lie face down with your hands under your shoulders.",
+      "Press into your palms and lift your chest off the ground.",
+      "Keep your hips on the floor and stretch your abdomen.",
+      "Hold the position and breathe deeply."
+    ],
+    focusAreas: ["Stretches the lower back and core.", "Improves spinal flexibility.", "Relieves tension in the back."],
+    commonMistakes: ["Overextending the lower back.", "Not engaging the shoulders.", "Holding breath instead of relaxing into the stretch."],
+    breathingTips: ["Inhale deeply as you lift up.", "Exhale while holding the stretch.", "Breathe deeply to relax into the position."]
+  },
+  {
+    id: 9,
+    name: "Chest Stretch",
+    image: require("../assets/chest_stretch.gif"),
+    instructions: [
+      "Stand tall or sit upright with your back straight.",
+      "Extend your arms behind you and clasp your hands together.",
+      "Gently lift your arms upward while opening your chest.",
+      "Hold the stretch for 20-30 seconds while breathing deeply.",
+      "Release and repeat as needed."
+    ],
+    focusAreas: [
+      "Opens up the chest and shoulders.",
+      "Improves posture and flexibility.",
+      "Relieves tension from the upper body."
+    ],
+    commonMistakes: [
+      "Arching the lower back excessively.",
+      "Hunching the shoulders instead of opening the chest.",
+      "Forcing the stretch too aggressively."
+    ],
+    breathingTips: [
+      "Inhale deeply as you prepare for the stretch.",
+      "Exhale slowly as you hold the stretch.",
+      "Maintain a calm and steady breathing pattern."
+    ]
+  },  
+]
+
+export const ChestIntermediate:Exercise[] =[
+  {
+    id: 1,
+    name: "Jumping Jacks",
+    image: require("../assets/jumping_jack.gif"),
+    instructions: [
+      "Stand upright with your feet together and arms at your sides.",
+      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
+      "Jump again to return to the starting position.",
+      "Repeat at a steady pace."
+    ],
+    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
+    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
+    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
+  },
+  {
+    id: 2,
+    name: "Knee Push-Ups",
+    image: require("../assets/knee_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position but lower your knees to the floor, keeping your body in a straight line from head to knees.",
+      "Place your hands slightly wider than shoulder-width apart.",
+      "Engage your core and lower your chest toward the floor by bending your elbows.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, and triceps with reduced intensity.",
+      "Engages the core while maintaining proper form.",
+      "Ideal for beginners to build upper body strength."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or sticking them too high.",
+      "Not maintaining a straight line from head to knees.",
+      "Performing partial reps without a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain a steady breathing pattern for better endurance."
+    ]
+  },
+  {
+    id: 3,
+    name: "Push-Ups",
+    image: require("../assets/push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with your hands slightly wider than shoulder-width apart and your body in a straight line from head to heels.",
+      "Engage your core and keep your elbows slightly tucked in.",
+      "Lower your chest toward the floor by bending your elbows while keeping your body straight.",
+      "Push back up to the starting position by extending your arms fully.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, and triceps.",
+      "Engages the core and improves overall stability.",
+      "Enhances upper body endurance and functional strength."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or rise too high.",
+      "Flaring the elbows out too much, straining the shoulders.",
+      "Not going low enough for a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain steady breathing to avoid early fatigue."
+    ]
+  },
+  {
+    id: 4,
+    name: "Wide Arm Push-Ups",
+    image: require("../assets/wide_arm_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with your hands placed wider than shoulder-width apart.",
+      "Engage your core and keep your body in a straight line from head to heels.",
+      "Lower your chest toward the floor by bending your elbows outward.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Targets the chest muscles more intensely.",
+      "Engages the shoulders and triceps.",
+      "Improves upper body strength and endurance."
+    ],
+    commonMistakes: [
+      "Allowing the hips to sag or rise too high.",
+      "Not maintaining a straight body posture.",
+      "Failing to lower the chest enough for a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Keep a steady breathing rhythm to maintain endurance."
+    ]
+  },
+  {
+    id: 4,
+    name: "Hindu Push-Ups",
+    image: require("../assets/hindu_push_ups.gif"),
+    instructions: [
+      "Start in a downward dog position with your hands and feet shoulder-width apart, hips raised, and body forming an inverted V shape.",
+      "Lower your head and chest forward in a scooping motion, bringing your chest close to the ground while keeping your elbows bent.",
+      "As you move forward, arch your back and extend your arms to lift your upper body into an upward dog position.",
+      "Reverse the movement by lifting your hips back up to the starting position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, triceps, and back.",
+      "Improves flexibility and mobility in the spine and shoulders.",
+      "Engages the core and enhances overall endurance."
+    ],
+    commonMistakes: [
+      "Not maintaining a smooth, controlled motion.",
+      "Dropping the hips too low, straining the lower back.",
+      "Failing to engage the core for stability."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body forward.",
+      "Exhale as you push up into the upward dog position.",
+      "Maintain deep, steady breathing throughout the movement."
+    ]
+  },
+  {
+    id: 5,
+    name: "Staggered Push-Ups",
+    image: require("../assets/staggered_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with one hand placed slightly forward and the other hand slightly back.",
+      "Engage your core and maintain a straight body posture from head to heels.",
+      "Lower your chest toward the floor by bending your elbows while keeping your body aligned.",
+      "Push back up to the starting position by extending your arms fully.",
+      "Switch hand positions after each set and repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Targets the chest, shoulders, and triceps asymmetrically for balanced strength.",
+      "Engages the core for stability and control.",
+      "Improves coordination and upper body endurance."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or rise too high.",
+      "Not maintaining a straight body posture.",
+      "Failing to switch hand positions evenly."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain steady breathing to sustain endurance."
+    ]
+  },
+  {
+    id: 6,
+    name: "Knee Push-Ups",
+    image: require("../assets/knee_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position but lower your knees to the floor, keeping your body in a straight line from head to knees.",
+      "Place your hands slightly wider than shoulder-width apart.",
+      "Engage your core and lower your chest toward the floor by bending your elbows.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, and triceps with reduced intensity.",
+      "Engages the core while maintaining proper form.",
+      "Ideal for beginners to build upper body strength."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or sticking them too high.",
+      "Not maintaining a straight line from head to knees.",
+      "Performing partial reps without a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain a steady breathing pattern for better endurance."
+    ]
+  },
+  {
+    id: 7,
+    name: "Shoulder Stretch",
+    image: require("../assets/shoulder_stretch.gif"),
+    instructions: [
+      "Stand or sit upright with your back straight.",
+      "Extend one arm across your chest at shoulder height.",
+      "Use your opposite hand to gently pull the extended arm closer to your body.",
+      "Hold the stretch for 20-30 seconds while keeping your shoulders relaxed.",
+      "Switch arms and repeat the stretch."
+    ],
+    focusAreas: [
+      "Stretches the shoulders and upper back.",
+      "Improves flexibility and range of motion.",
+      "Helps reduce muscle tension and stiffness."
+    ],
+    commonMistakes: [
+      "Hunching the shoulders instead of keeping them relaxed.",
+      "Holding the breath instead of breathing deeply.",
+      "Pulling too forcefully, causing discomfort."
+    ],
+    breathingTips: [
+      "Inhale deeply before starting the stretch.",
+      "Exhale slowly as you hold the stretch.",
+      "Maintain steady breathing for relaxation and effectiveness."
+    ]
+  },
+  {
+    id: 8,
+    name: "Shoulder Stretch",
+    image: require("../assets/shoulder_stretch.gif"),
+    instructions: [
+      "Stand or sit with a straight posture.",
+      "Extend one arm across your chest at shoulder height.",
+      "Use your opposite hand to gently pull the extended arm closer to your body.",
+      "Hold the stretch for 20-30 seconds while keeping your shoulders relaxed.",
+      "Switch arms and repeat."
+    ],
+    focusAreas: [
+      "Loosens tight shoulder muscles.",
+      "Improves flexibility and range of motion.",
+      "Reduces muscle tension and stiffness."
+    ],
+    commonMistakes: [
+      "Hunching the shoulders instead of keeping them relaxed.",
+      "Pulling too forcefully, causing strain.",
+      "Holding the breath instead of breathing deeply."
+    ],
+    breathingTips: [
+      "Inhale deeply before starting the stretch.",
+      "Exhale slowly as you hold the stretch.",
+      "Maintain steady breathing for relaxation."
+    ]
+  },
+
     
 ]
 
+
+export const ChestAdvanced:Exercise[] = [
+  {
+    id: 1,
+    name: "Jumping Jacks",
+    image: require("../assets/jumping_jack.gif"),
+    instructions: [
+      "Stand upright with your feet together and arms at your sides.",
+      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
+      "Jump again to return to the starting position.",
+      "Repeat at a steady pace."
+    ],
+    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
+    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
+    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
+  },  
+] 
 
 
 
