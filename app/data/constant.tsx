@@ -1425,7 +1425,7 @@ export const  ChestBeginner:Exercise[] =[
   {
     id: 2,
     name: "Incline Push-ups",
-    image: require("../assets/incline_push_up.gif"),
+    image: require("../assets/incline_push_ups.gif"),
     instructions: [
       "Place your hands on an elevated surface (bench, step, or wall) shoulder-width apart.",
       "Step your feet back until your body forms a straight line from head to heels.",
@@ -1560,7 +1560,7 @@ export const  ChestBeginner:Exercise[] =[
   {
     id: 6,
     name: "Incline Push-ups",
-    image: require("../assets/incline_push_up.gif"),
+    image: require("../assets/incline_push_ups.gif"),
     instructions: [
       "Place your hands on an elevated surface (bench, step, or wall) shoulder-width apart.",
       "Step your feet back until your body forms a straight line from head to heels.",
