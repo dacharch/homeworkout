@@ -1908,4 +1908,7 @@ export const ChestAdvanced:Exercise[] = [
 ] 
 
 
+export const LegBeginner:Exercise[] =[
+   
+]
 
