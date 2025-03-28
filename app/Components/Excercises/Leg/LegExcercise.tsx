@@ -38,14 +38,14 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
                          style={styles.box} 
                         >
                          <Text style={styles.emoji}>🔥</Text>
-                         <Text style={styles.box_text}>Chest Beginner Excercise</Text>
+                         <Text style={styles.box_text}>Leg Beginner Excercise</Text>
                        </TouchableOpacity>
                
                        <TouchableOpacity 
                           onPress={()=>setComponent2("Leg Intermediate Excercise")}
                           style={styles.box}>
                          <Text style={styles.emoji}>⚡</Text>
-                         <Text style={styles.box_text}>Chest Intermedidate Excercise</Text>
+                         <Text style={styles.box_text}>Leg Intermedidate Excercise</Text>
                        </TouchableOpacity>
                      </View>
                
@@ -55,7 +55,7 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
                          style={styles.bottom_box}
                          >
                          <Text style={styles.emoji}>🏆</Text>
-                         <Text style={styles.box_text}>Chest Advanced Excercise</Text>
+                         <Text style={styles.box_text}>Leg Advanced Excercise</Text>
                        </TouchableOpacity>
                      </View>
                
