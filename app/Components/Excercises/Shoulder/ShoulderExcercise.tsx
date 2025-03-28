@@ -1,24 +1,23 @@
 import React, {useState} from 'react' ;
 import {View,Text,StyleSheet,TouchableOpacity} from 'react-native' 
-import LegBeginnerExcercise from './LegBeginner/LegBeginnerExcercise';
-import LegIntermediateExcercise from './LegIntermediate/LegIntermediateExcercise';
-import LegAdvancedExcercise from './LegAdvanced/LegAdvancedExcercise';
+import ShoulderBeginnerExcercise from './ShoulderIntermediate/ShoulderIntermediateExcercise';
+import ShoulderAdvancedExcercise from './ShoulderAdvanced/ShoulderAdvancedExcercise';
 
-interface LegExcerciseProps {
+interface ShoulderProps {
      setComponent:(component:string) =>void ;
 }
 
-const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
+const ShoulderExcercise: React.FC<ShoulderProps> = ({setComponent}) =>{
    const [switchComponent,setComponent2] = useState("") ;
 
    const RenderComponent  = () =>{
     switch(switchComponent) {
-        case "Leg Beginner Excercise" :
-            return <LegBeginnerExcercise/>
-        case  "Leg Intermediate Excercise" :
-            return <LegIntermediateExcercise />
-        case  "Leg Advanced Excercise" :
-           return <LegAdvancedExcercise/>   
+        case "Shoulder Beginner Excercise" :
+            return <ShoulderBeginnerExcercise />
+        case  "Shoulder Intermediate Excercise" :
+            return <ShoulderBeginnerExcercise />
+        case  "Shoulder Advanced Excercise" :
+           return <ShoulderAdvancedExcercise/>   
         default : return null ;
     }
    }
@@ -27,32 +26,32 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
                  {
                     switchComponent === ""?(
                      <View style={styles.container}>
-                     <Text style={styles.text_container}>💪 Leg Workout</Text>
+                     <Text style={styles.text_container}>💪 Shoulder Workout</Text>
                
                      <View style={styles.box_flex_container}>
                        <TouchableOpacity
-                         onPress={()=>setComponent2("Leg Beginner Excercise")}
+                         onPress={()=>setComponent2("Shoulder Beginner Excercise")}
                          style={styles.box} 
                         >
                          <Text style={styles.emoji}>🔥</Text>
-                         <Text style={styles.box_text}>Leg Beginner Excercise</Text>
+                         <Text style={styles.box_text}>Shoulder Beginner Excercise</Text>
                        </TouchableOpacity>
                
                        <TouchableOpacity 
-                          onPress={()=>setComponent2("Leg Intermediate Excercise")}
+                          onPress={()=>setComponent2("Shoulder Intermediate Excercise")}
                           style={styles.box}>
                          <Text style={styles.emoji}>⚡</Text>
-                         <Text style={styles.box_text}>Leg Intermedidate Excercise</Text>
+                         <Text style={styles.box_text}>Shoulder Intermedidate Excercise</Text>
                        </TouchableOpacity>
                      </View>
                
                      <View style={styles.box_flex_container2}>
                        <TouchableOpacity 
-                         onPress={()=>setComponent2("Leg Advanced Excercise")}
+                         onPress={()=>setComponent2("Shoulder Advanced Excercise")}
                          style={styles.bottom_box}
                          >
                          <Text style={styles.emoji}>🏆</Text>
-                         <Text style={styles.box_text}>Leg Advanced Excercise</Text>
+                         <Text style={styles.box_text}>Shoulder Advanced Excercise</Text>
                        </TouchableOpacity>
                      </View>
                
@@ -69,7 +68,7 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
    )
 }
 
-export default LegExcercise ;
+export default ShoulderExcercise ;
 
 const styles  = StyleSheet.create({
    

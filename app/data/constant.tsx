@@ -1934,7 +1934,243 @@ export const LegBeginner:Exercise[] =[
       "Exhale as you land softly.",
       "Keep a controlled breathing pattern to maintain endurance."
     ]
-  }
+  },
+  {
+    id: 2,
+    name: "Squats",
+    image: require("../assets/squats.gif"),
+    instructions: [
+      "Stand with your feet shoulder-width apart and toes slightly pointed out.",
+      "Engage your core and keep your chest up.",
+      "Lower your body by bending your knees and pushing your hips back.",
+      "Go down until your thighs are parallel to the ground, keeping your knees aligned with your toes.",
+      "Push through your heels to return to the starting position.",
+      "Repeat while maintaining proper form."
+    ],
+    focusAreas: [
+      "Strengthens quads, hamstrings, and glutes.",
+      "Improves lower body endurance and stability.",
+      "Enhances core engagement and posture."
+    ],
+    commonMistakes: [
+      "Letting knees go beyond the toes, causing unnecessary strain.",
+      "Rounding the back instead of keeping a neutral spine.",
+      "Not going low enough to engage muscles effectively."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push up to the starting position.",
+      "Maintain steady breathing to improve performance and endurance."
+    ]
+  },
+  {
+    id: 3,
+    name: "Side Lying Leg Lift (Left)",
+    image: require("../assets/side_lying_leg_lift_left.gif"),
+    instructions: [
+      "Lie on your right side with your legs extended straight and stacked.",
+      "Rest your head on your right arm and place your left hand in front for balance.",
+      "Engage your core and lift your left leg upwards while keeping it straight.",
+      "Pause at the top, then slowly lower it back to the starting position.",
+      "Repeat while maintaining control and avoiding momentum."
+    ],
+    focusAreas: [
+      "Strengthens hip abductors, glutes, and outer thighs.",
+      "Improves hip stability and mobility.",
+      "Enhances lower body endurance."
+    ],
+    commonMistakes: [
+      "Lifting the leg too high, causing strain on the lower back.",
+      "Using momentum instead of controlled movement.",
+      "Letting the upper body sway instead of staying stable."
+    ],
+    breathingTips: [
+      "Inhale as you prepare to lift your leg.",
+      "Exhale as you lift your leg upward.",
+      "Keep a steady breathing pattern to maintain stability."
+    ]
+  },
+  {
+    id: 4,
+    name: "Side Lying Leg Lift (Right)",
+    image: require("../assets/side_lying_leg_lift_right.gif"),
+    instructions: [
+      "Lie on your left side with your legs extended straight and stacked.",
+      "Rest your head on your left arm and place your right hand in front for balance.",
+      "Engage your core and lift your right leg upwards while keeping it straight.",
+      "Pause at the top, then slowly lower it back to the starting position.",
+      "Repeat while maintaining control and avoiding momentum."
+    ],
+    focusAreas: [
+      "Strengthens hip abductors, glutes, and outer thighs.",
+      "Improves hip stability and mobility.",
+      "Enhances lower body endurance."
+    ],
+    commonMistakes: [
+      "Lifting the leg too high, causing strain on the lower back.",
+      "Using momentum instead of controlled movement.",
+      "Letting the upper body sway instead of staying stable."
+    ],
+    breathingTips: [
+      "Inhale as you prepare to lift your leg.",
+      "Exhale as you lift your leg upward.",
+      "Keep a steady breathing pattern to maintain stability."
+    ]
+  },
+  {
+    id: 5,
+    name: "Backward Lunge",
+    image: require("../assets/backward_lunge.gif"),
+    instructions: [
+      "Stand tall with your feet hip-width apart.",
+      "Step backward with your right leg and lower your hips until both knees are bent at 90 degrees.",
+      "Keep your torso upright and your front knee aligned with your ankle.",
+      "Push through your front heel to return to the starting position.",
+      "Repeat on the other leg and continue alternating."
+    ],
+    focusAreas: [
+      "Strengthens quadriceps, hamstrings, and glutes.",
+      "Enhances balance and stability.",
+      "Improves lower body coordination."
+    ],
+    commonMistakes: [
+      "Leaning too far forward, putting stress on the lower back.",
+      "Allowing the front knee to extend past the toes.",
+      "Not keeping the core engaged for balance."
+    ],
+    breathingTips: [
+      "Inhale as you step back into the lunge.",
+      "Exhale as you push back up to the starting position.",
+      "Maintain steady breathing to stay controlled."
+    ]
+},
+{
+  id: 6,
+  name: "Donkey Kicks (Left)",
+  image: require("../assets/donkey_kicks_left.gif"),
+  instructions: [
+    "Start on all fours with your hands directly under your shoulders and knees under your hips.",
+    "Engage your core and keep your back straight.",
+    "Lift your left leg, keeping your knee bent at 90 degrees, and push your foot towards the ceiling.",
+    "Pause at the top, squeezing your glutes, then slowly lower your leg back to the starting position.",
+    "Repeat while maintaining control and avoiding arching your back."
+  ],
+  focusAreas: [
+    "Strengthens glutes, hamstrings, and lower back.",
+    "Improves core stability and hip mobility.",
+    "Enhances lower body endurance and control."
+  ],
+  commonMistakes: [
+    "Arching the back instead of keeping it neutral.",
+    "Using momentum instead of controlled movement.",
+    "Not fully engaging the glutes at the top of the movement."
+  ],
+  breathingTips: [
+    "Inhale as you lower your leg.",
+    "Exhale as you lift your leg and squeeze your glutes.",
+    "Maintain a steady breathing rhythm for stability."
+  ]
+},
+{
+  id: 7,
+  name: "Donkey Kicks (Left)",
+  image: require("../assets/donkey_kicks_left.gif"),
+  instructions: [
+    "Start on all fours with your hands directly under your shoulders and knees under your hips.",
+    "Engage your core and keep your back straight.",
+    "Lift your left leg, keeping your knee bent at 90 degrees, and push your foot towards the ceiling.",
+    "Pause at the top, squeezing your glutes, then slowly lower your leg back to the starting position.",
+    "Repeat while maintaining control and avoiding arching your back."
+  ],
+  focusAreas: [
+    "Strengthens glutes, hamstrings, and lower back.",
+    "Improves core stability and hip mobility.",
+    "Enhances lower body endurance and control."
+  ],
+  commonMistakes: [
+    "Arching the back instead of keeping it neutral.",
+    "Using momentum instead of controlled movement.",
+    "Not fully engaging the glutes at the top of the movement."
+  ],
+  breathingTips: [
+    "Inhale as you lower your leg.",
+    "Exhale as you lift your leg and squeeze your glutes.",
+    "Maintain a steady breathing rhythm for stability."
+  ]
+},
+{
+  id: 8,
+  name: "Donkey Kick (Right)",
+  image: require("../assets/donkey_kicks_right.gif"),
+  instructions: [
+    "Start on all fours with your hands aligned under your shoulders and knees under your hips.",
+    "Engage your core and keep your back flat throughout the movement.",
+    "Lift your right leg upward, keeping your knee bent at 90 degrees.",
+    "Pause at the top, squeezing your glutes, then lower your leg back down without touching the floor.",
+    "Repeat while maintaining control and switch to the other leg after completing the set."
+  ],
+  focusAreas: [
+    "Strengthens glutes and hamstrings.",
+    "Improves lower body muscle endurance.",
+    "Enhances core stability."
+  ],
+  commonMistakes: [
+    "Arching the lower back instead of keeping it neutral.",
+    "Using momentum instead of controlled movement.",
+    "Letting the supporting hip shift excessively."
+  ],
+  breathingTips: [
+    "Inhale as you lower your leg back down.",
+    "Exhale as you lift your leg upward.",
+    "Keep a steady breathing rhythm to maintain control."
+  ]
+}
+
   
 ]
 
+export const LegIntermediate:Exercise[]= [
+  {
+    id: 1,
+    name: "Jumping Jacks",
+    image: require("../assets/jumping_jack.gif"),
+    instructions: [
+      "Stand upright with your feet together and arms at your sides.",
+      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
+      "Jump again to return to the starting position.",
+      "Repeat at a steady pace."
+    ],
+    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
+    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
+    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
+  },
+  {
+    id: 2,
+    name: "Squats",
+    image: require("../assets/squats.gif"),
+    instructions: [
+      "Stand with your feet shoulder-width apart and toes slightly pointed out.",
+      "Engage your core and keep your chest up.",
+      "Lower your body by bending your knees and pushing your hips back.",
+      "Go down until your thighs are parallel to the ground, keeping your knees aligned with your toes.",
+      "Push through your heels to return to the starting position.",
+      "Repeat while maintaining proper form."
+    ],
+    focusAreas: [
+      "Strengthens quads, hamstrings, and glutes.",
+      "Improves lower body endurance and stability.",
+      "Enhances core engagement and posture."
+    ],
+    commonMistakes: [
+      "Letting knees go beyond the toes, causing unnecessary strain.",
+      "Rounding the back instead of keeping a neutral spine.",
+      "Not going low enough to engage muscles effectively."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push up to the starting position.",
+      "Maintain steady breathing to improve performance and endurance."
+    ]
+  },
+ 
+]

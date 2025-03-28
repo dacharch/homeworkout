@@ -4,6 +4,7 @@ import AbsExercise from "../Components/Excercises/Abs/AbsExcercise";
 import ArmExcercise from "../Components/Excercises/Arm/ArmExcercise" ;
 import ChestExcercise from "../Components/Excercises/Chest/ChestExcercise";
 import LegExcercise from "../Components/Excercises/Leg/LegExcercise";
+import ShoulderExcercise from "../Components/Excercises/Shoulder/ShoulderExcercise";
 
 
 const Index: React.FC = () => {
@@ -19,6 +20,9 @@ const Index: React.FC = () => {
         return <ChestExcercise setComponent={setComponent}/>
       case "Leg Excercise" :
         return <LegExcercise setComponent={setComponent}/>
+
+      case "Shoulder Excercise" : 
+        return <ShoulderExcercise setComponent={setComponent} />
       default:
         return null;
     }
@@ -64,7 +68,9 @@ const Index: React.FC = () => {
           <View style={styles.box_flex_container2}>
             <View style={styles.bottom_box}>
               <Text style={styles.emoji}>🏋️‍♂️</Text>
-              <Text style={styles.box_text}>Back & Shoulder Workout</Text>
+              <TouchableOpacity onPress={()=>setComponent("Shoulder Excercise")}>
+                 <Text style={styles.box_text}>Back & Shoulder Workout</Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
