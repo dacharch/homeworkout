@@ -3,6 +3,9 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import AbsExercise from "../Components/Excercises/Abs/AbsExcercise";
 import ArmExcercise from "../Components/Excercises/Arm/ArmExcercise" ;
 import ChestExcercise from "../Components/Excercises/Chest/ChestExcercise";
+import LegExcercise from "../Components/Excercises/Leg/LegExcercise";
+
+
 const Index: React.FC = () => {
   const [switchComponent, setComponent] = useState<string>("");
 
@@ -14,6 +17,9 @@ const Index: React.FC = () => {
         return <ArmExcercise setComponent={setComponent}/>;
       case "Chest Excercise" :
         return <ChestExcercise setComponent={setComponent}/>
+
+      case "Leg Excercise" :
+        return <LegExcercise setComponent={setComponent}/>
       default:
         return null;
     }
@@ -50,7 +56,9 @@ const Index: React.FC = () => {
             </View>
             <View style={styles.box}>
               <Text style={styles.emoji}>🦵</Text>
-              <Text style={styles.box_text}>Leg Workout</Text>
+              <TouchableOpacity onPress = {()=>setComponent("Leg Excercise")}>
+                 <Text style={styles.box_text}>Leg Workout</Text>
+              </TouchableOpacity>
             </View>
           </View>
 
