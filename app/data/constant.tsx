@@ -1911,17 +1911,30 @@ export const ChestAdvanced:Exercise[] = [
 export const LegBeginner:Exercise[] =[
   {
     id: 1,
-    name: "Jumping Jacks",
-    image: require("../assets/jumping_jack.gif"),
+    name: "Side Hops",
+    image: require("../assets/side_hop.gif"),
     instructions: [
-      "Stand upright with your feet together and arms at your sides.",
-      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
-      "Jump again to return to the starting position.",
-      "Repeat at a steady pace."
+      "Stand upright with your feet together and arms slightly bent.",
+      "Hop sideways to your right, landing softly on both feet.",
+      "Immediately hop to your left, keeping a steady rhythm.",
+      "Repeat while maintaining balance and control."
     ],
-    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
-    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
-    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
-  },  
+    focusAreas: [
+      "Enhances agility and coordination.",
+      "Strengthens calves, quads, and glutes.",
+      "Improves lateral movement and cardiovascular endurance."
+    ],
+    commonMistakes: [
+      "Landing heavily, which can strain your knees.",
+      "Losing balance due to improper posture.",
+      "Not using arms for momentum and balance."
+    ],
+    breathingTips: [
+      "Inhale as you prepare to hop.",
+      "Exhale as you land softly.",
+      "Keep a controlled breathing pattern to maintain endurance."
+    ]
+  }
+  
 ]
 

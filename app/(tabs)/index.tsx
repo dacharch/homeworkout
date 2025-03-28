@@ -12,7 +12,6 @@ const Index: React.FC = () => {
         return <AbsExercise setComponent={setComponent} />;
       case "Arm Excercise":
         return <ArmExcercise setComponent={setComponent}/>;
-      
       case "Chest Excercise" :
         return <ChestExcercise setComponent={setComponent}/>
       default:
