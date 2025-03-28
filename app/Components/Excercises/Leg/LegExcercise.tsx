@@ -15,29 +15,26 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
 
    const RenderComponent  = () =>{
     switch(switchComponent) {
-        case "Chest Beginner Excercise" :
+        case "Leg Beginner Excercise" :
             return <LegIntermediateExcercise/>
-        case  "Chest Intermediate Excercise" :
+        case  "Leg Intermediate Excercise" :
             return <LegIntermediateExcercise />
-        case  "Chest Advanced Excercise" :
+        case  "Leg Advanced Excercise" :
            return <LegAdvancedExcercise/>
        
         default : return null ;
     }
-
    }
-
-
    return(
          <>
                  {
                     switchComponent === ""?(
                      <View style={styles.container}>
-                     <Text style={styles.text_container}>💪 Chest Workout</Text>
+                     <Text style={styles.text_container}>💪 Leg Workout</Text>
                
                      <View style={styles.box_flex_container}>
                        <TouchableOpacity
-                         onPress={()=>setComponent2("Chest Beginner Excercise")}
+                         onPress={()=>setComponent2("Leg Beginner Excercise")}
                          style={styles.box} 
                         >
                          <Text style={styles.emoji}>🔥</Text>
@@ -45,7 +42,7 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
                        </TouchableOpacity>
                
                        <TouchableOpacity 
-                          onPress={()=>setComponent2("Chest Intermediate Excercise")}
+                          onPress={()=>setComponent2("Leg Intermediate Excercise")}
                           style={styles.box}>
                          <Text style={styles.emoji}>⚡</Text>
                          <Text style={styles.box_text}>Chest Intermedidate Excercise</Text>
@@ -54,7 +51,7 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
                
                      <View style={styles.box_flex_container2}>
                        <TouchableOpacity 
-                         onPress={()=>setComponent2("Chest Advanced Excercise")}
+                         onPress={()=>setComponent2("Leg Advanced Excercise")}
                          style={styles.bottom_box}
                          >
                          <Text style={styles.emoji}>🏆</Text>
