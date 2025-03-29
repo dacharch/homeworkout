@@ -4,7 +4,7 @@ import { View,Text } from 'react-native'
 const ShoulderBeginnerExcercise = () => {
   return (
     <View>
-         <Text>Shoulder Beginner Excercise</Text>
+         <Text>Shoulder Intermediate  Excercise</Text>
     </View>
   )
 }

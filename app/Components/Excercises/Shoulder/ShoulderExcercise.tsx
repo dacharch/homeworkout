@@ -1,8 +1,8 @@
 import React, {useState} from 'react' ;
 import {View,Text,StyleSheet,TouchableOpacity} from 'react-native' 
-import ShoulderBeginnerExcercise from './ShoulderIntermediate/ShoulderIntermediateExcercise';
+import ShoulderIntermediateExcercise from './ShoulderIntermediate/ShoulderIntermediateExcercise';
 import ShoulderAdvancedExcercise from './ShoulderAdvanced/ShoulderAdvancedExcercise';
-
+import ShoulderBeginnerExcercise from './ShoulderBeginner/ShoulderBeginnerExcercise';
 interface ShoulderProps {
      setComponent:(component:string) =>void ;
 }
@@ -15,7 +15,7 @@ const ShoulderExcercise: React.FC<ShoulderProps> = ({setComponent}) =>{
         case "Shoulder Beginner Excercise" :
             return <ShoulderBeginnerExcercise />
         case  "Shoulder Intermediate Excercise" :
-            return <ShoulderBeginnerExcercise />
+            return <ShoulderIntermediateExcercise />
         case  "Shoulder Advanced Excercise" :
            return <ShoulderAdvancedExcercise/>   
         default : return null ;
