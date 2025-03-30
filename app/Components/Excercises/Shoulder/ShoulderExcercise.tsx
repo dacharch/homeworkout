@@ -1,5 +1,5 @@
 import React, {useState} from 'react' ;
-import {View,Text,StyleSheet,TouchableOpacity} from 'react-native' 
+import {View,Text,StyleSheet,TouchableOpacity, Image} from 'react-native' 
 import ShoulderIntermediateExcercise from './ShoulderIntermediate/ShoulderIntermediateExcercise';
 import ShoulderAdvancedExcercise from './ShoulderAdvanced/ShoulderAdvancedExcercise';
 import ShoulderBeginnerExcercise from './ShoulderBeginner/ShoulderBeginnerExcercise';
@@ -26,21 +26,27 @@ const ShoulderExcercise: React.FC<ShoulderProps> = ({setComponent}) =>{
                  {
                     switchComponent === ""?(
                      <View style={styles.container}>
-                     <Text style={styles.text_container}>💪 Shoulder Workout</Text>
+                     <Text style={styles.text_container}> Shoulder Workout</Text>
                
                      <View style={styles.box_flex_container}>
                        <TouchableOpacity
                          onPress={()=>setComponent2("Shoulder Beginner Excercise")}
                          style={styles.box} 
                         >
-                         <Text style={styles.emoji}>🔥</Text>
+                         <Image
+                            source={require("../../../assets/shoulder_beginner.jpg")}
+                            style={styles.image}
+                         />
                          <Text style={styles.box_text}>Shoulder Beginner Excercise</Text>
                        </TouchableOpacity>
                
                        <TouchableOpacity 
                           onPress={()=>setComponent2("Shoulder Intermediate Excercise")}
                           style={styles.box}>
-                         <Text style={styles.emoji}>⚡</Text>
+                         <Image
+                           source={require("../../../assets/shoulder_intermediate.jpg")}
+                           style={styles.image}
+                         />
                          <Text style={styles.box_text}>Shoulder Intermedidate Excercise</Text>
                        </TouchableOpacity>
                      </View>
@@ -50,7 +56,10 @@ const ShoulderExcercise: React.FC<ShoulderProps> = ({setComponent}) =>{
                          onPress={()=>setComponent2("Shoulder Advanced Excercise")}
                          style={styles.bottom_box}
                          >
-                         <Text style={styles.emoji}>🏆</Text>
+                         <Image
+                            source={require("../../../assets/shoulder_advanced.jpg")}
+                            style={styles.image}
+                         />
                          <Text style={styles.box_text}>Shoulder Advanced Excercise</Text>
                        </TouchableOpacity>
                      </View>
@@ -86,6 +95,11 @@ const styles  = StyleSheet.create({
         color: "#FF9500",
         letterSpacing: 1.5,
         textTransform: "uppercase",
+      },
+      image:{
+         width:80,
+         height:80,
+         resizeMode:"contain"
       },
       box_flex_container: {
         flexDirection: "row",

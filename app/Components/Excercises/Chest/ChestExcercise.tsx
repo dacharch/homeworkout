@@ -3,6 +3,7 @@ import { View,Text,StyleSheet,TouchableOpacity } from 'react-native'
 import ChestAdvancedExcercise from './ChestAdvanced/ChestAdvancedExcercise'
 import ChestBeginnerExcecise from './ChestBeginner/ChestBeginnerExcecise'
 import ChestIntermediateExcercise from './ChestIntermediate/ChestIntermediateExcercise'
+import { Image } from 'expo-image'
 
 interface ChestExcerciseProps {
      setComponent:(component:string) =>void ;
@@ -38,14 +39,20 @@ const ChestExcercise:React.FC<ChestExcerciseProps> = ({setComponent}) => {
                    onPress={()=>setComponent2("Chest Beginner Excercise")}
                    style={styles.box} 
                   >
-                   <Text style={styles.emoji}>🔥</Text>
+                   <Image
+                      source={require("../../../assets/chest_beginner.jpg")}
+                      style={styles.image}
+                   />
                    <Text style={styles.box_text}>Chest Beginner Excercise</Text>
                  </TouchableOpacity>
          
                  <TouchableOpacity 
                     onPress={()=>setComponent2("Chest Intermediate Excercise")}
                     style={styles.box}>
-                   <Text style={styles.emoji}>⚡</Text>
+                   <Image
+                      source={require("../../../assets/Abs_Intermediate.jpg")}
+                      style={styles.image}
+                   />
                    <Text style={styles.box_text}>Chest Intermedidate Excercise</Text>
                  </TouchableOpacity>
                </View>
@@ -55,7 +62,10 @@ const ChestExcercise:React.FC<ChestExcerciseProps> = ({setComponent}) => {
                    onPress={()=>setComponent2("Chest Advanced Excercise")}
                    style={styles.bottom_box}
                    >
-                   <Text style={styles.emoji}>🏆</Text>
+                   <Image
+                      source={require('../../../assets/chest_Advanced.jpeg')}
+                      style={styles.image}
+                   />
                    <Text style={styles.box_text}>Chest Advanced Excercise</Text>
                  </TouchableOpacity>
                </View>
@@ -102,6 +112,11 @@ const styles  = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "center",
         marginTop: 30,
+      },
+      image:{
+         width:80,
+         height:80,
+         resizeMode:"contain",
       },
       box: {
         backgroundColor: "#2C2C2E",

@@ -1,5 +1,5 @@
 import React, {useState} from 'react' ;
-import {View,Text,StyleSheet,TouchableOpacity} from 'react-native' 
+import {View,Text,StyleSheet,TouchableOpacity, Image} from 'react-native' 
 import LegBeginnerExcercise from './LegBeginner/LegBeginnerExcercise';
 import LegIntermediateExcercise from './LegIntermediate/LegIntermediateExcercise';
 import LegAdvancedExcercise from './LegAdvanced/LegAdvancedExcercise';
@@ -27,21 +27,27 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
                  {
                     switchComponent === ""?(
                      <View style={styles.container}>
-                     <Text style={styles.text_container}>💪 Leg Workout</Text>
+                     <Text style={styles.text_container}>Leg Workout</Text>
                
                      <View style={styles.box_flex_container}>
                        <TouchableOpacity
                          onPress={()=>setComponent2("Leg Beginner Excercise")}
                          style={styles.box} 
                         >
-                         <Text style={styles.emoji}>🔥</Text>
+                         <Image
+                            source={require("../../../assets/leg_Beginner.jpg")}
+                            style={styles.image}
+                         />
                          <Text style={styles.box_text}>Leg Beginner Excercise</Text>
                        </TouchableOpacity>
                
                        <TouchableOpacity 
                           onPress={()=>setComponent2("Leg Intermediate Excercise")}
                           style={styles.box}>
-                         <Text style={styles.emoji}>⚡</Text>
+                          <Image
+                            source={require("../../../assets/leg_Intermediate.jpg")}
+                            style={styles.image}
+                         />
                          <Text style={styles.box_text}>Leg Intermedidate Excercise</Text>
                        </TouchableOpacity>
                      </View>
@@ -51,7 +57,11 @@ const LegExcercise: React.FC<LegExcerciseProps> = ({setComponent}) =>{
                          onPress={()=>setComponent2("Leg Advanced Excercise")}
                          style={styles.bottom_box}
                          >
-                         <Text style={styles.emoji}>🏆</Text>
+                          <Image
+                            source={require("../../../assets/leg_Advanced.jpg")}
+                            style={styles.image}
+                         />
+                       
                          <Text style={styles.box_text}>Leg Advanced Excercise</Text>
                        </TouchableOpacity>
                      </View>
@@ -98,6 +108,11 @@ const styles  = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "center",
         marginTop: 30,
+      },
+      image:{
+         width:80,
+         height:80,
+         resizeMode:"contain"
       },
       box: {
         backgroundColor: "#2C2C2E",
