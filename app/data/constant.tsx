@@ -1148,6 +1148,7 @@ export const ArmIntermedidate:Exercise[] =[
     ]
   },
   {
+    
     "id": 12,
     "name": "Arm Scissors",
     "image": require("../assets/arm_scissors.gif"),
@@ -2189,5 +2190,523 @@ export const ShoulderBeginner:Exercise[] =[
     commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
     breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
   },
+  {
+    id: 2,
+    name: "Arm Raises",
+    image: require("../assets/arm_raises.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Keep your arms straight and relaxed at your sides.",
+      "Slowly raise both arms forward until they reach shoulder height.",
+      "Lower them back down in a controlled motion.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the shoulders and upper arms.",
+      "Improves shoulder mobility and endurance.",
+      "Enhances posture and upper body coordination."
+    ],
+    commonMistakes: [
+      "Using momentum instead of controlled movements.",
+      "Raising the arms too high or too low.",
+      "Shrugging the shoulders instead of keeping them relaxed."
+    ],
+    breathingTips: [
+      "Inhale before lifting your arms.",
+      "Exhale as you raise them to shoulder height.",
+      "Breathe steadily and avoid holding your breath."
+    ]
+  },
+  {
+    id: 3,
+    name: "Side Arm Raises",
+    image: require("../assets/side_arm_raises.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Keep your arms straight and relaxed at your sides.",
+      "Slowly raise both arms out to the sides until they reach shoulder height.",
+      "Lower them back down in a controlled motion.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the shoulders and upper arms.",
+      "Improves shoulder mobility and endurance.",
+      "Enhances posture and upper body coordination."
+    ],
+    commonMistakes: [
+      "Using momentum instead of controlled movements.",
+      "Raising the arms too high or too low.",
+      "Shrugging the shoulders instead of keeping them relaxed."
+    ],
+    breathingTips: [
+      "Inhale before lifting your arms.",
+      "Exhale as you raise them to shoulder height.",
+      "Breathe steadily and avoid holding your breath."
+    ]
+  },
+  {
+    id: 4,
+    name: "Knee Push-Ups",
+    image: require("../assets/knee_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position but lower your knees to the floor, keeping your body in a straight line from head to knees.",
+      "Place your hands slightly wider than shoulder-width apart.",
+      "Engage your core and lower your chest toward the floor by bending your elbows.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the chest, shoulders, and triceps with reduced intensity.",
+      "Engages the core while maintaining proper form.",
+      "Ideal for beginners to build upper body strength."
+    ],
+    commonMistakes: [
+      "Letting the hips sag or sticking them too high.",
+      "Not maintaining a straight line from head to knees.",
+      "Performing partial reps without a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Maintain a steady breathing pattern for better endurance."
+    ]
+  },
+  {
+    
+    "id": 5,
+    "name": "Arm Scissors",
+    "image": require("../assets/arm_scissors.gif"),
+    "instructions": [
+      "Stand upright with your feet shoulder-width apart.",
+      "Extend both arms straight out to the sides at shoulder height.",
+      "Cross your arms in front of your chest, overlapping them like scissors.",
+      "Quickly return to the starting position and repeat the movement, alternating which arm is on top.",
+      "Maintain a steady pace and engage your shoulders throughout the exercise.",
+      "Continue for the desired duration or number of repetitions."
+    ],
+    "focusAreas": [
+      "Strengthens the shoulders, chest, and upper arms.",
+      "Improves arm mobility and endurance.",
+      "Enhances flexibility and coordination."
+    ],
+    "commonMistakes": [
+      "Dropping the arms below shoulder height.",
+      "Moving too fast and using momentum instead of controlled movement.",
+      "Not fully extending the arms during the motion."
+    ],
+    "breathingTips": [
+      "Breathe steadily throughout the movement.",
+      "Inhale as you open your arms.",
+      "Exhale as you cross your arms in front of your chest."
+    ]
+  },
+  {
+    id: 6,
+    name: "Side Arm Raises",
+    image: require("../assets/side_arm_raises.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Keep your arms straight and relaxed at your sides.",
+      "Slowly raise both arms out to the sides until they reach shoulder height.",
+      "Lower them back down in a controlled motion.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the shoulders and upper arms.",
+      "Improves shoulder mobility and endurance.",
+      "Enhances posture and upper body coordination."
+    ],
+    commonMistakes: [
+      "Using momentum instead of controlled movements.",
+      "Raising the arms too high or too low.",
+      "Shrugging the shoulders instead of keeping them relaxed."
+    ],
+    breathingTips: [
+      "Inhale before lifting your arms.",
+      "Exhale as you raise them to shoulder height.",
+      "Breathe steadily and avoid holding your breath."
+    ]
+  },
+  {
+    id: 7,
+    name: "Child’s Pose",
+    image: require("../assets/childs_pose.gif"),
+    instructions: [
+      "Start in a kneeling position with your big toes touching and knees apart.",
+      "Sit back on your heels and extend your arms forward.",
+      "Lower your chest towards the ground, resting your forehead on the mat.",
+      "Relax your shoulders and breathe deeply.",
+      "Hold the pose while focusing on slow, steady breathing."
+    ],
+    focusAreas: [
+      "Stretches the lower back, hips, and thighs.",
+      "Relieves stress and promotes relaxation.",
+      "Enhances flexibility in the spine and shoulders."
+    ],
+    commonMistakes: [
+      "Keeping the knees too close together, restricting movement.",
+      "Holding tension in the shoulders instead of relaxing them.",
+      "Not breathing deeply, reducing relaxation benefits."
+    ],
+    breathingTips: [
+      "Inhale deeply as you lengthen your spine.",
+      "Exhale as you relax deeper into the pose.",
+      "Maintain slow, steady breaths for better relaxation."
+    ]
+  },
+
+  {
+    id: 8,
+    name: "Child’s Pose",
+    image: require("../assets/childs_pose.gif"),
+    instructions: [
+      "Start in a kneeling position with your big toes touching and knees apart.",
+      "Sit back on your heels and extend your arms forward.",
+      "Lower your chest towards the ground, resting your forehead on the mat.",
+      "Relax your shoulders and breathe deeply.",
+      "Hold the pose while focusing on slow, steady breathing."
+    ],
+    focusAreas: [
+      "Stretches the lower back, hips, and thighs.",
+      "Relieves stress and promotes relaxation.",
+      "Enhances flexibility in the spine and shoulders."
+    ],
+    commonMistakes: [
+      "Keeping the knees too close together, restricting movement.",
+      "Holding tension in the shoulders instead of relaxing them.",
+      "Not breathing deeply, reducing relaxation benefits."
+    ],
+    breathingTips: [
+      "Inhale deeply as you lengthen your spine.",
+      "Exhale as you relax deeper into the pose.",
+      "Maintain slow, steady breaths for better relaxation."
+    ]
+  },
+
+
+
+
+
+
+]
+
+export const ShoulderIntermediate:Exercise[] =[
+  {
+    id: 1,
+    name: "Triceps Kickbacks",
+    image: require("../assets/triceps_kickbacks.gif"),
+    instructions: [
+      "Hold a dumbbell in each hand with your palms facing inward.",
+      "Bend your knees slightly and hinge forward at the hips, keeping your back straight.",
+      "Bring your upper arms close to your torso and bend your elbows at 90 degrees.",
+      "Extend your arms backward by straightening your elbows, squeezing your triceps at the top.",
+      "Slowly return to the starting position and repeat."
+    ],
+    focusAreas: [
+      "Strengthens and tones the triceps.",
+      "Improves upper body stability and endurance.",
+      "Enhances arm definition and muscle control."
+    ],
+    commonMistakes: [
+      "Using momentum instead of controlled movement.",
+      "Arching or rounding the back, leading to poor posture.",
+      "Not fully extending the arms, reducing effectiveness."
+    ],
+    breathingTips: [
+      "Exhale as you extend your arms back.",
+      "Inhale as you return to the starting position.",
+      "Maintain steady, controlled breathing throughout."
+    ]
+  },
+
+  {
+    id: 2,
+    name: "Jumping Jacks",
+    image: require("../assets/jumping_jack.gif"),
+    instructions: [
+      "Stand upright with your feet together and arms at your sides.",
+      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
+      "Jump again to return to the starting position.",
+      "Repeat at a steady pace."
+    ],
+    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
+    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
+    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
+  },
+  {
+    id: 3,
+    name: "Incline Push-ups",
+    image: require("../assets/incline_push_ups.gif"),
+    instructions: [
+      "Place your hands on an elevated surface (bench, step, or wall) shoulder-width apart.",
+      "Step your feet back until your body forms a straight line from head to heels.",
+      "Lower your chest towards the surface by bending your elbows.",
+      "Push back up to the starting position, fully extending your arms.",
+      "Repeat while maintaining proper form."
+    ],
+    focusAreas: [
+      "Targets the lower chest, shoulders, and triceps.",
+      "Engages the core for stability.",
+      "Reduces strain on the shoulders compared to standard push-ups."
+    ],
+    commonMistakes: [
+      "Letting hips sag or rise too high, reducing effectiveness.",
+      "Placing hands too far apart, straining the shoulders.",
+      "Not lowering the chest fully, limiting range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your chest towards the surface.",
+      "Exhale as you push back up to the starting position.",
+      "Keep a steady breathing rhythm for endurance."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Floor Tricep Dips",
+    "image": require("../assets/floor_tricep_dips.gif"),
+    "instructions": [
+      "Sit on the floor with your knees bent and feet flat on the ground.",
+      "Place your hands behind you, fingers pointing forward, shoulder-width apart.",
+      "Press into your palms and lift your hips slightly off the ground.",
+      "Lower your body by bending your elbows until your arms are at a 90-degree angle.",
+      "Push through your palms to return to the starting position.",
+      "Repeat for the desired number of reps."
+    ],
+    "focusAreas": [
+      "Strengthens the triceps, shoulders, and chest.",
+      "Improves upper body endurance.",
+      "Enhances arm and shoulder stability."
+    ],
+    "commonMistakes": [
+      "Letting elbows flare out instead of keeping them close to the body.",
+      "Dropping the hips too low instead of focusing on arm movement.",
+      "Locking the elbows at the top of the movement."
+    ],
+    "breathingTips": [
+      "Inhale as you lower your body down.",
+      "Exhale as you push yourself back up.",
+      "Maintain steady breathing throughout the movement."
+    ]
+  },
+  {
+    id: 4,
+    name: "Side-Lying Floor Stretch (Left)",
+    image: require("../assets/side_lying_floor_stretch_left.gif"),
+    instructions: [
+      "Lie on your left side with your legs stacked and knees bent at 90 degrees.",
+      "Extend your left arm straight in front of you and place your right hand on top.",
+      "Slowly rotate your upper body to the right, opening your chest while keeping your lower body stable.",
+      "Hold the stretch for a few seconds, feeling the stretch in your back and shoulders.",
+      "Return to the starting position and repeat."
+    ],
+    focusAreas: [
+      "Stretches the spine, chest, and shoulders.",
+      "Improves upper body mobility and flexibility.",
+      "Relieves tension in the lower back and obliques."
+    ],
+    commonMistakes: [
+      "Lifting the knees off the floor, reducing stretch effectiveness.",
+      "Forcing the rotation, leading to discomfort or strain.",
+      "Holding the breath instead of breathing deeply."
+    ],
+    breathingTips: [
+      "Inhale as you prepare to rotate.",
+      "Exhale as you twist and hold the stretch.",
+      "Breathe deeply to enhance relaxation and flexibility."
+    ]
+  },
+  {
+    id: 5,
+    name: "Side Lying Floor Stretch Right",
+    image: require("../assets/side_lying_floor_stretch_right.gif"),
+    instructions: [
+        "Lie on your right side with your legs stacked and knees bent at 90 degrees.",
+        "Extend your right arm straight in front of you and place your left hand on top.",
+        "Slowly rotate your left arm open towards the floor, stretching your chest and spine.",
+        "Hold the stretch, ensuring your knees stay stacked and hips remain stable.",
+        "Breathe deeply and relax into the stretch."
+    ],
+    focusAreas: [
+        "Opens the chest and shoulders.",
+        "Improves spinal mobility and flexibility.",
+        "Releases tension in the lower back and torso."
+    ],
+    commonMistakes: [
+        "Allowing the knees to separate, reducing spinal rotation.",
+        "Forcing the stretch instead of relaxing into it.",
+        "Holding the breath instead of breathing deeply."
+    ],
+    breathingTips: [
+        "Inhale as you prepare for the stretch.",
+        "Exhale as you rotate your arm open and relax deeper.",
+        "Maintain slow, steady breaths for better mobility."
+    ]
+},
+
+
+
+ 
+]
+
+export const ShoulderAdvanced:Exercise[] =[
+  {
+    id: 1,
+    name: "Jumping Jacks",
+    image: require("../assets/jumping_jack.gif"),
+    instructions: [
+      "Stand upright with your feet together and arms at your sides.",
+      "Jump while spreading your legs shoulder-width apart and raising your arms overhead.",
+      "Jump again to return to the starting position.",
+      "Repeat at a steady pace."
+    ],
+    focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
+    commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
+    breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
+  },
+  
+  {
+    id: 2,
+    name: "Inchworms",
+    image: require("../assets/inchworms.gif"),
+    instructions: [
+      "Stand tall with your feet hip-width apart and your arms relaxed at your sides.",
+      "Hinge at your hips and reach your hands toward the floor, keeping your legs as straight as possible.",
+      "Walk your hands forward until you reach a high plank position with your body in a straight line.",
+      "Hold the plank briefly, engaging your core and keeping your shoulders aligned over your wrists.",
+      "Walk your hands back toward your feet and return to a standing position.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Strengthens the core, shoulders, and arms.",
+      "Improves flexibility in the hamstrings and lower back.",
+      "Enhances overall mobility and coordination."
+    ],
+    commonMistakes: [
+      "Bending the knees too much while reaching down.",
+      "Letting the hips sag in the plank position.",
+      "Rushing through the movement instead of maintaining control."
+    ],
+    breathingTips: [
+      "Inhale as you bend forward and walk your hands out.",
+      "Exhale as you return to a standing position.",
+      "Maintain steady breathing throughout the movement."
+    ]
+  },
+
+  {
+    id: 3,
+    name: "Cat-Cow Pose",
+    image: require("../assets/cat_cow_pose.gif"),
+    instructions: [
+        "Start on all fours in a tabletop position, with your wrists under your shoulders and knees under your hips.",
+        "Inhale as you drop your belly towards the floor, arching your back and lifting your head for Cow Pose.",
+        "Exhale as you round your spine, tucking your chin into your chest for Cat Pose.",
+        "Continue flowing between Cat and Cow poses in sync with your breath.",
+        "Repeat for the desired duration, moving smoothly and mindfully."
+    ],
+    focusAreas: [
+        "Improves spinal flexibility and mobility.",
+        "Relieves tension in the back and neck.",
+        "Enhances coordination and breath control."
+    ],
+    commonMistakes: [
+        "Moving too quickly without syncing breath with movement.",
+        "Not fully rounding or arching the spine.",
+        "Placing too much weight on the wrists instead of distributing it evenly."
+    ],
+    breathingTips: [
+        "Inhale deeply as you move into Cow Pose.",
+        "Exhale fully as you transition into Cat Pose.",
+        "Maintain steady, controlled breaths for better relaxation and mobility."
+    ]
+},
+
+{
+  id:4,
+  name: "Reverse Snow Angels",
+  image: require("../assets/reverse_snow_angels.gif"),
+  instructions: [
+      "Lie face down on the floor with your arms extended forward and legs straight.",
+      "Engage your core and lift your chest slightly off the ground.",
+      "Move your arms in a wide arc from the front to the back, as if making a snow angel.",
+      "Squeeze your shoulder blades together as your arms reach behind you.",
+      "Slowly return your arms to the starting position and repeat."
+  ],
+  focusAreas: [
+      "Strengthens the upper back, shoulders, and posterior chain.",
+      "Improves posture and shoulder mobility.",
+      "Engages the lower back and core muscles."
+  ],
+  commonMistakes: [
+      "Lifting the legs instead of focusing on the upper body.",
+      "Moving too fast without controlled motion.",
+      "Not engaging the shoulder blades during the movement."
+  ],
+  breathingTips: [
+      "Inhale as you move your arms forward.",
+      "Exhale as you sweep your arms backward.",
+      "Maintain steady, controlled breaths for better endurance."
+  ]
+},
+
+{
+  id: 5,
+  name: "Floor Y Raises",
+  image: require("../assets/floor_y_raises.gif"),
+  instructions: [
+    "Lie face down on the floor with your arms extended forward in a Y-shape (palms facing down).",
+    "Engage your core and keep your legs relaxed.",
+    "Lift your arms off the ground while squeezing your shoulder blades together.",
+    "Hold for a second at the top, then slowly lower your arms back to the starting position.",
+    "Repeat while keeping your neck neutral and movement controlled."
+  ],
+  focusAreas: [
+    "Strengthens upper back, shoulders, and traps.",
+    "Improves posture and scapular stability.",
+    "Enhances shoulder mobility and endurance."
+  ],
+  commonMistakes: [
+    "Lifting the head too much, straining the neck.",
+    "Using momentum instead of controlled movement.",
+    "Not fully engaging the shoulder blades at the top."
+  ],
+  breathingTips: [
+    "Inhale as you prepare to lift your arms.",
+    "Exhale as you raise your arms and squeeze your shoulder blades.",
+    "Maintain a steady breathing rhythm to avoid tension."
+  ]
+},
+{
+  id:6,
+  name: "Reverse Snow Angels",
+  image: require("../assets/reverse_snow_angels.gif"),
+  instructions: [
+      "Lie face down on the floor with your arms extended forward and legs straight.",
+      "Engage your core and lift your chest slightly off the ground.",
+      "Move your arms in a wide arc from the front to the back, as if making a snow angel.",
+      "Squeeze your shoulder blades together as your arms reach behind you.",
+      "Slowly return your arms to the starting position and repeat."
+  ],
+  focusAreas: [
+      "Strengthens the upper back, shoulders, and posterior chain.",
+      "Improves posture and shoulder mobility.",
+      "Engages the lower back and core muscles."
+  ],
+  commonMistakes: [
+      "Lifting the legs instead of focusing on the upper body.",
+      "Moving too fast without controlled motion.",
+      "Not engaging the shoulder blades during the movement."
+  ],
+  breathingTips: [
+      "Inhale as you move your arms forward.",
+      "Exhale as you sweep your arms backward.",
+      "Maintain steady, controlled breaths for better endurance."
+  ]
+},
+
+
+
+
+  
 
 ]
