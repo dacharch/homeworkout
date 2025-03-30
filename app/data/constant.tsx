@@ -2291,6 +2291,234 @@ export const LegIntermediate:Exercise[]= [
 ]
 
 export const LegAdvanced:Exercise[] =[
+  {
+    id: 1,
+    name: "Burpees",
+    image: require("../assets/burpees.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Lower your body into a squat position and place your hands on the ground.",
+      "Kick your feet back into a high plank position.",
+      "Perform a push-up by lowering your chest to the floor and pushing back up.",
+      "Jump your feet forward to return to the squat position.",
+      "Explosively jump up, reaching your arms overhead.",
+      "Land softly and immediately go into the next rep."
+    ],
+    focusAreas: [
+      "Engages the full body, including chest, arms, legs, and core.",
+      "Boosts cardiovascular endurance and explosive power.",
+      "Improves agility, coordination, and functional strength."
+    ],
+    commonMistakes: [
+      "Not performing a full push-up, reducing effectiveness.",
+      "Letting the hips sag during the plank position.",
+      "Landing too hard after the jump, increasing impact on joints."
+    ],
+    breathingTips: [
+      "Inhale as you lower into the squat and kick back.",
+      "Exhale as you push up and jump forward.",
+      "Maintain a steady rhythm to avoid gasping for air."
+    ]
+  },
+  {
+    id: 2,
+    name: "Squats",
+    image: require("../assets/squats.gif"),
+    instructions: [
+      "Stand with your feet shoulder-width apart and toes slightly pointed out.",
+      "Engage your core and keep your chest up.",
+      "Lower your body by bending your knees and pushing your hips back.",
+      "Go down until your thighs are parallel to the ground, keeping your knees aligned with your toes.",
+      "Push through your heels to return to the starting position.",
+      "Repeat while maintaining proper form."
+    ],
+    focusAreas: [
+      "Strengthens quads, hamstrings, and glutes.",
+      "Improves lower body endurance and stability.",
+      "Enhances core engagement and posture."
+    ],
+    commonMistakes: [
+      "Letting knees go beyond the toes, causing unnecessary strain.",
+      "Rounding the back instead of keeping a neutral spine.",
+      "Not going low enough to engage muscles effectively."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push up to the starting position.",
+      "Maintain steady breathing to improve performance and endurance."
+    ]
+  },
+  {
+    id: 3,
+    name: "Squats",
+    image: require("../assets/squats.gif"),
+    instructions: [
+      "Stand with your feet shoulder-width apart and toes slightly pointed out.",
+      "Engage your core and keep your chest up.",
+      "Lower your body by bending your knees and pushing your hips back.",
+      "Go down until your thighs are parallel to the ground, keeping your knees aligned with your toes.",
+      "Push through your heels to return to the starting position.",
+      "Repeat while maintaining proper form."
+    ],
+    focusAreas: [
+      "Strengthens quads, hamstrings, and glutes.",
+      "Improves lower body endurance and stability.",
+      "Enhances core engagement and posture."
+    ],
+    commonMistakes: [
+      "Letting knees go beyond the toes, causing unnecessary strain.",
+      "Rounding the back instead of keeping a neutral spine.",
+      "Not going low enough to engage muscles effectively."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push up to the starting position.",
+      "Maintain steady breathing to improve performance and endurance."
+    ]
+  },
+
+  {
+    id: 4,
+    name: "Jumping Squats",
+    image: require("../assets/jumping_squats.gif"), // Update path if needed
+    instructions: [
+      "Stand with your feet shoulder-width apart and hands in front of you or behind your head.",
+      "Lower your body into a squat position by bending your knees and pushing your hips back.",
+      "Explode upward, jumping as high as possible.",
+      "Land softly with your knees slightly bent and go straight into the next squat.",
+      "Repeat for the desired number of reps."
+    ],
+    focusAreas: [
+      "Builds explosive power in legs and glutes.",
+      "Strengthens the core and lower body.",
+      "Improves cardiovascular endurance."
+    ],
+    commonMistakes: [
+      "Landing with stiff knees, which can cause joint strain.",
+      "Not using full range of motion in the squat.",
+      "Leaning too far forward, reducing balance."
+    ],
+    breathingTips: [
+      "Inhale as you lower into the squat.",
+      "Exhale forcefully as you jump up.",
+      "Maintain steady breathing to avoid fatigue."
+    ]
+  },
+  {
+    id: 4,
+    name: "Glute Kickback Left",
+    image: require("../assets/glute_kick_back_left.gif"), // Ensure correct path
+    instructions: [
+      "Start on all fours with hands directly under shoulders and knees under hips.",
+      "Keep your core engaged and back straight.",
+      "Lift your left leg straight back and up while keeping your knee slightly bent.",
+      "Squeeze your glutes at the top and hold for a second.",
+      "Lower your leg slowly back to the starting position and repeat."
+    ],
+    focusAreas: [
+      "Strengthens the glutes and hamstrings.",
+      "Improves hip mobility and stability.",
+      "Engages the core for balance."
+    ],
+    commonMistakes: [
+      "Arching the lower back instead of engaging the glutes.",
+      "Lifting the leg too high, causing hip misalignment.",
+      "Rushing through reps without controlled movement."
+    ],
+    breathingTips: [
+      "Inhale as you lower your leg.",
+      "Exhale as you lift and squeeze your glutes.",
+      "Maintain a steady breathing rhythm for control."
+    ]
+  },
+  {
+    id: 4,
+    name: "Glute Kickback Right",
+    image: require("../assets/glute_kick_back_right.gif"), // Ensure correct path
+    instructions: [
+      "Start on all fours with hands directly under shoulders and knees under hips.",
+      "Keep your core engaged and back straight.",
+      "Lift your right leg straight back and up while keeping your knee slightly bent.",
+      "Squeeze your glutes at the top and hold for a second.",
+      "Lower your leg slowly back to the starting position and repeat."
+    ],
+    focusAreas: [
+      "Strengthens the glutes and hamstrings.",
+      "Improves hip mobility and stability.",
+      "Engages the core for balance."
+    ],
+    commonMistakes: [
+      "Arching the lower back instead of engaging the glutes.",
+      "Lifting the leg too high, causing hip misalignment.",
+      "Rushing through reps without controlled movement."
+    ],
+    breathingTips: [
+      "Inhale as you lower your leg.",
+      "Exhale as you lift and squeeze your glutes.",
+      "Maintain a steady breathing rhythm for control."
+    ]
+  },
+  {
+    id: 5,
+    name: "Wall Sit",
+    image: require("../assets/wall_sit.gif"), // Ensure correct path
+    instructions: [
+      "Stand with your back against a wall and feet shoulder-width apart.",
+      "Slowly slide down the wall until your knees are bent at a 90-degree angle.",
+      "Keep your back flat against the wall and hands resting by your sides or on your thighs.",
+      "Hold the position for the desired duration, keeping your core engaged.",
+      "Slowly stand back up to release."
+    ],
+    focusAreas: [
+      "Strengthens the quadriceps, glutes, and hamstrings.",
+      "Improves endurance and stability.",
+      "Engages the core for balance."
+    ],
+    commonMistakes: [
+      "Placing hands on thighs for support instead of keeping them free.",
+      "Not keeping knees at a 90-degree angle.",
+      "Leaning forward or arching the back."
+    ],
+    breathingTips: [
+      "Breathe evenly throughout the exercise.",
+      "Inhale through the nose, exhale through the mouth.",
+      "Avoid holding your breath to prevent fatigue."
+    ]
+  },
+  {
+    id: 6,
+    name: "Leaning Stretcher Raises",
+    image: require("../assets/leaning_stretcher_raises.gif"), 
+    instructions: [
+      "Stand next to a sturdy object and lean slightly to the side, supporting yourself with one hand.",
+      "Extend your outer leg straight and raise it slowly to the side.",
+      "Pause at the top and squeeze your glutes and outer thighs.",
+      "Lower your leg back down in a controlled motion.",
+      "Repeat for the desired reps and switch sides."
+    ],
+    focusAreas: [
+      "Targets the glutes, hip abductors, and thighs.",
+      "Improves hip stability and flexibility.",
+      "Enhances lower body endurance."
+    ],
+    commonMistakes: [
+      "Swinging the leg instead of controlled movements.",
+      "Leaning too much, reducing muscle engagement.",
+      "Not engaging the core for balance."
+    ],
+    breathingTips: [
+      "Inhale as you lower the leg.",
+      "Exhale as you lift the leg.",
+      "Maintain steady breathing to support balance and endurance."
+    ]
+  }
+  
+  
+  
+  
+  
+  
+
 
 ]
 
