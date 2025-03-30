@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import AbsBeginnerExcercise from "./AbsBeginner/AbsBeginnerExcercise";
 import AbsIntermediateExcercise from "./AbsIntermediate/AbsIntermediateExcercise";
 import AbsAdvannced from "./AbsAdvanced/AbsAdvannced";
@@ -9,69 +9,78 @@ interface AbsExerciseProps {
 }
 
 const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
-  const[switchComponent,setComponent2] = useState("") ;
+  const [switchComponent, setComponent2] = useState("");
 
-  const RenderComponent = () =>{
-       switch(switchComponent){
-         case "Abs Beginner Excercise" :
-            return <AbsBeginnerExcercise/>  ;
-         
-         case "Abs Intermedidate Excercise" :
-            return <AbsIntermediateExcercise />
-          
-         case  "Abs Advanced Excercise" :
-             return <AbsAdvannced/>
-      
-         default : return null ;
+  const RenderComponent = () => {
+    switch (switchComponent) {
+      case "Abs Beginner Excercise":
+        return <AbsBeginnerExcercise />;
 
-       }
-  }
+      case "Abs Intermedidate Excercise":
+        return <AbsIntermediateExcercise />;
+
+      case "Abs Advanced Excercise":
+        return <AbsAdvannced />;
+
+      default:
+        return null;
+    }
+  };
+
   return (
-
     <>
-      {
-         switchComponent === ""?(
-          <View style={styles.container}>
+      {switchComponent === "" ? (
+        <View style={styles.container}>
           <Text style={styles.text_container}>💪 Abs Workout</Text>
-    
+
           <View style={styles.box_flex_container}>
             <TouchableOpacity
-              onPress={()=>setComponent2("Abs Beginner Excercise")}
-              style={styles.box} 
-             >
-              <Text style={styles.emoji}>🔥</Text>
+              onPress={() => setComponent2("Abs Beginner Excercise")}
+              style={styles.box}
+            >
+              <Image
+                source={require("../../../assets/Abs_Beginner.jpg")}
+                style={styles.image}
+              />
               <Text style={styles.box_text}>Abs Beginner</Text>
             </TouchableOpacity>
-    
-            <TouchableOpacity 
-               onPress={()=>setComponent2("Abs Intermedidate Excercise")}
-               style={styles.box}>
-              <Text style={styles.emoji}>⚡</Text>
+
+            <TouchableOpacity
+              onPress={() => setComponent2("Abs Intermedidate Excercise")}
+              style={styles.box}
+            >
+              <Image
+                source={require("../../../assets/Abs_Intermediate.jpg")}
+                style={styles.image}
+              />
               <Text style={styles.box_text}>Abs Intermediate</Text>
             </TouchableOpacity>
           </View>
-    
+
           <View style={styles.box_flex_container2}>
-            <TouchableOpacity 
-              onPress={()=>setComponent2("Abs Advanced Excercise")}
+            <TouchableOpacity
+              onPress={() => setComponent2("Abs Advanced Excercise")}
               style={styles.bottom_box}
-              >
-              <Text style={styles.emoji}>🏆</Text>
+            >
+              <Image
+                source={require("../../../assets/Abs_Advanced.jpg")}
+                style={styles.image}
+              />
               <Text style={styles.box_text}>Abs Advanced</Text>
             </TouchableOpacity>
           </View>
-    
-          <TouchableOpacity style={styles.back_button} onPress={() => setComponent("")}>
+
+          <TouchableOpacity
+            style={styles.back_button}
+            onPress={() => setComponent("")}
+          >
             <Text style={styles.back_text}>⬅ Back</Text>
           </TouchableOpacity>
         </View>
-         ):(
-           <RenderComponent/>
-         )
-      }
-    
+      ) : (
+        <RenderComponent />
+      )}
     </>
-   
   );
 };
 
@@ -145,8 +154,10 @@ const styles = StyleSheet.create({
     letterSpacing: 1.2,
     marginTop: 10,
   },
-  emoji: {
-    fontSize: 50,
+  image: {
+    width: 80,
+    height: 80,
+    resizeMode: "contain",
   },
   back_button: {
     marginTop: 40,
