@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import AbsExercise from "../Components/Excercises/Abs/AbsExcercise";
-import ArmExcercise from "../Components/Excercises/Arm/ArmExcercise" ;
+import ArmExcercise from "../Components/Excercises/Arm/ArmExcercise";
 import ChestExcercise from "../Components/Excercises/Chest/ChestExcercise";
 import LegExcercise from "../Components/Excercises/Leg/LegExcercise";
 import ShoulderExcercise from "../Components/Excercises/Shoulder/ShoulderExcercise";
-
 
 const Index: React.FC = () => {
   const [switchComponent, setComponent] = useState<string>("");
@@ -15,19 +14,17 @@ const Index: React.FC = () => {
       case "Abs Exercise":
         return <AbsExercise setComponent={setComponent} />;
       case "Arm Excercise":
-        return <ArmExcercise setComponent={setComponent}/>;
-      case "Chest Excercise" :
-        return <ChestExcercise setComponent={setComponent}/>
-      case "Leg Excercise" :
-        return <LegExcercise setComponent={setComponent}/>
-
-      case "Shoulder Excercise" : 
-        return <ShoulderExcercise setComponent={setComponent} />
+        return <ArmExcercise setComponent={setComponent} />;
+      case "Chest Excercise":
+        return <ChestExcercise setComponent={setComponent} />;
+      case "Leg Excercise":
+        return <LegExcercise setComponent={setComponent} />;
+      case "Shoulder Excercise":
+        return <ShoulderExcercise setComponent={setComponent} />;
       default:
         return null;
     }
   };
-
 
   return (
     <>
@@ -37,15 +34,15 @@ const Index: React.FC = () => {
 
           <View style={styles.box_flex_container}>
             <View style={styles.box}>
-              <Text style={styles.emoji}>💪</Text>
+              <Image source={require("../assets/Abs_Advanced.jpg")} style={styles.image} />
               <TouchableOpacity onPress={() => setComponent("Abs Exercise")}>
                 <Text style={styles.box_text}>Abs Workout</Text>
               </TouchableOpacity>
             </View>
 
             <View style={styles.box}>
-              <Text style={styles.emoji}>💪</Text>
-              <TouchableOpacity onPress={()=>setComponent("Arm Excercise")}>
+              <Image source={require("../assets/arm.jpg")} style={styles.image} />
+              <TouchableOpacity onPress={() => setComponent("Arm Excercise")}>
                 <Text style={styles.box_text}>Arm Workout</Text>
               </TouchableOpacity>
             </View>
@@ -53,24 +50,24 @@ const Index: React.FC = () => {
 
           <View style={styles.box_flex_container}>
             <View style={styles.box}>
-              <Text style={styles.emoji}>🏋️</Text>
-              <TouchableOpacity onPress={()=>setComponent("Chest Excercise")}>
-                 <Text style={styles.box_text}>Chest Workout</Text>
+              <Image source={require("../assets/chest.jpg")} style={styles.image} />
+              <TouchableOpacity onPress={() => setComponent("Chest Excercise")}>
+                <Text style={styles.box_text}>Chest Workout</Text>
               </TouchableOpacity>
             </View>
             <View style={styles.box}>
-              <Text style={styles.emoji}>🦵</Text>
-              <TouchableOpacity onPress = {()=>setComponent("Leg Excercise")}>
-                 <Text style={styles.box_text}>Leg Workout</Text>
+              <Image source={require("../assets/leg.jpg")} style={styles.image} />
+              <TouchableOpacity onPress={() => setComponent("Leg Excercise")}>
+                <Text style={styles.box_text}>Leg Workout</Text>
               </TouchableOpacity>
             </View>
           </View>
 
           <View style={styles.box_flex_container2}>
             <View style={styles.bottom_box}>
-              <Text style={styles.emoji}>🏋️‍♂️</Text>
-              <TouchableOpacity onPress={()=>setComponent("Shoulder Excercise")}>
-                 <Text style={styles.box_text}>Back & Shoulder Workout</Text>
+              <Image source={require("../assets/shoulder.jpeg")} style={styles.image} />
+              <TouchableOpacity onPress={() => setComponent("Shoulder Excercise")}>
+                <Text style={styles.box_text}>Back & Shoulder Workout</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -114,7 +111,7 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 15,
     width: 180,
-    height: 250,
+    height: 230,
     alignItems: "center",
     justifyContent: "center",
     elevation: 6,
@@ -130,7 +127,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 15,
     width: 250,
-    height: 150,
+    height: 200,
     alignItems: "center",
     justifyContent: "center",
     elevation: 6,
@@ -150,7 +147,9 @@ const styles = StyleSheet.create({
     letterSpacing: 1.2,
     marginTop: 10,
   },
-  emoji: {
-    fontSize: 50,
+  image: {
+    width: 100,
+    height: 100,
+    resizeMode: "contain",
   },
 });
