@@ -47,11 +47,14 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
 
             <TouchableOpacity
               onPress={() => setComponent2("Arm Intermedidate Excercise")}
-              style={styles.image}
+              style={styles.box}
             >
-              <Image 
+                <Image
                  source={require("../../../assets/Arm_Intermediate.jpg")}
+                 style={styles.image}
+
               />
+              
               <Text style={styles.box_text}>Arm Intermediate</Text>
             </TouchableOpacity>
           </View>
@@ -59,12 +62,14 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
           <View style={styles.box_flex_container2}>
             <TouchableOpacity
               onPress={() => setComponent2("Arm Advanced Excercise")}
-              style={styles.image}
+              style={styles.bottom_box}
             >
-              <Image
+               <Image
                  source={require("../../../assets/Arm_Advanced.jpg")}
                  style={styles.image}
+
               />
+             
               <Text style={styles.box_text}>Arm Advanced</Text>
             </TouchableOpacity>
           </View>
