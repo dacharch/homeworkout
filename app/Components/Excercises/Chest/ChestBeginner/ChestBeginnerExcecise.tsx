@@ -10,7 +10,7 @@ const ChestBeginnerExcecise = () => {
   return (
       <>
         <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.text_container}>🔥 Chest Beginner Workout</Text>
+        <Text style={styles.text_container}>Chest Beginner Workout</Text>
 
     <View style={styles.exercise_container}>
       {ChestBeginner.map((exercise) => (

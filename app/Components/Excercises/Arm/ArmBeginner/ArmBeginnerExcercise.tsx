@@ -9,7 +9,7 @@ const ArmBeginnerExcercise = () => {
   return (
     <>
       <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.text_container}>🔥 Arm Beginner Workout</Text>
+        <Text style={styles.text_container}> Arm Beginner Workout</Text>
 
         <View style={styles.exercise_container}>
           {ArmBeginner.map((exercise) => (

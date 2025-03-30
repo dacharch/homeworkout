@@ -10,7 +10,7 @@ const ShoulderAdvancedExcercise = () => {
   return (
       <>
              <ScrollView contentContainerStyle={styles.container}>
-             <Text style={styles.text_container}>🔥 Shoulder Beginner Workout</Text>
+             <Text style={styles.text_container}>Shoulder Beginner Workout</Text>
          
              <View style={styles.exercise_container}>
                {ShoulderAdvanced.map((exercise) => (
@@ -30,7 +30,6 @@ const ShoulderAdvancedExcercise = () => {
              </View>
            </ScrollView>
          
-           {/* Modal for Exercise Details */}
            
            <Modal
              visible={!!selectedExercise}

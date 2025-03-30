@@ -156,7 +156,7 @@ export const AbsIntermediate:Exercise[] =[
     breathingTips: ["Breathe deeply and steadily throughout.", "Exhale when lifting hips.", "Inhale when lowering hips."]
   },
   {
-    id: 5,
+    id: 2,
     name: "Butt Bridge",
     image: require("../assets/butt_bridge_left.gif"), 
     instructions: [
@@ -171,7 +171,7 @@ export const AbsIntermediate:Exercise[] =[
     breathingTips: ["Exhale as you lift your hips.", "Inhale as you lower them.", "Maintain a steady breathing rhythm."]
   },
   {
-    id: 6,
+    id: 3,
     name: "Side Bridges Right",
     image: require("../assets/site_bridge_right.gif"),
     instructions: [
@@ -200,7 +200,7 @@ export const AbsIntermediate:Exercise[] =[
   },
 
   {
-    id: 7,
+    id: 4,
     name: "Bicycle Crunches",
     image: require("../assets/bicycle_crunches.gif"),
     instructions: [
@@ -228,7 +228,7 @@ export const AbsIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 8,
+    id: 5,
     name: "Spine Lumbar Twist Stretch Right",
     image: require("../assets/spline_number_right.gif"),
     instructions: [
@@ -256,7 +256,7 @@ export const AbsIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 9,
+    id: 6,
     name: "Spine Lumbar Twist Stretch Left",
     image: require("../assets/spine_left.gif"),
     instructions: [
@@ -952,10 +952,10 @@ export const ArmIntermedidate:Exercise[] =[
     ]
   },
   {
-    "id": 3,
-    "name": "Floor Tricep Dips",
-    "image": require("../assets/floor_tricep_dips.gif"),
-    "instructions": [
+    id: 3,
+    name: "Floor Tricep Dips",
+    image: require("../assets/floor_tricep_dips.gif"),
+    instructions: [
       "Sit on the floor with your knees bent and feet flat on the ground.",
       "Place your hands behind you, fingers pointing forward, shoulder-width apart.",
       "Press into your palms and lift your hips slightly off the ground.",
@@ -963,27 +963,27 @@ export const ArmIntermedidate:Exercise[] =[
       "Push through your palms to return to the starting position.",
       "Repeat for the desired number of reps."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens the triceps, shoulders, and chest.",
       "Improves upper body endurance.",
       "Enhances arm and shoulder stability."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Letting elbows flare out instead of keeping them close to the body.",
       "Dropping the hips too low instead of focusing on arm movement.",
       "Locking the elbows at the top of the movement."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Inhale as you lower your body down.",
       "Exhale as you push yourself back up.",
       "Maintain steady breathing throughout the movement."
     ]
   },
   {
-    "id": 4,
-    "name": "Military Push-Ups",
-    "image": require("../assets/military_push_ups.gif"),
-    "instructions": [
+    id: 4,
+    name: "Military Push-Ups",
+    image: require("../assets/military_push_ups.gif"),
+    instructions: [
       "Start in a high plank position with your hands directly under your shoulders.",
       "Keep your body in a straight line from head to heels, engaging your core.",
       "Lower your body by bending your elbows, keeping them close to your torso.",
@@ -991,27 +991,27 @@ export const ArmIntermedidate:Exercise[] =[
       "Push through your palms to return to the starting position.",
       "Repeat for the desired number of reps."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens the triceps, chest, and shoulders.",
       "Enhances core stability and overall upper body endurance.",
       "Improves posture and functional strength."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Letting elbows flare out instead of keeping them close to the body.",
       "Dropping the hips or arching the back, causing poor form.",
       "Not going low enough or rushing through the reps."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Inhale as you lower your body down.",
       "Exhale as you push yourself back up.",
       "Maintain steady and controlled breathing throughout the movement."
     ]
   },
   {
-    "id": 5,
-    "name": "Alternative Hooks",
-    "image": require("../assets/alternative_hooks.gif"),
-    "instructions": [
+    id: 5,
+    name: "Alternative Hooks",
+    image: require("../assets/alternative_hooks.gif"),
+    instructions: [
       "Stand with your feet shoulder-width apart and slightly bend your knees.",
       "Hold your fists near your chin in a boxing stance.",
       "Twist your torso and throw a hook punch with your right arm, keeping your elbow at a 90-degree angle.",
@@ -1019,27 +1019,27 @@ export const ArmIntermedidate:Exercise[] =[
       "Continue alternating hooks in a controlled and powerful motion.",
       "Maintain a steady pace and engage your core throughout the movement."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens the shoulders, arms, and core.",
       "Improves coordination and punching power.",
       "Enhances cardiovascular endurance and agility."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Throwing wild punches without control.",
       "Not rotating the hips and torso for full power.",
       "Dropping the guard after each punch instead of keeping hands up."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Exhale sharply with each punch for more power.",
       "Inhale as you return to the starting position.",
       "Maintain steady breathing to keep up endurance."
     ]
   },
   {
-    "id": 6,
-    "name": "Push-Up Rotation",
-    "image": require("../assets/push_up_rotation.gif"),
-    "instructions": [
+    id: 6,
+    name: "Push-Up Rotation",
+    image: require("../assets/push_up_rotation.gif"),
+    instructions: [
       "Start in a high plank position with your hands directly under your shoulders.",
       "Lower your body into a push-up by bending your elbows, keeping your core engaged.",
       "Push back up to the starting position.",
@@ -1047,17 +1047,17 @@ export const ArmIntermedidate:Exercise[] =[
       "Return to the starting position and repeat the movement, this time rotating to the left.",
       "Continue alternating sides with each push-up."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens the chest, shoulders, triceps, and core.",
       "Improves balance, stability, and coordination.",
       "Engages the obliques and enhances rotational strength."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Letting hips sag or rise too high, breaking form.",
       "Not fully extending the arm during the rotation.",
       "Rushing through the movement instead of maintaining control."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Inhale as you lower your body down.",
       "Exhale as you push back up and rotate.",
       "Maintain steady breathing throughout the movement."
@@ -1119,10 +1119,10 @@ export const ArmIntermedidate:Exercise[] =[
     ]
   },
   {
-    "id": 11,
-    "name": "Burpees",
-    "image": require("../assets/burpees.gif"),
-    "instructions": [
+    id: 11,
+    name: "Burpees",
+    image: require("../assets/burpees.gif"),
+    instructions: [
       "Stand upright with your feet shoulder-width apart.",
       "Lower your body into a squat position and place your hands on the ground.",
       "Kick your feet back into a high plank position.",
@@ -1131,17 +1131,17 @@ export const ArmIntermedidate:Exercise[] =[
       "Explosively jump up, reaching your arms overhead.",
       "Land softly and immediately go into the next rep."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Engages the full body, including chest, arms, legs, and core.",
       "Boosts cardiovascular endurance and explosive power.",
       "Improves agility, coordination, and functional strength."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Not performing a full push-up, reducing effectiveness.",
       "Letting the hips sag during the plank position.",
       "Landing too hard after the jump, increasing impact on joints."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Inhale as you lower into the squat and kick back.",
       "Exhale as you push up and jump forward.",
       "Maintain a steady rhythm to avoid gasping for air."
@@ -1149,10 +1149,10 @@ export const ArmIntermedidate:Exercise[] =[
   },
   {
     
-    "id": 12,
-    "name": "Arm Scissors",
-    "image": require("../assets/arm_scissors.gif"),
-    "instructions": [
+    id: 12,
+    name: "Arm Scissors",
+    image: require("../assets/arm_scissors.gif"),
+    instructions: [
       "Stand upright with your feet shoulder-width apart.",
       "Extend both arms straight out to the sides at shoulder height.",
       "Cross your arms in front of your chest, overlapping them like scissors.",
@@ -1160,27 +1160,28 @@ export const ArmIntermedidate:Exercise[] =[
       "Maintain a steady pace and engage your shoulders throughout the exercise.",
       "Continue for the desired duration or number of repetitions."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens the shoulders, chest, and upper arms.",
       "Improves arm mobility and endurance.",
       "Enhances flexibility and coordination."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Dropping the arms below shoulder height.",
       "Moving too fast and using momentum instead of controlled movement.",
       "Not fully extending the arms during the motion."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Breathe steadily throughout the movement.",
       "Inhale as you open your arms.",
       "Exhale as you cross your arms in front of your chest."
     ]
   },
+  
   {
-    "id": 13,
-    "name": "Skipping Without Rope",
-    "image": require("../assets/skipping_without_rope.gif"),
-    "instructions": [
+    id: 13,
+    name: "Skipping Without Rope",
+    image: require("../assets/skipping_without_rope.gif"),
+    instructions: [
       "Stand upright with your feet close together and arms at your sides.",
       "Bend your elbows and position your hands as if holding a jump rope.",
       "Jump lightly off the ground, keeping your knees slightly bent.",
@@ -1188,17 +1189,17 @@ export const ArmIntermedidate:Exercise[] =[
       "Land softly on the balls of your feet and immediately jump again.",
       "Maintain a steady rhythm and continue for the desired duration."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Improves cardiovascular endurance and coordination.",
       "Strengthens the calves, legs, and core muscles.",
       "Enhances agility, balance, and footwork."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Jumping too high, which can cause unnecessary impact on joints.",
       "Not using arm movements, reducing the effectiveness of the exercise.",
       "Landing too hard instead of keeping it light and controlled."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Breathe in a steady rhythm to maintain endurance.",
       "Inhale through the nose and exhale through the mouth.",
       "Avoid holding your breath while jumping."
@@ -1267,10 +1268,10 @@ export const ArmAdvanced:Exercise[] =[
     ]
   },
   {
-    "id": 3,
-    "name": "Skipping Without Rope",
-    "image": require("../assets/skipping_without_rope.gif"),
-    "instructions": [
+    id: 3,
+    name: "Skipping Without Rope",
+    image: require("../assets/skipping_without_rope.gif"),
+    instructions: [
       "Stand upright with your feet close together and arms at your sides.",
       "Bend your elbows and position your hands as if holding a jump rope.",
       "Jump lightly off the ground, keeping your knees slightly bent.",
@@ -1278,17 +1279,17 @@ export const ArmAdvanced:Exercise[] =[
       "Land softly on the balls of your feet and immediately jump again.",
       "Maintain a steady rhythm and continue for the desired duration."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Improves cardiovascular endurance and coordination.",
       "Strengthens the calves, legs, and core muscles.",
       "Enhances agility, balance, and footwork."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Jumping too high, which can cause unnecessary impact on joints.",
       "Not using arm movements, reducing the effectiveness of the exercise.",
       "Landing too hard instead of keeping it light and controlled."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Breathe in a steady rhythm to maintain endurance.",
       "Inhale through the nose and exhale through the mouth.",
       "Avoid holding your breath while jumping."
@@ -1322,10 +1323,10 @@ export const ArmAdvanced:Exercise[] =[
     ]
   },
   {
-    "id": 11,
-    "name": "Burpees",
-    "image": require("../assets/burpees.gif"),
-    "instructions": [
+    id: 11,
+    name: "Burpees",
+    image: require("../assets/burpees.gif"),
+    instructions: [
       "Stand upright with your feet shoulder-width apart.",
       "Lower your body into a squat position and place your hands on the ground.",
       "Kick your feet back into a high plank position.",
@@ -1334,71 +1335,71 @@ export const ArmAdvanced:Exercise[] =[
       "Explosively jump up, reaching your arms overhead.",
       "Land softly and immediately go into the next rep."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Engages the full body, including chest, arms, legs, and core.",
       "Boosts cardiovascular endurance and explosive power.",
       "Improves agility, coordination, and functional strength."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Not performing a full push-up, reducing effectiveness.",
       "Letting the hips sag during the plank position.",
       "Landing too hard after the jump, increasing impact on joints."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Inhale as you lower into the squat and kick back.",
       "Exhale as you push up and jump forward.",
       "Maintain a steady rhythm to avoid gasping for air."
     ]
   },
   {
-    "id": 12,
-    "name": "Arm Curls Crunch Left",
-    "image": require("../assets/arm_curls_crunch_left.gif"),
-    "instructions": [
+    id: 12,
+    name: "Arm Curls Crunch Left",
+    image: require("../assets/arm_curls_crunch_left.gif"),
+    instructions: [
       "Lie on your left side with your legs stacked and knees slightly bent.",
       "Place your right hand behind your head and your left arm on the floor for support.",
       "Crunch your upper body by bringing your right elbow towards your right knee.",
       "Engage your core and squeeze your obliques during the movement.",
       "Slowly return to the starting position and repeat for the desired reps."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens obliques and core muscles.",
       "Enhances abdominal definition and stability.",
       "Improves flexibility and side-body engagement."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Using momentum instead of engaging core muscles.",
       "Pulling the neck with the hand instead of using core strength.",
       "Not fully extending the body back to the starting position."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Exhale as you crunch up.",
       "Inhale as you return to the starting position.",
       "Maintain steady breathing to avoid fatigue."
     ]
 },
 {
-  "id": 13,
-  "name": "Arm Curls Crunch Right",
-  "image": require("../assets/arm_curls_crunch_right.gif"),
-  "instructions": [
+  id: 13,
+  name: "Arm Curls Crunch Right",
+  image: require("../assets/arm_curls_crunch_right.gif"),
+  instructions: [
     "Lie on your right side with your legs stacked and knees slightly bent.",
     "Place your left hand behind your head and your right arm on the floor for support.",
     "Crunch your upper body by bringing your left elbow towards your left knee.",
     "Engage your core and squeeze your obliques during the movement.",
     "Slowly return to the starting position and repeat for the desired reps."
   ],
-  "focusAreas": [
+  focusAreas: [
     "Strengthens obliques and core muscles.",
     "Enhances abdominal definition and stability.",
     "Improves flexibility and side-body engagement."
   ],
-  "commonMistakes": [
+  commonMistakes: [
     "Using momentum instead of engaging core muscles.",
     "Pulling the neck with the hand instead of using core strength.",
     "Not fully extending the body back to the starting position."
   ],
-  "breathingTips": [
+  breathingTips: [
     "Exhale as you crunch up.",
     "Inhale as you return to the starting position.",
     "Maintain steady breathing to avoid fatigue."
@@ -1905,7 +1906,120 @@ export const ChestAdvanced:Exercise[] = [
     focusAreas: ["Engages the whole body.", "Targets the calves, quads, shoulders, and core.", "Improves cardiovascular endurance."],
     commonMistakes: ["Not landing softly, which can strain your knees.", "Moving arms and legs out of sync.", "Skipping full range of motion."],
     breathingTips: ["Inhale as you jump and extend your arms.", "Exhale as you return to the starting position.", "Maintain a steady breathing rhythm."]
-  },  
+  }, 
+  {
+    id: 2,
+    name: "Shoulder Stretch",
+    image: require("../assets/shoulder_stretch.gif"),
+    instructions: [
+      "Stand or sit upright with your back straight.",
+      "Extend one arm across your chest at shoulder height.",
+      "Use your opposite hand to gently pull the extended arm closer to your body.",
+      "Hold the stretch for 20-30 seconds while keeping your shoulders relaxed.",
+      "Switch arms and repeat the stretch."
+    ],
+    focusAreas: [
+      "Stretches the shoulders and upper back.",
+      "Improves flexibility and range of motion.",
+      "Helps reduce muscle tension and stiffness."
+    ],
+    commonMistakes: [
+      "Hunching the shoulders instead of keeping them relaxed.",
+      "Holding the breath instead of breathing deeply.",
+      "Pulling too forcefully, causing discomfort."
+    ],
+    breathingTips: [
+      "Inhale deeply before starting the stretch.",
+      "Exhale slowly as you hold the stretch.",
+      "Maintain steady breathing for relaxation and effectiveness."
+    ]
+  },
+  {
+    id: 3,
+    name: "Burpees",
+    image: require("../assets/burpees.gif"),
+    instructions: [
+      "Stand upright with your feet shoulder-width apart.",
+      "Lower your body into a squat position and place your hands on the ground.",
+      "Kick your feet back into a high plank position.",
+      "Perform a push-up by lowering your chest to the floor and pushing back up.",
+      "Jump your feet forward to return to the squat position.",
+      "Explosively jump up, reaching your arms overhead.",
+      "Land softly and immediately go into the next rep."
+    ],
+    focusAreas: [
+      "Engages the full body, including chest, arms, legs, and core.",
+      "Boosts cardiovascular endurance and explosive power.",
+      "Improves agility, coordination, and functional strength."
+    ],
+    commonMistakes: [
+      "Not performing a full push-up, reducing effectiveness.",
+      "Letting the hips sag during the plank position.",
+      "Landing too hard after the jump, increasing impact on joints."
+    ],
+    breathingTips: [
+      "Inhale as you lower into the squat and kick back.",
+      "Exhale as you push up and jump forward.",
+      "Maintain a steady rhythm to avoid gasping for air."
+    ]
+  },
+  {
+    id: 4,
+    name: "Shoulder Stretch",
+    image: require("../assets/shoulder_stretch.gif"),
+    instructions: [
+      "Stand or sit upright with your back straight.",
+      "Extend one arm across your chest at shoulder height.",
+      "Use your opposite hand to gently pull the extended arm closer to your body.",
+      "Hold the stretch for 20-30 seconds while keeping your shoulders relaxed.",
+      "Switch arms and repeat the stretch."
+    ],
+    focusAreas: [
+      "Stretches the shoulders and upper back.",
+      "Improves flexibility and range of motion.",
+      "Helps reduce muscle tension and stiffness."
+    ],
+    commonMistakes: [
+      "Hunching the shoulders instead of keeping them relaxed.",
+      "Holding the breath instead of breathing deeply.",
+      "Pulling too forcefully, causing discomfort."
+    ],
+    breathingTips: [
+      "Inhale deeply before starting the stretch.",
+      "Exhale slowly as you hold the stretch.",
+      "Maintain steady breathing for relaxation and effectiveness."
+    ]
+  },
+  {
+    id: 5,
+    name: "Cobra Stretch",
+    image: require("../assets/cobra_stretch.gif"),
+    instructions: [
+      "Lie face down with your hands under your shoulders.",
+      "Press into your palms and lift your chest off the ground.",
+      "Keep your hips on the floor and stretch your abdomen.",
+      "Hold the position and breathe deeply."
+    ],
+    focusAreas: ["Stretches the lower back and core.", "Improves spinal flexibility.", "Relieves tension in the back."],
+    commonMistakes: ["Overextending the lower back.", "Not engaging the shoulders.", "Holding breath instead of relaxing into the stretch."],
+    breathingTips: ["Inhale deeply as you lift up.", "Exhale while holding the stretch.", "Breathe deeply to relax into the position."]
+  },
+  {
+    id: 6,
+    name: "Cobra Stretch",
+    image: require("../assets/cobra_stretch.gif"),
+    instructions: [
+      "Lie face down with your hands under your shoulders.",
+      "Press into your palms and lift your chest off the ground.",
+      "Keep your hips on the floor and stretch your abdomen.",
+      "Hold the position and breathe deeply."
+    ],
+    focusAreas: ["Stretches the lower back and core.", "Improves spinal flexibility.", "Relieves tension in the back."],
+    commonMistakes: ["Overextending the lower back.", "Not engaging the shoulders.", "Holding breath instead of relaxing into the stretch."],
+    breathingTips: ["Inhale deeply as you lift up.", "Exhale while holding the stretch.", "Breathe deeply to relax into the position."]
+  },
+
+
 ] 
 
 
@@ -2175,6 +2289,11 @@ export const LegIntermediate:Exercise[]= [
   },
  
 ]
+
+export const LegAdvanced:Exercise[] =[
+
+]
+
 export const ShoulderBeginner:Exercise[] =[
   {
     id: 1,
@@ -2273,10 +2392,10 @@ export const ShoulderBeginner:Exercise[] =[
   },
   {
     
-    "id": 5,
-    "name": "Arm Scissors",
-    "image": require("../assets/arm_scissors.gif"),
-    "instructions": [
+    id: 5,
+    name: "Arm Scissors",
+    image: require("../assets/arm_scissors.gif"),
+    instructions: [
       "Stand upright with your feet shoulder-width apart.",
       "Extend both arms straight out to the sides at shoulder height.",
       "Cross your arms in front of your chest, overlapping them like scissors.",
@@ -2284,17 +2403,17 @@ export const ShoulderBeginner:Exercise[] =[
       "Maintain a steady pace and engage your shoulders throughout the exercise.",
       "Continue for the desired duration or number of repetitions."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens the shoulders, chest, and upper arms.",
       "Improves arm mobility and endurance.",
       "Enhances flexibility and coordination."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Dropping the arms below shoulder height.",
       "Moving too fast and using momentum instead of controlled movement.",
       "Not fully extending the arms during the motion."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Breathe steadily throughout the movement.",
       "Inhale as you open your arms.",
       "Exhale as you cross your arms in front of your chest."
@@ -2461,10 +2580,10 @@ export const ShoulderIntermediate:Exercise[] =[
     ]
   },
   {
-    "id": 3,
-    "name": "Floor Tricep Dips",
-    "image": require("../assets/floor_tricep_dips.gif"),
-    "instructions": [
+    id: 3,
+    name: "Floor Tricep Dips",
+    image: require("../assets/floor_tricep_dips.gif"),
+    instructions: [
       "Sit on the floor with your knees bent and feet flat on the ground.",
       "Place your hands behind you, fingers pointing forward, shoulder-width apart.",
       "Press into your palms and lift your hips slightly off the ground.",
@@ -2472,17 +2591,17 @@ export const ShoulderIntermediate:Exercise[] =[
       "Push through your palms to return to the starting position.",
       "Repeat for the desired number of reps."
     ],
-    "focusAreas": [
+    focusAreas: [
       "Strengthens the triceps, shoulders, and chest.",
       "Improves upper body endurance.",
       "Enhances arm and shoulder stability."
     ],
-    "commonMistakes": [
+    commonMistakes: [
       "Letting elbows flare out instead of keeping them close to the body.",
       "Dropping the hips too low instead of focusing on arm movement.",
       "Locking the elbows at the top of the movement."
     ],
-    "breathingTips": [
+    breathingTips: [
       "Inhale as you lower your body down.",
       "Exhale as you push yourself back up.",
       "Maintain steady breathing throughout the movement."
@@ -2703,10 +2822,5 @@ export const ShoulderAdvanced:Exercise[] =[
       "Maintain steady, controlled breaths for better endurance."
   ]
 },
-
-
-
-
-  
 
 ]

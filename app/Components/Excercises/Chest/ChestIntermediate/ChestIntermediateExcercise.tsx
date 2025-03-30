@@ -12,7 +12,7 @@ const ChestIntermediateExcercise = () => {
   return (
       <>
         <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.text_container}>🔥 Chest Intemediate Excercise</Text>
+        <Text style={styles.text_container}>Chest Intemediate Excercise</Text>
         <View style={styles.exercise_container}>
           {ChestIntermediate.map((exercise) => (
             <TouchableOpacity 

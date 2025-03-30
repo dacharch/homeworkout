@@ -10,7 +10,7 @@ const ArmAdvancedExcercise = () => {
   return (
      <>
           <ScrollView contentContainerStyle={styles.container}>
-            <Text style={styles.text_container}>🔥 Arm Intermediate Workout</Text>
+            <Text style={styles.text_container}>Arm Intermediate Workout</Text>
     
             <View style={styles.exercise_container}>
               {ArmAdvanced.map((exercise) => (
