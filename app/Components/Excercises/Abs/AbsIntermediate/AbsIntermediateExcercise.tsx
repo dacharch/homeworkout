@@ -9,7 +9,7 @@ const AbsIntermediateExercise = () => {
   return (
     <>
       <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.text_container}>🔥 Abs Intermediate Workout</Text>
+        <Text style={styles.text_container}>Abs Intermediate Workout</Text>
 
         <View style={styles.exercise_container}>
           {AbsIntermediate.map((exercise) => (
@@ -27,6 +27,10 @@ const AbsIntermediateExercise = () => {
             </TouchableOpacity>
           ))}
         </View>
+
+        <Pressable style={styles.button}>
+           <Text style={styles.buttonText}>Start the Excercise</Text>
+        </Pressable>
       </ScrollView>
 
       {/* Modal for Exercise Details */}
@@ -85,6 +89,28 @@ const styles = StyleSheet.create({
     backgroundColor: "#1C1C1E",
     padding: 20,
     alignItems: "center",
+  },
+
+  button:{
+     backgroundColor:"#FF9500",
+     paddingVertical:14,
+     paddingHorizontal:20,
+     borderRadius:12,
+     alignItems:"center",
+     width:"80%",
+     marginTop:20,
+     shadowColor:"#FF9500",
+     shadowOffset:{width:0,height:4},
+     shadowOpacity:0.6,
+     shadowRadius:6,
+     elevation:8,
+  },
+  buttonText:{
+     color:"#1C1C1E",
+     fontSize:18,
+     fontWeight:"bold",
+     textTransform:'uppercase',
+     letterSpacing:1.2,
   },
   text_container: {
     textAlign: "center",

@@ -4,12 +4,12 @@ import { Exercise, AbsAdvanced } from "../../../../data/constant";
 import {Image} from 'expo-image'
 
 
-const AbsAdvannced = () => {
+const AbsAdvancedExcercise = () => {
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);  
   return (
      <>
         <ScrollView contentContainerStyle={styles.container}>
-            <Text style={styles.text_container}>🔥 Abs Advanced Workout</Text>
+            <Text style={styles.text_container}> Abs Advanced Workout</Text>
 
             <View style={styles.exercise_container}>
                {
@@ -32,8 +32,12 @@ const AbsAdvannced = () => {
                 ))
                }
             </View>
+
+             <Pressable style={styles.button}>
+                     <Text style={styles.buttonText}>Start the Exercise</Text>
+             </Pressable>
+
         </ScrollView>
-        {/*Modal Excercise View*/}
            <Modal
                 visible={!!selectedExercise}
                 animationType="slide"
@@ -68,10 +72,10 @@ const AbsAdvannced = () => {
                             <Text key={index} style={styles.modalText}>• {tip}</Text>
                           ))}
                         </ScrollView>
-        
-                        <Pressable style={styles.closeButton} onPress={() => setSelectedExercise(null)}>
-                          <Text style={styles.closeButtonText}>Close</Text>
-                        </Pressable>
+                          <Pressable style={styles.closeButton} onPress={() => setSelectedExercise(null)}>
+                                  <Text style={styles.closeButtonText}>Close</Text>
+                          </Pressable> 
+                        
                       </>
                     )}
                   </View>
@@ -80,7 +84,7 @@ const AbsAdvannced = () => {
      </>
   )
 }
-export default AbsAdvannced
+export default AbsAdvancedExcercise
 
 const styles = StyleSheet.create({
   container: {
@@ -89,6 +93,30 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: "center",
   },
+
+  button:{
+    backgroundColor: "#FF9500",
+    paddingVertical: 14,
+    paddingHorizontal: 20,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+    width: "80%",
+    marginTop: 20,
+    shadowColor: "#FF9500",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.6,
+    shadowRadius: 6,
+    elevation: 8,
+  },
+  buttonText:{
+    color:"#1C1C1E",
+    fontSize:18,
+    fontWeight:"bold",
+    textTransform:'uppercase',
+    letterSpacing:1.2,
+  },
+
   text_container: {
     textAlign: "center",
     fontWeight: "bold",

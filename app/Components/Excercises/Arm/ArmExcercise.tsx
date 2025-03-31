@@ -30,7 +30,7 @@ const AbsExercise: React.FC<AbsExerciseProps> = ({ setComponent }) => {
     <>
       {switchComponent === "" ? (
         <View style={styles.container}>
-          <Text style={styles.text_container}>💪 Arm Workout</Text>
+          <Text style={styles.text_container}>Arm Workout</Text>
 
           <View style={styles.box_flex_container}>
             <TouchableOpacity

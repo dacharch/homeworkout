@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import AbsBeginnerExcercise from "./AbsBeginner/AbsBeginnerExcercise";
 import AbsIntermediateExcercise from "./AbsIntermediate/AbsIntermediateExcercise";
-import AbsAdvannced from "./AbsAdvanced/AbsAdvannced";
+import AbsAdvannced from "./AbsAdvanced/AbsAdvancedExcercise";
 
 interface AbsExerciseProps {
   setComponent: (component: string) => void;
