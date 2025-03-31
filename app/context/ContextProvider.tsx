@@ -2,30 +2,29 @@ import React, { createContext, useContext, useState, ReactNode } from "react";
 
 interface AppContextType {
   points: number;
-  increasePoints: (value: number) => void;
-  excerise:string,
-  setExcercise:(value:string) =>void ;
+  setPoints: (value:number)=>void;
+  excerise: string;
+  setExcercise: (value: string) => void;
+  currentIndex:number,
+  setCurrentIndex:(value:number) =>void ;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [points, setPoints] = useState(0);
-  const[excerise,setExcercise] = useState("") ;
+  const [excerise, setExcercise] = useState("");
+  const[currentIndex,setCurrentIndex] =useState(0) ;
 
-
-  const increasePoints = (value: number) => {
-    setPoints((prev) => prev + value);
-  };
+ 
 
   return (
-    <AppContext.Provider value={{ points, increasePoints,excerise,setExcercise }}>
+    <AppContext.Provider value={{ points, setPoints, excerise, setExcercise,currentIndex,setCurrentIndex }}>
       {children}
     </AppContext.Provider>
   );
 };
 
-// Custom hook for easy access
 export const useAppContext = () => {
   const context = useContext(AppContext);
   if (!context) {
