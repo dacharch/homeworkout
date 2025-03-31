@@ -1,24 +1,26 @@
 import { Tabs } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
+import { AppProvider } from "../context/ContextProvider";
 
 export default function TabLayout() {
   return (
-    <Tabs
+    <AppProvider>
+         <Tabs
       screenOptions={{
-        tabBarActiveTintColor: "#4A90E2", // Active tab icon color
-        tabBarInactiveTintColor: "#b0b0b0", // Inactive tab icon color
+        tabBarActiveTintColor: "#4A90E2", 
+        tabBarInactiveTintColor: "#b0b0b0", 
         tabBarStyle: {
-          backgroundColor: "#1e1e1e", // Dark background
+          backgroundColor: "#1e1e1e", 
           borderTopWidth: 1,
-          borderTopColor: "#333", // Subtle border
+          borderTopColor: "#333", 
           height: 60,
           paddingBottom: 8,
           paddingTop: 8,
         },
-        headerShown: false, // Hide header
+        headerShown: false, 
       }}
     >
-      {/* Training Tab */}
+  
       <Tabs.Screen
         name="index"
         options={{
@@ -29,7 +31,6 @@ export default function TabLayout() {
         }}
       />
 
-      {/* Game Tab */}
       <Tabs.Screen
         name="Game"
         options={{
@@ -40,7 +41,7 @@ export default function TabLayout() {
         }}
       />
 
-      {/* Settings Tab */}
+
       <Tabs.Screen
         name="Setting"
         options={{
@@ -51,5 +52,8 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+
+    </AppProvider>
+   
   );
 }
