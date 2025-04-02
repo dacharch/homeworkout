@@ -1454,7 +1454,7 @@ export const  ChestBeginner:Exercise[] =[
     ]
   },
   {
-    id: 2,
+    id: 3,
     name: "Push-Ups",
     image: require("../assets/push_ups.gif"),
     instructions: [
@@ -1478,33 +1478,6 @@ export const  ChestBeginner:Exercise[] =[
       "Inhale as you lower your body.",
       "Exhale as you push back up.",
       "Maintain steady breathing to avoid early fatigue."
-    ]
-  },
-  {
-    id: 3,
-    name: "Wide Arm Push-Ups",
-    image: require("../assets/wide_arm_push_ups.gif"),
-    instructions: [
-      "Start in a high plank position with your hands placed wider than shoulder-width apart.",
-      "Engage your core and keep your body in a straight line from head to heels.",
-      "Lower your chest toward the floor by bending your elbows outward.",
-      "Push back up to the starting position by fully extending your arms.",
-      "Repeat for the desired number of repetitions."
-    ],
-    focusAreas: [
-      "Targets the chest muscles more intensely.",
-      "Engages the shoulders and triceps.",
-      "Improves upper body strength and endurance."
-    ],
-    commonMistakes: [
-      "Allowing the hips to sag or rise too high.",
-      "Not maintaining a straight body posture.",
-      "Failing to lower the chest enough for a full range of motion."
-    ],
-    breathingTips: [
-      "Inhale as you lower your body.",
-      "Exhale as you push back up.",
-      "Keep a steady breathing rhythm to maintain endurance."
     ]
   },
   {
@@ -1536,6 +1509,33 @@ export const  ChestBeginner:Exercise[] =[
   },
   {
     id: 5,
+    name: "Wide Arm Push-Ups",
+    image: require("../assets/wide_arm_push_ups.gif"),
+    instructions: [
+      "Start in a high plank position with your hands placed wider than shoulder-width apart.",
+      "Engage your core and keep your body in a straight line from head to heels.",
+      "Lower your chest toward the floor by bending your elbows outward.",
+      "Push back up to the starting position by fully extending your arms.",
+      "Repeat for the desired number of repetitions."
+    ],
+    focusAreas: [
+      "Targets the chest muscles more intensely.",
+      "Engages the shoulders and triceps.",
+      "Improves upper body strength and endurance."
+    ],
+    commonMistakes: [
+      "Allowing the hips to sag or rise too high.",
+      "Not maintaining a straight body posture.",
+      "Failing to lower the chest enough for a full range of motion."
+    ],
+    breathingTips: [
+      "Inhale as you lower your body.",
+      "Exhale as you push back up.",
+      "Keep a steady breathing rhythm to maintain endurance."
+    ]
+  },
+  {
+    id: 6,
     name: "Triceps Dips",
     image: require("../assets/triceps_dips.gif"),
     instructions: [
@@ -1562,7 +1562,7 @@ export const  ChestBeginner:Exercise[] =[
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: "Incline Push-ups",
     image: require("../assets/incline_push_ups.gif"),
     instructions: [
@@ -1589,7 +1589,7 @@ export const  ChestBeginner:Exercise[] =[
     ]
   },
   {
-    id: 7,
+    id: 8,
     name: "Knee Push-Ups",
     image: require("../assets/knee_push_ups.gif"),
     instructions: [
@@ -1616,7 +1616,7 @@ export const  ChestBeginner:Exercise[] =[
     ]
   },
   {
-    id: 8,
+    id: 9,
     name: "Cobra Stretch",
     image: require("../assets/cobra_stretch.gif"),
     instructions: [
@@ -1630,7 +1630,7 @@ export const  ChestBeginner:Exercise[] =[
     breathingTips: ["Inhale deeply as you lift up.", "Exhale while holding the stretch.", "Breathe deeply to relax into the position."]
   },
   {
-    id: 9,
+    id: 10,
     name: "Chest Stretch",
     image: require("../assets/chest_stretch.gif"),
     instructions: [
@@ -1755,7 +1755,7 @@ export const ChestIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Hindu Push-Ups",
     image: require("../assets/hindu_push_ups.gif"),
     instructions: [
@@ -1782,7 +1782,7 @@ export const ChestIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: "Staggered Push-Ups",
     image: require("../assets/staggered_push_ups.gif"),
     instructions: [
@@ -1809,7 +1809,7 @@ export const ChestIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: "Knee Push-Ups",
     image: require("../assets/knee_push_ups.gif"),
     instructions: [
@@ -1836,7 +1836,7 @@ export const ChestIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 7,
+    id: 8,
     name: "Shoulder Stretch",
     image: require("../assets/shoulder_stretch.gif"),
     instructions: [
@@ -1863,7 +1863,7 @@ export const ChestIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 8,
+    id: 9,
     name: "Shoulder Stretch",
     image: require("../assets/shoulder_stretch.gif"),
     instructions: [

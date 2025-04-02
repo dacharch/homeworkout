@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Modal } from 'react-native';
-import { ArmAdvanced } from '@/app/data/constant';
+import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal } from 'react-native';
+import { ChestBeginner } from '@/app/data/constant';
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
 import { useAppContext } from '@/app/context/ContextProvider';
 
-const ArmAdvancedGame = () => {
+const ArmBeginnerGame = () => {
   const [timer, setTimer] = useState(30);
   const [key, setKey] = useState(0); 
   const { points, setPoints, currentIndex, setCurrentIndex } = useAppContext();
@@ -22,7 +22,7 @@ const ArmAdvancedGame = () => {
 
   const handleNextExercise = () => {
     setPoints(points + 10);
-    if (currentIndex < ArmAdvancedGame.length - 1) {
+    if (currentIndex < ArmBeginnerGame.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setTimer(30);
       setKey((prev) => prev + 1);
@@ -37,10 +37,10 @@ const ArmAdvancedGame = () => {
       <View style={styles.card} key={key}>         
         <Image 
           key={currentIndex}
-          source={ArmAdvanced[currentIndex].image} 
+          source={ChestBeginner[currentIndex].image} 
           style={styles.image} 
         />
-        <Text style={styles.exerciseName}>{ArmAdvanced[currentIndex].name}</Text>
+        <Text style={styles.exerciseName}>{ChestBeginner[currentIndex].name}</Text>
       </View>
 
       {/* Timer with Progress Bar */}
@@ -84,7 +84,7 @@ const ArmAdvancedGame = () => {
   );
 };
 
-export default ArmAdvancedGame;
+export default ArmBeginnerGame;
 
 const styles = StyleSheet.create({
   container2: {

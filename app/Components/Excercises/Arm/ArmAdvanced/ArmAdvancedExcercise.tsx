@@ -17,7 +17,7 @@ const ArmAdvancedExcercise = () => {
      router.push("/Game") ;
   }
 
-  
+
   return (
      <>
           <ScrollView contentContainerStyle={styles.container}>
@@ -43,9 +43,7 @@ const ArmAdvancedExcercise = () => {
                   <Text style={styles.buttonText}>Start the Excercise</Text>
             </Pressable>
           </ScrollView>
-    
-          {/* Modal for Exercise Details */}
-          
+            
           <Modal
             visible={!!selectedExercise}
             animationType="slide"

@@ -7,6 +7,8 @@ import AbsAdvancedGame from '../Components/GameExcercises/AbsGame/AbsAdvancedGam
 import ArmBeginnerGame from '../Components/GameExcercises/ArmGame/ArmBeginnerGame/ArmBeginnerGame';
 import ArmIntermediateGame from '../Components/GameExcercises/ArmGame/ArmIntermediateGame/ArmIntermediateGame';
 import ArmAdvancedGame from '../Components/GameExcercises/ArmGame/ArmAdavancedGame/ArmAdvancedGame';
+import ChestBeginnerGame from '../Components/GameExcercises/ChestGame/ChestBeginnerGame/ChestBeginnerGame';
+import ChestIntermediateGame from '../Components/GameExcercises/ChestGame/ChestIntermediateGame/ChestIntermediateGame';
 
 const Game = () => {
   const { points } = useAppContext();
@@ -29,7 +31,12 @@ const Game = () => {
       
       case "Arm Advanced" :
           return <ArmAdvancedGame/>
-      
+
+      case "Chest Beginner" :
+          return <ChestBeginnerGame/>
+
+      case "Chest Intermediate" :
+          return <ChestIntermediateGame/>
       default:
         return null;
     }
