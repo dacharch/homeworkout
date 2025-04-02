@@ -2,6 +2,10 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useAppContext } from '../context/ContextProvider';
 import AbsBeginnerGame from '../Components/GameExcercises/AbsGame/AbsBeginnerGame/AbsBeginnerGame';
+import AbsIntermediateGame from '../Components/GameExcercises/AbsGame/AbsIntermediate/AbsIntermediateGame';
+import AbsAdvancedGame from '../Components/GameExcercises/AbsGame/AbsAdvancedGame/AbsAdvancedGame';
+import ArmBeginnerGame from '../Components/GameExcercises/ArmGame/ArmBeginnerGame/ArmBeginnerGame';
+import ArmIntermediateGame from '../Components/GameExcercises/ArmGame/ArmIntermediateGame/ArmIntermediateGame';
 
 const Game = () => {
   const { points } = useAppContext();
@@ -11,6 +15,21 @@ const Game = () => {
     switch (excerise) {
       case "Abs Beginner":
         return <AbsBeginnerGame />;
+      case "Abs Intermediate": 
+         return <AbsIntermediateGame/>
+      case "Abs Advanced" :
+         return <AbsAdvancedGame/>
+      
+      case "Arm Beginner" :
+          return <ArmBeginnerGame/>
+
+      case "Arm Intermediate" :
+          return <ArmIntermediateGame/>
+      
+      case "Arm Advanced" :
+          return <ArmAdvancedGame/>
+
+      
       default:
         return null;
     }

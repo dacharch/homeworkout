@@ -7,15 +7,16 @@ import { useRouter } from "expo-router";
 
 const AbsBeginnerExercise = () => {
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
+  
   const{excerise,setExcercise} =useAppContext() ;
   const router = useRouter() ;
-
-
+  
   const AbsBeginnerGameSetup = () =>{
     setExcercise("Abs Beginner")
     router.push('/Game') ;
   
   }
+
   return (
     <>
       <ScrollView contentContainerStyle={styles.container}>

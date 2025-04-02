@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal } from 'react-native';
-import { AbsBeginner } from '@/app/data/constant';
+import { AbsIntermediate } from '@/app/data/constant';
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
 import { useAppContext } from '@/app/context/ContextProvider';
 
-const AbsBeginnerGame = () => {
+const AbsIntermediateGame = () => {
   const [timer, setTimer] = useState(30);
   const [key, setKey] = useState(0); 
   const { points, setPoints, currentIndex, setCurrentIndex } = useAppContext();
@@ -22,7 +22,7 @@ const AbsBeginnerGame = () => {
 
   const handleNextExercise = () => {
     setPoints(points + 10);
-    if (currentIndex < AbsBeginner.length - 1) {
+    if (currentIndex < AbsIntermediate.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setTimer(30);
       setKey((prev) => prev + 1);
@@ -37,10 +37,10 @@ const AbsBeginnerGame = () => {
       <View style={styles.card} key={key}>         
         <Image 
           key={currentIndex}
-          source={AbsBeginner[currentIndex].image} 
+          source={AbsIntermediate[currentIndex].image} 
           style={styles.image} 
         />
-        <Text style={styles.exerciseName}>{AbsBeginner[currentIndex].name}</Text>
+        <Text style={styles.exerciseName}>{AbsIntermediate[currentIndex].name}</Text>
       </View>
 
       {/* Timer with Progress Bar */}
@@ -84,7 +84,7 @@ const AbsBeginnerGame = () => {
   );
 };
 
-export default AbsBeginnerGame;
+export default AbsIntermediateGame;
 
 const styles = StyleSheet.create({
   container2: {

@@ -2,9 +2,19 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Modal, Pressable } from "react-native";
 import { Exercise, ArmBeginner } from "../../../../data/constant";
 import { Image } from "expo-image";
+import { useAppContext } from "@/app/context/ContextProvider";
+import { useRouter } from "expo-router";
 
 const ArmBeginnerExcercise = () => {
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
+  const {excerise,setExcercise} = useAppContext() ;
+  const router =useRouter() ;
+
+  const ArmBeginnerGameSetup = () =>{
+    setExcercise("Arm Beginner") ;
+    router.push('/Game') ;
+
+  }
 
   return (
     <>
@@ -27,9 +37,8 @@ const ArmBeginnerExcercise = () => {
             </TouchableOpacity>
           ))}
         </View>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={ArmBeginnerGameSetup}>
            <Text style={styles.buttonText}>Start the Excercise</Text>
-            
         </Pressable>
       </ScrollView>
 
