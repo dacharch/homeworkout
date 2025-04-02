@@ -2,10 +2,18 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Modal, Pressable } from "react-native";
 import { Exercise, ArmIntermedidate } from "../../../../data/constant";
 import { Image } from "expo-image";
+import { useAppContext } from "@/app/context/ContextProvider";
+import { useRouter } from "expo-router";
 
 const ArmIntermedidateExcercise = () => {
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
-
+  const {setExcercise} =useAppContext() ;
+  const router = useRouter()  ;
+  const ArmIntermedidateGameSetup = ()  =>{
+    setExcercise("Arm Intermediate") ;
+    router.push("/Game")
+      
+ }
   return (
     <>
       <ScrollView contentContainerStyle={styles.container}>
@@ -28,7 +36,7 @@ const ArmIntermedidateExcercise = () => {
           ))}
         </View>
 
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={ArmIntermedidateGameSetup}>
              <Text style={styles.buttonText}>Start the Excercise</Text>
         </Pressable>
       </ScrollView>

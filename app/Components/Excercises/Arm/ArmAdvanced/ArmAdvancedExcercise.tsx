@@ -2,10 +2,21 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Modal, Pressable } from "react-native";
 import { Exercise, ArmAdvanced } from "../../../../data/constant";
 import { Image } from "expo-image";
+import { useAppContext } from "@/app/context/ContextProvider";
+import { useRouter } from "expo-router";
 
 
 const ArmAdvancedExcercise = () => {
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
+  
+  const {setExcercise} = useAppContext() ;
+  const router = useRouter();
+
+  const ArmAdvancedGameSetup = () =>{
+     setExcercise("Arm Advanced") ;
+     router.push("/Game") ;
+  }
+
   
   return (
      <>
@@ -28,7 +39,7 @@ const ArmAdvancedExcercise = () => {
                 </TouchableOpacity>
               ))}
             </View>
-            <Pressable style={styles.button}>
+            <Pressable style={styles.button} onPress={ArmAdvancedGameSetup}>
                   <Text style={styles.buttonText}>Start the Excercise</Text>
             </Pressable>
           </ScrollView>

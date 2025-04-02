@@ -6,6 +6,7 @@ import AbsIntermediateGame from '../Components/GameExcercises/AbsGame/AbsInterme
 import AbsAdvancedGame from '../Components/GameExcercises/AbsGame/AbsAdvancedGame/AbsAdvancedGame';
 import ArmBeginnerGame from '../Components/GameExcercises/ArmGame/ArmBeginnerGame/ArmBeginnerGame';
 import ArmIntermediateGame from '../Components/GameExcercises/ArmGame/ArmIntermediateGame/ArmIntermediateGame';
+import ArmAdvancedGame from '../Components/GameExcercises/ArmGame/ArmAdavancedGame/ArmAdvancedGame';
 
 const Game = () => {
   const { points } = useAppContext();
@@ -28,7 +29,6 @@ const Game = () => {
       
       case "Arm Advanced" :
           return <ArmAdvancedGame/>
-
       
       default:
         return null;
