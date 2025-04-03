@@ -15,9 +15,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [points, setPoints] = useState(0);
   const [excerise, setExcercise] = useState("");
   const[currentIndex,setCurrentIndex] =useState(0) ;
-
- 
-
   return (
     <AppContext.Provider value={{ points, setPoints, excerise, setExcercise,currentIndex,setCurrentIndex }}>
       {children}

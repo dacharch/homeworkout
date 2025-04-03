@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import {View,Text,StyleSheet,ScrollView,
-    Modal,Pressable,TouchableOpacity} from 'react-native'
+import {View,Text,StyleSheet,ScrollView, Modal,Pressable,TouchableOpacity} from 'react-native'
 import { Exercise, ChestBeginner } from "../../../../data/constant";
 import {Image} from 'expo-image' ;
 import { useAppContext } from '@/app/context/ContextProvider';
