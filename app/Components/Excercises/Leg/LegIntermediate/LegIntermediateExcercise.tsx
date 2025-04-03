@@ -3,11 +3,23 @@ import {View,Text,StyleSheet,ScrollView, Modal,Pressable,TouchableOpacity} from 
 import { Exercise, LegIntermediate } from "../../../../data/constant";
 import {Image} from 'expo-image' ;
 import { useState } from 'react';
+import { useAppContext } from '@/app/context/ContextProvider';
+import { useRouter } from 'expo-router';
 
 const LegIntermediateExcercise = () => {
    
    const [selectedExercise,setSelectedExercise] = useState<Exercise| null>(null)
-    return (
+   
+   const {setExcercise} =useAppContext() ;
+   const router = useRouter() ;
+
+   const  LegIntermediateGameSetup = () =>{
+      setExcercise("Leg Intermediate") 
+      router.push("/Game") ;
+       
+   }
+  
+   return (
         <>
           <ScrollView contentContainerStyle={styles.container}>
           <Text style={styles.text_container}>🔥 Chest Beginner Workout</Text>
@@ -28,7 +40,7 @@ const LegIntermediateExcercise = () => {
           </TouchableOpacity>
         ))}
       </View>
-      <Pressable style={styles.button}>
+      <Pressable style={styles.button} onPress={LegIntermediateGameSetup}>
           <Text style={styles.buttonText}> Start the Exercise</Text>
       </Pressable>
     </ScrollView>

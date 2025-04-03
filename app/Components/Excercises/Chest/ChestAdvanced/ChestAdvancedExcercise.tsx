@@ -4,12 +4,22 @@ import {View,Text,StyleSheet,ScrollView,
 import { Exercise, ChestAdvanced } from "../../../../data/constant";
 import { useState } from 'react';
 import {Image} from 'expo-image' ;
+import { useAppContext } from '@/app/context/ContextProvider';
+import { useRouter } from 'expo-router';
 
 
 
 const ChestAdvancedExcercise = () => {
   const [selectedExercise,setSelectedExercise] = useState<Exercise| null>(null)
-  
+  const {setExcercise} =useAppContext() ;
+  const router = useRouter() ;
+
+  const  ChestAdvancedGameSetup = () =>{
+       setExcercise("Chest Advanced") ;
+       router.push("/Game") ;
+  }
+
+
   return (
       <>
           <ScrollView contentContainerStyle={styles.container}>
@@ -31,7 +41,7 @@ const ChestAdvancedExcercise = () => {
             </TouchableOpacity>
           ))}
         </View>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={ChestAdvancedGameSetup}>
              <Text style={styles.buttonText}> Start the Excercise</Text>
         </Pressable>
       </ScrollView>
