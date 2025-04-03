@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Modal } from 'react-native';
 import { ShoulderAdvanced } from '@/app/data/constant';
 import { Image } from 'expo-image';
@@ -29,7 +29,6 @@ const ShoulderAdvancedGame = () => {
     } else {
       setModalVisible(true);
     }
-    
   };
 
   return (

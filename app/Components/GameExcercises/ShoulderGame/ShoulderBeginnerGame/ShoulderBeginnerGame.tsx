@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Modal } from 'react-native';
-import { ChestAdvanced } from '@/app/data/constant';
+import { ShoulderBeginner } from '@/app/data/constant';
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
 import { useAppContext } from '@/app/context/ContextProvider';
 
-const ChestAdvancedGame = () => {
+const ShoulderBeginnerGame = () => {
   const [timer, setTimer] = useState(30);
   const [key, setKey] = useState(0); 
   const { points, setPoints, currentIndex, setCurrentIndex } = useAppContext();
@@ -22,7 +22,7 @@ const ChestAdvancedGame = () => {
 
   const handleNextExercise = () => {
     setPoints(points + 10);
-    if (currentIndex < ChestAdvancedGame.length - 1) {
+    if (currentIndex < ShoulderBeginner.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setTimer(30);
       setKey((prev) => prev + 1);
@@ -37,10 +37,10 @@ const ChestAdvancedGame = () => {
       <View style={styles.card} key={key}>         
         <Image 
           key={currentIndex}
-          source={ChestAdvanced[currentIndex].image} 
+          source={ShoulderBeginner[currentIndex].image} 
           style={styles.image} 
         />
-        <Text style={styles.exerciseName}>{ChestAdvanced[currentIndex].name}</Text>
+        <Text style={styles.exerciseName}>{ShoulderBeginner[currentIndex].name}</Text>
       </View>
 
       {/* Timer with Progress Bar */}
@@ -84,7 +84,7 @@ const ChestAdvancedGame = () => {
   );
 };
 
-export default ChestAdvancedGame;
+export default ShoulderBeginnerGame;
 
 const styles = StyleSheet.create({
   container2: {

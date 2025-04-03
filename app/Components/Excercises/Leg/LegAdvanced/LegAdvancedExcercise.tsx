@@ -2,9 +2,20 @@ import React, { useState } from 'react'
 import { View,Text,StyleSheet,TouchableOpacity,ScrollView,Modal,Pressable } from 'react-native'
 import { LegAdvanced,Exercise } from '../../../../data/constant'
 import {Image} from 'expo-image'
+import { useRouter } from 'expo-router'
+import { useAppContext } from '@/app/context/ContextProvider'
 
 const LegAdvancedExcercise = () => {
   const [selectedExercise,setSelectedExercise] = useState<Exercise|null>(null) ;
+  const router = useRouter() ;
+  const {setExcercise}  = useAppContext() ;
+
+  const LegAdvancedGameSetup = () =>{
+     setExcercise("Leg Advanced") ;
+     router.push("/Game") ;
+  }
+
+
   return (
      <>
           <>
@@ -27,7 +38,7 @@ const LegAdvancedExcercise = () => {
                      </TouchableOpacity>
                    ))}
                  </View>
-                 <Pressable style={styles.button}>
+                 <Pressable style={styles.button} onPress={LegAdvancedGameSetup}>
                      <Text style={styles.buttonText}> Start the Excercise</Text>
                  </Pressable>
                </ScrollView>

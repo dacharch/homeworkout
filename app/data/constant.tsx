@@ -1066,7 +1066,7 @@ export const ArmIntermedidate:Exercise[] =[
     ]
   },
   {
-    id: 9,
+    id: 7,
     name: "Leg Barbell Curl (Right Leg)",
     image: require("../assets/leg_barbell_curl_right.gif"),
     instructions: [
@@ -1094,7 +1094,7 @@ export const ArmIntermedidate:Exercise[] =[
   },
 
   {
-    id: 10,
+    id: 8,
     name: "Push-Ups",
     image: require("../assets/push_ups.gif"),
     instructions: [
@@ -1121,7 +1121,7 @@ export const ArmIntermedidate:Exercise[] =[
     ]
   },
   {
-    id: 11,
+    id: 9,
     name: "Burpees",
     image: require("../assets/burpees.gif"),
     instructions: [
@@ -1151,7 +1151,7 @@ export const ArmIntermedidate:Exercise[] =[
   },
   {
     
-    id: 12,
+    id: 10,
     name: "Arm Scissors",
     image: require("../assets/arm_scissors.gif"),
     instructions: [
@@ -1180,7 +1180,7 @@ export const ArmIntermedidate:Exercise[] =[
   },
   
   {
-    id: 13,
+    id: 11,
     name: "Skipping Without Rope",
     image: require("../assets/skipping_without_rope.gif"),
     instructions: [
@@ -1207,12 +1207,9 @@ export const ArmIntermedidate:Exercise[] =[
       "Avoid holding your breath while jumping."
     ]
   }
-  
-  
-  
-  
-
 ]
+
+
 export const ArmAdvanced:Exercise[] =[
 
   {
@@ -1298,7 +1295,7 @@ export const ArmAdvanced:Exercise[] =[
     ]
   },
   {
-    id: 9,
+    id: 4,
     name: "Leg Barbell Curl (Right Leg)",
     image: require("../assets/leg_barbell_curl_right.gif"),
     instructions: [
@@ -1325,7 +1322,7 @@ export const ArmAdvanced:Exercise[] =[
     ]
   },
   {
-    id: 11,
+    id: 5,
     name: "Burpees",
     image: require("../assets/burpees.gif"),
     instructions: [
@@ -1354,7 +1351,7 @@ export const ArmAdvanced:Exercise[] =[
     ]
   },
   {
-    id: 12,
+    id: 6,
     name: "Arm Curls Crunch Left",
     image: require("../assets/arm_curls_crunch_left.gif"),
     instructions: [
@@ -1381,7 +1378,7 @@ export const ArmAdvanced:Exercise[] =[
     ]
 },
 {
-  id: 13,
+  id: 7,
   name: "Arm Curls Crunch Right",
   image: require("../assets/arm_curls_crunch_right.gif"),
   instructions: [
@@ -2407,7 +2404,7 @@ export const LegAdvanced:Exercise[] =[
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Glute Kickback Left",
     image: require("../assets/glute_kick_back_left.gif"), // Ensure correct path
     instructions: [
@@ -2434,7 +2431,7 @@ export const LegAdvanced:Exercise[] =[
     ]
   },
   {
-    id: 4,
+    id: 6,
     name: "Glute Kickback Right",
     image: require("../assets/glute_kick_back_right.gif"), // Ensure correct path
     instructions: [
@@ -2461,7 +2458,7 @@ export const LegAdvanced:Exercise[] =[
     ]
   },
   {
-    id: 5,
+    id: 7,
     name: "Wall Sit",
     image: require("../assets/wall_sit.gif"), // Ensure correct path
     instructions: [
@@ -2488,7 +2485,7 @@ export const LegAdvanced:Exercise[] =[
     ]
   },
   {
-    id: 6,
+    id: 8,
     name: "Leaning Stretcher Raises",
     image: require("../assets/leaning_stretcher_raises.gif"), 
     instructions: [
@@ -2810,7 +2807,7 @@ export const ShoulderIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: "Floor Tricep Dips",
     image: require("../assets/floor_tricep_dips.gif"),
     instructions: [
@@ -2838,7 +2835,7 @@ export const ShoulderIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 4,
+    id:5,
     name: "Side-Lying Floor Stretch (Left)",
     image: require("../assets/side_lying_floor_stretch_left.gif"),
     instructions: [
@@ -2865,7 +2862,7 @@ export const ShoulderIntermediate:Exercise[] =[
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: "Side Lying Floor Stretch Right",
     image: require("../assets/side_lying_floor_stretch_right.gif"),
     instructions: [

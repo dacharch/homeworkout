@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Modal } from 'react-native';
-import { LegIntermediate } from '@/app/data/constant';
+import { LegAdvanced } from '@/app/data/constant';
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
 import { useAppContext } from '@/app/context/ContextProvider';
 
-const LegIntermediateGame = () => {
+const LegAdvancedGame = () => {
   const [timer, setTimer] = useState(30);
   const [key, setKey] = useState(0); 
   const { points, setPoints, currentIndex, setCurrentIndex } = useAppContext();
@@ -22,7 +22,7 @@ const LegIntermediateGame = () => {
 
   const handleNextExercise = () => {
     setPoints(points + 10);
-    if (currentIndex < LegIntermediate.length - 1) {
+    if (currentIndex < LegAdvanced.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setTimer(30);
       setKey((prev) => prev + 1);
@@ -37,10 +37,10 @@ const LegIntermediateGame = () => {
       <View style={styles.card} key={key}>         
         <Image 
           key={currentIndex}
-          source={LegIntermediate[currentIndex].image} 
+          source={LegAdvanced[currentIndex].image} 
           style={styles.image} 
         />
-        <Text style={styles.exerciseName}>{LegIntermediate[currentIndex].name}</Text>
+        <Text style={styles.exerciseName}>{LegAdvanced[currentIndex].name}</Text>
       </View>
 
       {/* Timer with Progress Bar */}
@@ -84,7 +84,7 @@ const LegIntermediateGame = () => {
   );
 };
 
-export default LegIntermediateGame;
+export default LegAdvancedGame;
 
 const styles = StyleSheet.create({
   container2: {

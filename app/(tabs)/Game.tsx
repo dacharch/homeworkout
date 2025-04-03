@@ -10,7 +10,13 @@ import ArmAdvancedGame from '../Components/GameExcercises/ArmGame/ArmAdavancedGa
 import ChestBeginnerGame from '../Components/GameExcercises/ChestGame/ChestBeginnerGame/ChestBeginnerGame';
 import ChestIntermediateGame from '../Components/GameExcercises/ChestGame/ChestIntermediateGame/ChestIntermediateGame';
 import LegBeginnerGame from '../Components/GameExcercises/LegGame/LegBeginnerGame/LegBeginnerGame';
+import LegIntermediateGame from '../Components/GameExcercises/LegGame/LegIntermediateGame/LegIntermediateGame';
 import ChestAdvancedGame from '../Components/GameExcercises/LegGame/LegBeginnerGame/LegBeginnerGame';
+import LegAdvancedGame from '../Components/GameExcercises/LegGame/LegAdvancedGame/LegAdvancedGame';
+import ShoulderBeginnerGame from '../Components/GameExcercises/ShoulderGame/ShoulderBeginnerGame/ShoulderBeginnerGame';
+import ShoulderIntermediateGame from '../Components/GameExcercises/ShoulderGame/ShoulderIntermediateGame/ShoulderIntermediateGame';
+import ShoulderAdvancedGame from '../Components/GameExcercises/ShoulderGame/ShoulderAdvancedGame/ShoulderAdvandedGame';
+
 
 const Game = () => {
   const { points } = useAppContext();
@@ -20,11 +26,11 @@ const Game = () => {
     switch (excerise) {
       case "Abs Beginner":
         return <AbsBeginnerGame />;
+  
       case "Abs Intermediate": 
          return <AbsIntermediateGame/>
       case "Abs Advanced" :
          return <AbsAdvancedGame/>
-      
       case "Arm Beginner" :
           return <ArmBeginnerGame/>
 
@@ -45,9 +51,23 @@ const Game = () => {
         
       case "Leg Beginner" :
           return <LegBeginnerGame/>
-      default:
+      
+      case  "Leg Intermediate" :
+          return <LegIntermediateGame/>
 
-        return null;
+      case  "Leg Advanced" :
+          return <LegAdvancedGame/>   
+      
+      case  "Shoulder Beginner":
+          return <ShoulderBeginnerGame/>
+      
+      case  "Shoulder Intermediate " :
+          return <ShoulderIntermediateGame />
+      
+      case  "Shoulder Advanced" :
+          return <ShoulderAdvancedGame/>
+
+       default: return null;
     }
   };
 

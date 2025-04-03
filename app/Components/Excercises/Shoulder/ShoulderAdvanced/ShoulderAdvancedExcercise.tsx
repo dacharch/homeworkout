@@ -3,10 +3,19 @@ import {View,Text,StyleSheet,ScrollView, Modal,Pressable,TouchableOpacity} from 
 import { Exercise, ShoulderAdvanced } from "../../../../data/constant";
 
 import {Image} from 'expo-image' 
+import { useAppContext } from '@/app/context/ContextProvider';
+import { useRouter } from 'expo-router';
 
 
 const ShoulderAdvancedExcercise = () => {
   const [selectedExercise,setSelectedExercise] = useState<Exercise|null>(null)
+  const {setExcercise} = useAppContext() ;
+  const router = useRouter() ;
+
+  const ShoulderAdvancedGameSetup = () =>{
+     setExcercise("Shoudler Advanced") ;
+     router.push('/Game') ;    
+  }
   return (
       <>
              <ScrollView contentContainerStyle={styles.container}>
@@ -28,7 +37,7 @@ const ShoulderAdvancedExcercise = () => {
                  </TouchableOpacity>
                ))}
              </View>
-             <Pressable style={styles.button}>
+             <Pressable style={styles.button} onPress={ShoulderAdvancedGameSetup}>
                 <Text style={styles.buttonText}> Start the Excercise</Text>
              </Pressable>
            </ScrollView>

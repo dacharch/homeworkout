@@ -2,9 +2,20 @@ import React, { useState } from 'react'
 import {View,Text,StyleSheet,ScrollView, Modal,Pressable,TouchableOpacity} from 'react-native'
 import { Exercise, ShoulderBeginner } from "../../../../data/constant";
 import {Image} from 'expo-image' ;
+import { useRouter } from 'expo-router';
+import { useAppContext } from '@/app/context/ContextProvider';
 
 const ShoulderBeginnerExcercise = () => {
   const [selectedExercise,setSelectedExercise] = useState<Exercise|null>(null)
+  
+  const{setExcercise} =useAppContext() ;
+  const router = useRouter() ;
+
+  const ShoulderBeginnerGameSetup = () =>{
+    setExcercise("Shoulder Beginner") ;
+    router.push("/Game") ;    
+  }
+
   return (
       <>
          <ScrollView contentContainerStyle={styles.container}>
@@ -26,7 +37,7 @@ const ShoulderBeginnerExcercise = () => {
              </TouchableOpacity>
            ))}
          </View>
-         <Pressable style={styles.button}>
+         <Pressable style={styles.button} onPress={ShoulderBeginnerGameSetup}>
             <Text style={styles.buttonText}>Start the Excercise</Text>
          </Pressable>
        </ScrollView>
