@@ -1,6 +1,4 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { useAppContext } from '../context/ContextProvider';
 import AbsBeginnerGame from '../Components/GameExcercises/AbsGame/AbsBeginnerGame/AbsBeginnerGame';
 import AbsIntermediateGame from '../Components/GameExcercises/AbsGame/AbsIntermediate/AbsIntermediateGame';
 import AbsAdvancedGame from '../Components/GameExcercises/AbsGame/AbsAdvancedGame/AbsAdvancedGame';
@@ -16,6 +14,9 @@ import LegAdvancedGame from '../Components/GameExcercises/LegGame/LegAdvancedGam
 import ShoulderBeginnerGame from '../Components/GameExcercises/ShoulderGame/ShoulderBeginnerGame/ShoulderBeginnerGame';
 import ShoulderIntermediateGame from '../Components/GameExcercises/ShoulderGame/ShoulderIntermediateGame/ShoulderIntermediateGame';
 import ShoulderAdvancedGame from '../Components/GameExcercises/ShoulderGame/ShoulderAdvancedGame/ShoulderAdvandedGame';
+import { useAppContext } from '../context/ContextProvider';
+import { View, Text, StyleSheet } from 'react-native';
+
 
 
 const Game = () => {

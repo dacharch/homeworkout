@@ -90,7 +90,7 @@ const AbsAdvancedExcercise = () => {
                     )}
                   </View>
                 </View>
-              </Modal>
+           </Modal>
      </>
   )
 }

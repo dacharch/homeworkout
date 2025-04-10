@@ -138,9 +138,6 @@ export const AbsBeginner: Exercise[] = [
   }
 ];
 
-
-
-
 export const AbsIntermediate:Exercise[] =[
   {
     id: 1,

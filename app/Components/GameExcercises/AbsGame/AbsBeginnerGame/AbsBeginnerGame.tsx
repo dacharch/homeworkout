@@ -1,89 +1,122 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Modal } from 'react-native';
-import { AbsBeginner } from '@/app/data/constant';
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Pressable } from 'react-native';
+import {AbsBeginner, AbsIntermediate} from '../../../../data/constant'
+import MysteryBox, {Reward} from "../../../MysteryBox/MysteryBox"
+import {useAppContext} from '../../../../context/ContextProvider'
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
-import { useAppContext } from '@/app/context/ContextProvider';
 
 const AbsBeginnerGame = () => {
-  const [timer, setTimer] = useState(30);
-  const [key, setKey] = useState(0); 
+  const [timer, setTimer] = useState(5);
+  const [key, setKey] = useState(0);
   const { points, setPoints, currentIndex, setCurrentIndex } = useAppContext();
-  const [modalVisible, setModalVisible] = useState(false);
+  const [gameFinished, setGameFinished] = useState(false);
+  const [showMysteryBox, setShowMysteryBox] = useState(true);
+  const [number,setNumber] = useState(0);
 
   useEffect(() => {
-    if (timer > 0) {
+    if (!gameFinished && timer > 0) {
       const interval = setInterval(() => {
         setTimer((prev) => prev - 1);
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [timer]);
+  }, [timer, gameFinished]);
 
+  
   const handleNextExercise = () => {
-    setPoints(points + 10);
+     setPoints(points + 10);
+  
     if (currentIndex < AbsBeginner.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      setTimer(30);
+      setTimer(5);
+      setNumber(currentIndex+1) ;
       setKey((prev) => prev + 1);
-    } else {
-      setModalVisible(true);
+      
+    } 
+    console.log(number)
+    console.log(AbsBeginner.length) ;
+  };
+  
+
+  const handleReward = (reward: Reward) => {
+    let rewardPoints = Number(reward.value);
+    if (reward.type === 'points') {
+       setPoints(points + rewardPoints);
+    } else if (reward.type === 'pauseTimer') {
+
+    } else if (reward.type === 'skipExercise') {
+      
     }
-    
+    if (reward.type === 'box') {
+      setShowMysteryBox(true);
+    } else {
+      setShowMysteryBox(false);
+    }
   };
 
-  return (
-    <View style={styles.container2}>
-      <View style={styles.card} key={key}>         
-        <Image 
-          key={currentIndex}
-          source={AbsBeginner[currentIndex].image} 
-          style={styles.image} 
-        />
-        <Text style={styles.exerciseName}>{AbsBeginner[currentIndex].name}</Text>
-      </View>
+  const AskedQuestions = () =>{
+      
+  }
 
-      {/* Timer with Progress Bar */}
-      <View style={styles.timerContainer}>
-        <Text style={styles.timerText}>⏳ Time Left: {timer}s</Text>
-        <ProgressBar 
-          progress={timer / 30} 
-          color="#FF9800" 
-          style={styles.progressBar} 
-        />
-      </View>
+  
+  const MysteryBoxOpen = () =>{
+     setShowMysteryBox(true) ;
+     setGameFinished(true) ;
+  }
 
-      {/* Completion Button */}
-      {timer === 0 && (
-        <TouchableOpacity style={styles.button} onPress={handleNextExercise}>
-          <Text style={styles.buttonText}>✅ Completed!</Text>
-        </TouchableOpacity>
-      )}
-
-      {/* Unlock Modal */}
-      <Modal visible={modalVisible} transparent animationType="slide">
-        <View style={styles.modalContainer}>
-          <View style={styles.modalContent}>
-            <Text style={styles.modalText}>🎉 Workout Complete! Unlock the next exercise game?</Text>
-            <TouchableOpacity 
-              style={styles.modalButton} 
-              onPress={() => setModalVisible(false)}
-            >
-              <Text style={styles.buttonText}>🔓 Unlock</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-              style={[styles.modalButton, { backgroundColor: '#ccc' }]} 
-              onPress={() => setModalVisible(false)}
-            >
-              <Text style={styles.buttonText}>❌ Close</Text>
-            </TouchableOpacity>
+return(
+   <>
+      
+ {gameFinished && showMysteryBox ? (
+        <MysteryBox visible={true} onClose={handleReward} />
+      ) : (
+        <View style={styles.container2}>
+          <View style={styles.card} key={key}>
+            <Image
+              key={currentIndex}
+              source={AbsBeginner[currentIndex].image}
+              style={styles.image}
+            />
+            <Text style={styles.exerciseName}>{AbsBeginner[currentIndex].name}</Text>
           </View>
-        </View>
-      </Modal>
-    </View>
-  );
-};
 
+          <View style={styles.timerContainer}>
+            <Text style={styles.timerText}>⏳ Time Left: {timer}s</Text>
+            <ProgressBar
+              progress={timer / 30}
+              color="#FF9800"
+              style={styles.progressBar}
+            />
+          </View>
+
+          {timer === 0 && (
+            <>
+            <View style={styles.buttonContainer}>
+            <TouchableOpacity style={styles.button} onPress={handleNextExercise}>
+              <Text style={styles.buttonText}>✅ Next Excercise</Text>
+            </TouchableOpacity>
+          
+            </View>
+          
+            </>
+           
+          )}
+           {
+             number == AbsBeginner.length-1 && (
+                <TouchableOpacity style={styles.button} onPress={MysteryBoxOpen}>
+               <Text style={styles.buttonText}>✅ Mystery Box</Text>
+            </TouchableOpacity> 
+              )
+            }
+
+        </View>
+      )
+    }
+     
+   </>
+ )
+}
 export default AbsBeginnerGame;
 
 const styles = StyleSheet.create({
@@ -95,6 +128,11 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     padding: 20,
   },
+  buttonContainer:{
+    display:'flex',
+
+  },
+
   card: {
     backgroundColor: '#fff',
     padding: 20,
@@ -145,39 +183,13 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
+    marginBottom:10,
   },
   buttonText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'white',
     textAlign: 'center',
-  },
-  modalContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  modalContent: {
-    width: 300,
-    backgroundColor: 'white',
-    padding: 20,
-    borderRadius: 15,
-    alignItems: 'center',
-  },
-  modalText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  modalButton: {
-    backgroundColor: '#FF9800',
-    paddingVertical: 12,
-    paddingHorizontal: 30,
-    borderRadius: 10,
-    marginVertical: 5,
-    width: '80%',
-    alignItems: 'center',
+  
   },
 });
