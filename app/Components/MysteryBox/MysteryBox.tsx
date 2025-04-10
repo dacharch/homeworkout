@@ -45,7 +45,6 @@ const MysteryBox: React.FC<Props> = ({ visible, onClose }) => {
         friction: 5,
       }).start();
 
-      // fire confetti
       confettiRef.current?.start();
     } else {
       scaleAnim.setValue(0);

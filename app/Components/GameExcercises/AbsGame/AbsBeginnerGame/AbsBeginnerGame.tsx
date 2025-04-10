@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Pressable } from 'react-native';
-import {AbsBeginner, AbsIntermediate} from '../../../../data/constant'
-import MysteryBox, {Reward} from "../../../MysteryBox/MysteryBox"
-import {useAppContext} from '../../../../context/ContextProvider'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { AbsBeginner } from '../../../../data/constant'
+import MysteryBox, { Reward } from "../../../MysteryBox/MysteryBox"
+import { useAppContext } from '../../../../context/ContextProvider'
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
 
 const AbsBeginnerGame = () => {
-  const [timer, setTimer] = useState(5);
+  const [timer, setTimer] = useState(30);
   const [key, setKey] = useState(0);
-  const { points, setPoints, currentIndex, setCurrentIndex } = useAppContext();
-  const [gameFinished, setGameFinished] = useState(false);
-  const [showMysteryBox, setShowMysteryBox] = useState(true);
-  const [number,setNumber] = useState(0);
+  const { points, setPoints,
+      currentIndex, setCurrentIndex, gameFinished,
+      setGameFinished,setShowMysteryBox,
+      showMysteryBox } = useAppContext();
+
+  const [number, setNumber] = useState(0);
 
   useEffect(() => {
-    if (!gameFinished && timer > 0) {
+    if (timer > 0) {
       const interval = setInterval(() => {
         setTimer((prev) => prev - 1);
       }, 1000);
@@ -23,52 +25,47 @@ const AbsBeginnerGame = () => {
     }
   }, [timer, gameFinished]);
 
-  
   const handleNextExercise = () => {
-     setPoints(points + 10);
-  
+    setPoints(points + 10);
+
     if (currentIndex < AbsBeginner.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      setTimer(5);
-      setNumber(currentIndex+1) ;
+      setTimer(30);
+      setNumber(currentIndex + 1);
       setKey((prev) => prev + 1);
+    } else {
+      setGameFinished(true);
+      setShowMysteryBox(true) ;
       
-    } 
-    console.log(number)
-    console.log(AbsBeginner.length) ;
+    }
   };
-  
 
   const handleReward = (reward: Reward) => {
     let rewardPoints = Number(reward.value);
     if (reward.type === 'points') {
-       setPoints(points + rewardPoints);
+      setPoints(points + rewardPoints);
     } else if (reward.type === 'pauseTimer') {
+       setTimer(30) ; 
+       setTimeout(()=>{
+         setTimer((prev)=> prev-1) ;
+       },5000)
 
-    } else if (reward.type === 'skipExercise') {
+
+       
       
+    } else if (reward.type === 'skipExercise') {
+
     }
-    if (reward.type === 'box') {
-      setShowMysteryBox(true);
-    } else {
-      setShowMysteryBox(false);
-    }
+    setShowMysteryBox(false); 
+
+    
   };
 
-  const AskedQuestions = () =>{
-      
-  }
+ 
 
-  
-  const MysteryBoxOpen = () =>{
-     setShowMysteryBox(true) ;
-     setGameFinished(true) ;
-  }
-
-return(
-   <>
-      
- {gameFinished && showMysteryBox ? (
+  return (
+    <>
+      {gameFinished && showMysteryBox ? (
         <MysteryBox visible={true} onClose={handleReward} />
       ) : (
         <View style={styles.container2}>
@@ -91,32 +88,20 @@ return(
           </View>
 
           {timer === 0 && (
-            <>
             <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button} onPress={handleNextExercise}>
-              <Text style={styles.buttonText}>✅ Next Excercise</Text>
-            </TouchableOpacity>
-          
+              <TouchableOpacity style={styles.button} onPress={handleNextExercise}>
+                <Text style={styles.buttonText}>✅ Next Exercise</Text>
+              </TouchableOpacity>
             </View>
-          
-            </>
-           
           )}
-           {
-             number == AbsBeginner.length-1 && (
-                <TouchableOpacity style={styles.button} onPress={MysteryBoxOpen}>
-               <Text style={styles.buttonText}>✅ Mystery Box</Text>
-            </TouchableOpacity> 
-              )
-            }
 
+          
         </View>
-      )
-    }
-     
-   </>
- )
-}
+      )}
+    </>
+  );
+};
+
 export default AbsBeginnerGame;
 
 const styles = StyleSheet.create({
@@ -128,11 +113,9 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     padding: 20,
   },
-  buttonContainer:{
-    display:'flex',
-
+  buttonContainer: {
+    display: 'flex',
   },
-
   card: {
     backgroundColor: '#fff',
     padding: 20,
@@ -183,13 +166,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
-    marginBottom:10,
+    marginBottom: 10,
   },
   buttonText: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'white',
     textAlign: 'center',
-  
   },
 });

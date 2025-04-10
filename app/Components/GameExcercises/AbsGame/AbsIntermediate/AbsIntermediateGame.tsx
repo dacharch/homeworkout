@@ -4,11 +4,17 @@ import { AbsIntermediate } from '@/app/data/constant';
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
 import { useAppContext } from '@/app/context/ContextProvider';
+import MysteryBox, { Reward } from '@/app/Components/MysteryBox/MysteryBox';
 
 const AbsIntermediateGame = () => {
   const [timer, setTimer] = useState(30);
   const [key, setKey] = useState(0); 
-  const { points, setPoints, currentIndex, setCurrentIndex } = useAppContext();
+  const { points,
+     setPoints,  currentIndex, 
+    setCurrentIndex,gameFinished,
+    setGameFinished,setShowMysteryBox,showMysteryBox
+   } = useAppContext();
+
   const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
@@ -26,61 +32,98 @@ const AbsIntermediateGame = () => {
       setCurrentIndex(currentIndex + 1);
       setTimer(30);
       setKey((prev) => prev + 1);
-    } else {
-      setModalVisible(true);
+    } 
+
+    if(points == 50){
+        setGameFinished(true) ;
+        setShowMysteryBox(true)  ;
     }
     
   };
 
+
+  const handleReward = (reward: Reward) => {
+      let rewardPoints = Number(reward.value);
+      if (reward.type === 'points') {
+        setPoints(points + rewardPoints);
+      } else if (reward.type === 'pauseTimer') {
+         setTimer(30) ; 
+         setTimeout(()=>{
+           setTimer((prev)=> prev-1) ;
+         },5000)
+        
+      } else if (reward.type === 'skipExercise') {
+  
+      }
+      setShowMysteryBox(false); 
+  
+      
+    };
+
+
   return (
-    <View style={styles.container2}>
-      <View style={styles.card} key={key}>         
-        <Image 
-          key={currentIndex}
-          source={AbsIntermediate[currentIndex].image} 
-          style={styles.image} 
-        />
-        <Text style={styles.exerciseName}>{AbsIntermediate[currentIndex].name}</Text>
-      </View>
-
-      {/* Timer with Progress Bar */}
-      <View style={styles.timerContainer}>
-        <Text style={styles.timerText}>⏳ Time Left: {timer}s</Text>
-        <ProgressBar 
-          progress={timer / 30} 
-          color="#FF9800" 
-          style={styles.progressBar} 
-        />
-      </View>
-
-      {/* Completion Button */}
-      {timer === 0 && (
-        <TouchableOpacity style={styles.button} onPress={handleNextExercise}>
-          <Text style={styles.buttonText}>✅ Completed!</Text>
-        </TouchableOpacity>
-      )}
-
-      {/* Unlock Modal */}
-      <Modal visible={modalVisible} transparent animationType="slide">
-        <View style={styles.modalContainer}>
-          <View style={styles.modalContent}>
-            <Text style={styles.modalText}>🎉 Workout Complete! Unlock the next exercise game?</Text>
-            <TouchableOpacity 
-              style={styles.modalButton} 
-              onPress={() => setModalVisible(false)}
-            >
-              <Text style={styles.buttonText}>🔓 Unlock</Text>
-            </TouchableOpacity>
-            <TouchableOpacity 
-              style={[styles.modalButton, { backgroundColor: '#ccc' }]} 
-              onPress={() => setModalVisible(false)}
-            >
-              <Text style={styles.buttonText}>❌ Close</Text>
-            </TouchableOpacity>
+    <>  
+       {
+        gameFinished && showMysteryBox ?(
+           <MysteryBox visible={true} onClose={handleReward}/>
+        ):( 
+          <View style={styles.container2}>
+          <View style={styles.card} key={key}>         
+            <Image 
+              key={currentIndex}
+              source={AbsIntermediate[currentIndex].image} 
+              style={styles.image} 
+            />
+            <Text style={styles.exerciseName}>{AbsIntermediate[currentIndex].name}</Text>
           </View>
+    
+          {/* Timer with Progress Bar */}
+          <View style={styles.timerContainer}>
+            <Text style={styles.timerText}>⏳ Time Left: {timer}s</Text>
+            <ProgressBar 
+              progress={timer / 30} 
+              color="#FF9800" 
+              style={styles.progressBar} 
+            />
+          </View>
+    
+          {/* Completion Button */}
+          {timer === 0 && (
+            <TouchableOpacity style={styles.button} onPress={handleNextExercise}>
+              <Text style={styles.buttonText}>✅ Completed!</Text>
+            </TouchableOpacity>
+          )}
+    
+          {/* Unlock Modal */}
+          <Modal visible={modalVisible} transparent animationType="slide">
+            <View style={styles.modalContainer}>
+              <View style={styles.modalContent}>
+                <Text style={styles.modalText}>🎉 Workout Complete! Unlock the next exercise game?</Text>
+                <TouchableOpacity 
+                  style={styles.modalButton} 
+                  onPress={() => setModalVisible(false)}
+                >
+                  <Text style={styles.buttonText}>🔓 Unlock</Text>
+                </TouchableOpacity>
+                <TouchableOpacity 
+                  style={[styles.modalButton, { backgroundColor: '#ccc' }]} 
+                  onPress={() => setModalVisible(false)}
+                >
+                  <Text style={styles.buttonText}>❌ Close</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </Modal>
         </View>
-      </Modal>
-    </View>
+
+        )
+          
+       }
+      
+    
+    
+    </>
+  
   );
 };
 
