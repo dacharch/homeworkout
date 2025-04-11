@@ -53,11 +53,10 @@ const AbsIntermediateGame = () => {
          },5000)
         
       } else if (reward.type === 'skipExercise') {
+        
   
       }
       setShowMysteryBox(false); 
-  
-      
     };
 
 

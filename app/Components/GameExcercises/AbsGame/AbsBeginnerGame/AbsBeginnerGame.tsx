@@ -6,10 +6,12 @@ import { useAppContext } from '../../../../context/ContextProvider'
 import { Image } from 'expo-image';
 import { ProgressBar } from 'react-native-paper';
 
+
 const AbsBeginnerGame = () => {
   const [timer, setTimer] = useState(30);
   const [key, setKey] = useState(0);
-  const { points, setPoints,
+  const {
+      points, setPoints,
       currentIndex, setCurrentIndex, gameFinished,
       setGameFinished,setShowMysteryBox,
       showMysteryBox } = useAppContext();
@@ -49,11 +51,11 @@ const AbsBeginnerGame = () => {
        setTimeout(()=>{
          setTimer((prev)=> prev-1) ;
        },5000)
-
-
-       
       
     } else if (reward.type === 'skipExercise') {
+      // Back to the first Excercise where we start 
+        setCurrentIndex(0)
+
 
     }
     setShowMysteryBox(false); 
